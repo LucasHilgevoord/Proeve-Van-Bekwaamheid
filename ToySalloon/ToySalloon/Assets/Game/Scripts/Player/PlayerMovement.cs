@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
+    [SerializeField]
+    private GameObject walkIcon;
 
     private void OnEnable()
     {
@@ -33,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 newPos = hit.point;
                 MovePlayerToPos(newPos);
+
+                walkIcon.SetActive(true);
+                walkIcon.transform.position = new Vector3(newPos.x, newPos.y + 0.1f, newPos.z);
             }
         }
     }
