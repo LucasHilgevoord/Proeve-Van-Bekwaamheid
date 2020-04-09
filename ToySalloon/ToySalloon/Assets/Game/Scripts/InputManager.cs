@@ -6,13 +6,13 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     public delegate void ObjectClicked(Transform obj);
-    public static event ObjectClicked onObjectClicked;
+    public static event ObjectClicked OnObjectClicked;
 
     public delegate void TouchHold();
-    public static event TouchHold onTouchHold;
+    public static event TouchHold OnTouchHold;
 
     public delegate void MultiTouch();
-    public static event MultiTouch onMultiTouch;
+    public static event MultiTouch OnMultiTouch;
 
     private float touchDelay = 0.5f;
 
@@ -37,17 +37,17 @@ public class InputManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 Transform hitObj = hit.transform;
-                onObjectClicked(hitObj);
+                OnObjectClicked(hitObj);
             }
         }
         else if (Input.GetMouseButton(1))
         {
-            onTouchHold();
+            OnTouchHold();
         }
 
         if(Input.GetAxis("Mouse ScrollWheel") != 0)
         {
-            onMultiTouch();
+            OnMultiTouch();
         }
     }
 
@@ -65,19 +65,20 @@ public class InputManager : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     Transform hitObj = hit.transform;
-                    onObjectClicked(hitObj);
+                    OnObjectClicked(hitObj);
                 }
             }
 
             if (t.phase == TouchPhase.Moved)
             {
                 //Hold action
-                onTouchHold();
+                OnTouchHold();
             }
         }
         else if(Input.touchCount > 1)
         {
-            onMultiTouch();
+            //Multi hold action
+            OnMultiTouch();
         }
     }
 }

@@ -23,14 +23,15 @@ public class CameraController : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.onObjectClicked += FollowTarget;
-        InputManager.onTouchHold += MoveManual;
-        InputManager.onMultiTouch += Zoom;
+        InputManager.OnObjectClicked += FollowTarget;
+        InputManager.OnTouchHold += MoveManual;
+        InputManager.OnMultiTouch += Zoom;
     }
     private void OnDisable()
     {
-        InputManager.onObjectClicked -= FollowTarget;
-        InputManager.onTouchHold -= MoveManual;
+        InputManager.OnObjectClicked -= FollowTarget;
+        InputManager.OnTouchHold -= MoveManual;
+        InputManager.OnMultiTouch -= Zoom;
     }
 
     private void Start()
@@ -72,6 +73,25 @@ public class CameraController : MonoBehaviour
     /// </summary>
     private void Zoom()
     {
+        isManual = true;
+        if (Application.isEditor)
+        {
+            //Zoom in/out
+            Vector3 newPos = transform.position;
+            newPos.y += -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
+            newPos.z -= -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
+            transform.position = newPos;
+        } else
+        {
+            Touch firstTouch = Input.GetTouch(0);
+            Touch secondTouch = Input.GetTouch(1);
+
+            Vector2 firstTouchPos = firstTouch.position - firstTouch.deltaPosition;
+            Vector2 secondTouchPos = secondTouch.position - secondTouch.deltaPosition;
+            float prevMag = (firstTouchPos - secondTouchPos).magnitude;
+            float curMag = (firstTouch.position - secondTouch.position).magnitude;
+            float difference = curMag - prevMag * zoomSpeedTouch;
+        }
     }
 
     /// <summary>
