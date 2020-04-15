@@ -14,7 +14,7 @@ public class NpcController : MonoBehaviour
     private NpcStates.states currentState; // Current state the npc is in.
 
     private Transform destination;
-    private int maxPickCount = 10; // Maximal number of checks the npc can do for an availible station.
+    private int maxPickCount = 20; // Maximal number of checks the npc can do for an availible station.
     private int curPickCount = 0; // Current number of checks the npc did for an availible station.
 
 
@@ -51,7 +51,7 @@ public class NpcController : MonoBehaviour
     {
         Transform destination = transform;
 
-        // Pick random station from list
+        // Pick random station from list of availible stations
         int pickedStation = Random.Range(0, manager.buyStations.Count);
 
         // Check if the standpoint is not occupied;
@@ -66,19 +66,24 @@ public class NpcController : MonoBehaviour
             }
         }
 
-        if (pickedPoint < 0 && curPickCount < maxPickCount)
+        // If no standpoint is availible
+        if (pickedPoint < 0)
         {
-            //Try finding another availible stand
-            curPickCount++;
-            PickStation();
-        } else if (pickedPoint > 0)
-        {
-            //Found an availible stand
-            destination = manager.buyStations[pickedStation].standingPoints[0].standingPoints;
+            if (curPickCount < maxPickCount)
+            {
+                // Try finding another availible stand
+                curPickCount++;
+                destination = PickStation();
+            } else
+            {
+                // No stands availible within max tries
+                destination = transform;
+                Leave();
+            }
         } else
         {
-            //No stands availible within max tries
-            Leave();
+            // Found an availible stand
+            destination = manager.buyStations[pickedStation].standingPoints[pickedPoint].standingPoints;
         }
         return destination;
     }
