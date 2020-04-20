@@ -6,7 +6,10 @@ public class WalkIcon : MonoBehaviour
 {
     [SerializeField]
     private Transform player;
-    private float distance = 1.3f;
+    private float distance = 0.1f;
+
+    private Vector3 playerPos;
+    private Vector3 iconPos;
 
     void Start()
     {
@@ -15,7 +18,9 @@ public class WalkIcon : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) < distance)
+        playerPos = new Vector3(player.position.x, 0, player.position.z);
+        iconPos = new Vector3(transform.position.x, 0, transform.position.z);
+        if (Vector3.Distance(iconPos, playerPos) < distance)
         {
             gameObject.SetActive(false);
         }

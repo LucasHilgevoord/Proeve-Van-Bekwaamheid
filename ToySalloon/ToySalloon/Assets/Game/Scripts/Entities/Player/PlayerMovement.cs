@@ -35,9 +35,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 newPos = hit.point;
                 MovePlayerToPos(newPos);
-
-                walkIcon.SetActive(true);
-                walkIcon.transform.position = new Vector3(newPos.x, newPos.y + 0.1f, newPos.z);
             }
         }
     }
@@ -45,5 +42,7 @@ public class PlayerMovement : MonoBehaviour
     public void MovePlayerToPos(Vector3 newPos)
     {
         agent.SetDestination(newPos);
+        walkIcon.SetActive(true);
+        walkIcon.transform.position = new Vector3(newPos.x, newPos.y + 0.1f, newPos.z);
     }
 }

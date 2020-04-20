@@ -6,6 +6,13 @@ public class Counter : MonoBehaviour
 {
     [SerializeField]
     private Transform employeePoint; // Position where the employee stands.
+    public StandingPoint[] standingPoints; // Positions where the customers can stand
+
     [SerializeField]
-    public StandingPoint[] standingPoint; // Positions where the customers can stand
+    private PlayerMovement player;
+
+    private void OnMouseDown()
+    {
+        player.MovePlayerToPos(employeePoint.position);
+    }
 }

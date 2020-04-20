@@ -37,6 +37,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        FollowTarget(target);
     }
 
     void FixedUpdate()
