@@ -18,6 +18,7 @@ public class NpcController : StateMachine
         new StateID(NpcStates.states.CHECKING, typeof(NpcGoCheck)),
         new StateID(NpcStates.states.COUNTER, typeof(NpcGoCounter)),
         new StateID(NpcStates.states.CHECKOUT, typeof(NpcGoCheckout)),
+        new StateID(NpcStates.states.LEAVE, typeof(NpcGoLeave)),
         new StateID(NpcStates.states.TALK, typeof(NpcGoTalk)),
     };
 
@@ -29,8 +30,10 @@ public class NpcController : StateMachine
     public bool hasInteracted;
 
     [Header("Destination")]
+    public Vector3 myPos;
+    public Vector3 destPos;
     public Transform destination; // destination that has been chosen to go to.
-    public float destinationRange = 1.5f; // Max distance between npc and distance to have reached it. 
+    public float destinationRange = 0.1f; // Max distance between npc and distance to have reached it. 
     public int destinationStation; // Station that hase been chosen to go to.
     public int destinationPoint; // Standing point that has been chosen to go to.
 
@@ -73,10 +76,12 @@ public class NpcController : StateMachine
 
     private void Update()
     {
+        myPos = new Vector3(transform.position.x, 0, transform.position.z);
+        destPos = new Vector3(destination.position.x, 0, destination.position.z);
         switch (currentState)
         {
             case NpcStates.states.BUYSTATION:
-                if (Vector3.Distance(transform.position, destination.position) < destinationRange)
+                if (Vector3.Distance(myPos, destPos) < destinationRange)
                 {
                     //When npc is close enough to the station point, make it look at the items.
                     ChangeState(NpcStates.states.CHECKING);
@@ -109,8 +114,7 @@ public class NpcController : StateMachine
                 }
                 break;
             case NpcStates.states.COUNTER:
-                Debug.Log(Vector3.Distance(transform.position, destination.position));
-                if (Vector3.Distance(transform.position, destination.position) < destinationRange)
+                if (Vector3.Distance(myPos, destPos) < destinationRange)
                 {
                     ChangeState(NpcStates.states.CHECKOUT);
                 }

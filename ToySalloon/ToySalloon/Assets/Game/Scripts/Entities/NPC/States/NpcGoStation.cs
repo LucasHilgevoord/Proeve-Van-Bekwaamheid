@@ -53,8 +53,7 @@ public class NpcGoStation : State
             else
             {
                 // No stands availible within max tries
-                c.destination = transform;
-                //Leave();
+                c.ChangeState(NpcStates.states.LEAVE);
             }
         }
         else

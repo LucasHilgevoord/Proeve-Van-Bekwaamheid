@@ -33,16 +33,17 @@ public class NpcGoCounter : State
                 break;
             }
         }
-
         
         if (pickedPoint < 0)
         {
             // No counter spots availible
+            c.ChangeState(NpcStates.states.LEAVE);
         }
         else
         {
             // Found availible counter spot
             c.destination = c.manager.counters.standingPoints[pickedPoint].standingPoint;
+            c.destinationPoint = pickedPoint;
         }
         return c.destination;
     }

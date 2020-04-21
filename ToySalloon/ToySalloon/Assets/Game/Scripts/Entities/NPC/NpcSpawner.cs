@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -14,12 +15,20 @@ public class NpcSpawner : MonoBehaviour
     [SerializeField]
     private Transform parent; // Object where the npc needs to be the child off.
 
+    private float fadeSpeed = 1;
+
     private GameObject newNpc;
     private AudioSource audioSrc;
     private WorldManager manager;
 
-    // Quick fix for agent avoider.
-    private int priority = 1; // Priority of the NavMeshAgent avoidancePriority, 0 = player
+    private void OnEnable()
+    {
+        NpcGoLeave.OnNpcLeave += RemoveNPC;
+    }
+    private void OnDisable()
+    {
+        NpcGoLeave.OnNpcLeave -= RemoveNPC;
+    }
 
     void Start()
     {
@@ -32,11 +41,6 @@ public class NpcSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && manager.npcs.Count < manager.maxCustomers)
         {
             SpawnNPC();
-
-            if (priority == 100)
-            {
-                priority = 1;
-            }
         }
     }
 
@@ -49,9 +53,6 @@ public class NpcSpawner : MonoBehaviour
         newNpc = Instantiate(npcPrefab, parent);
         newNpc.transform.position = spawnPoint.position;
         manager.npcs.Add(newNpc.GetComponent<NpcController>());
-        priority++;
-        newNpc.GetComponent<NavMeshAgent>().avoidancePriority = priority;
-
 
         //Playing door audio
         audioSrc.PlayOneShot(doorBell);
@@ -60,10 +61,20 @@ public class NpcSpawner : MonoBehaviour
     /// <summary>
     /// Fadout npc and remove from scene.
     /// </summary>
-    private void RemoveNPC(GameObject npc)
+    private void RemoveNPC(NpcController npc)
     {
-        audioSrc.PlayOneShot(doorBell);
-        //Fadeout
-        //Destroy
+        SpriteRenderer npcRend = npc.gameObject.GetComponent<SpriteRenderer>();
+        float alpha = 1f;
+    
+        DOTween.To(() => alpha, f => alpha = f, 0f, fadeSpeed).OnUpdate(() =>
+        {
+            //npc.Skeleton.SetColor(new Color(1, 1, 1, alpha));
+            npcRend.color = new Color(1, 1, 1, alpha);
+        }).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            audioSrc.PlayOneShot(doorBell);
+            manager.npcs.Remove(npc);
+            Destroy(npc.gameObject);
+        });
     }
 }
