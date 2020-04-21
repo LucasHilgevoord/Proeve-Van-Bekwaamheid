@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NpcSpawner : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class NpcSpawner : MonoBehaviour
     private AudioSource audioSrc;
     private WorldManager manager;
 
+    // Quick fix for agent avoider.
+    private int priority = 1; // Priority of the NavMeshAgent avoidancePriority, 0 = player
+
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
@@ -28,6 +32,11 @@ public class NpcSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && manager.npcs.Count < manager.maxCustomers)
         {
             SpawnNPC();
+
+            if (priority == 100)
+            {
+                priority = 1;
+            }
         }
     }
 
@@ -40,6 +49,9 @@ public class NpcSpawner : MonoBehaviour
         newNpc = Instantiate(npcPrefab, parent);
         newNpc.transform.position = spawnPoint.position;
         manager.npcs.Add(newNpc.GetComponent<NpcController>());
+        priority++;
+        newNpc.GetComponent<NavMeshAgent>().avoidancePriority = priority;
+
 
         //Playing door audio
         audioSrc.PlayOneShot(doorBell);
