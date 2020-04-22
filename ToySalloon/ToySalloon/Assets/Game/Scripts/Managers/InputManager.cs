@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
     {
         if (disableTouch) return;
 
-        if (Application.isEditor)
+        if (!Application.isMobilePlatform)
         {
             MouseInput();
         } else

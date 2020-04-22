@@ -8,7 +8,7 @@ public class NextScene : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.N))
         {
-            //doe iets lucas, help me
+            Application.LoadLevel(1);
         }
     }
 }

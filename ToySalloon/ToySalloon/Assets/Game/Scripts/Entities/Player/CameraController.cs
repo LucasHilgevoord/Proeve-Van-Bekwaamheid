@@ -55,7 +55,7 @@ public class CameraController : MonoBehaviour
     private void MoveManual()
     {
         isManual = true;
-        if (Application.isEditor)
+        if (!Application.isMobilePlatform)
         {
             Vector3 desiredPos = transform.position - new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y"));
             transform.position = Vector3.Lerp(transform.position, desiredPos, dragSpeedMouse);
@@ -74,7 +74,7 @@ public class CameraController : MonoBehaviour
     private void Zoom()
     {
         isManual = true;
-        if (Application.isEditor)
+        if (!Application.isMobilePlatform)
         {
             //Zoom in/out
             Vector3 newPos = transform.position;

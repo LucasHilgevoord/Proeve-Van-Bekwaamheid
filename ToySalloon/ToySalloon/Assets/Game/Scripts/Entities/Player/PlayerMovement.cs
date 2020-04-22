@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (t.gameObject.tag == "Ground")
         {
             Vector3 newPos;
-            Ray ray = Application.isEditor ? Camera.main.ScreenPointToRay(Input.mousePosition) : Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            Ray ray = !Application.isMobilePlatform ? Camera.main.ScreenPointToRay(Input.mousePosition) : Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {

@@ -15,7 +15,7 @@ public class RatController : MonoBehaviour
         if (!isCaught && Vector3.Distance(transform.position, player.position) < distance)
         {
             isCaught = true;
-            WorldManager.SharedInstance.FadeToScene(0);
+            WorldManager.SharedInstance.FadeToScene(2);
         }
     }
 }

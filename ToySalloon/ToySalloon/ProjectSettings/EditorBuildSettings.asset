@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Game/PlayerControl.unity
     guid: 2f2beae49d638014a8ad6060be674cdc
+  - enabled: 1
+    path: Assets/Game/Scenes/FightScene/FightScene.unity
+    guid: f563f1febf757da4ebaf8c044f798c53
   m_configObjects: {}
