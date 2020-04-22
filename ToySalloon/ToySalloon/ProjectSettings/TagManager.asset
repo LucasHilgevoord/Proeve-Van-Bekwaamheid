@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - PuzzlePiece
+  - ParentHolder
   - Entity
   - Ground
   - Selectable
@@ -16,6 +18,7 @@ TagManager:
   - UI
   - 
   - 
+  - Pieces
   - Post Processing
   - Entities
   - 
