@@ -52,7 +52,9 @@ public class NpcSpawner : MonoBehaviour
         //Creating new npc
         newNpc = Instantiate(npcPrefab, parent);
         newNpc.transform.position = spawnPoint.position;
-        manager.npcs.Add(newNpc.GetComponent<NpcController>());
+        NpcController c = newNpc.GetComponent<NpcController>();
+        c.purpose = (NpcGoals)Random.Range(0, 2);
+        manager.npcs.Add(c);
 
         //Playing door audio
         audioSrc.PlayOneShot(doorBell);

@@ -59,9 +59,6 @@ public class NpcController : StateMachine
         curLookTime = Random.Range(minLookTime, maxLookTime);
         destination = transform;
 
-        //Testing!!!
-        purpose = NpcGoals.BUY;
-
         //Adding all states
         for (int i = 0; i < states.Length; i++)
         {
