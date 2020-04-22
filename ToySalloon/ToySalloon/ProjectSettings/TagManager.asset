@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PuzzlePiece
   - ParentHolder
+  - Entity
+  - Ground
+  - Selectable
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,8 @@ TagManager:
   - 
   - 
   - Pieces
-  - 
+  - Post Processing
+  - Entities
   - 
   - 
   - 
