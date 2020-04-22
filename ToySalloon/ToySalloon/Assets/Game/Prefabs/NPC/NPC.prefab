@@ -1233,9 +1233,11 @@ MonoBehaviour:
   action:
   - text: Verkopen
     image: {fileID: 21300000, guid: e00fec407e8ee3d47ac1d4296dfbbbbd, type: 3}
-  - text: Kopen
-    image: {fileID: 21300000, guid: 8c4bf27d7615550438fab69f1b1a1ab5, type: 3}
   - text: Repareren
+    image: {fileID: 21300000, guid: 2909206cb7b0d9749a838ef82e0a34d1, type: 3}
+  - text: LookAround
+    image: {fileID: 0}
+  - text: Kopen
     image: {fileID: 21300000, guid: 2909206cb7b0d9749a838ef82e0a34d1, type: 3}
   actionText: {fileID: 2015171686}
   actionImage: {fileID: 672853540}
@@ -3111,8 +3113,9 @@ MonoBehaviour:
   checkoutIconObj: {fileID: 1400024853026268044}
   checkoutIcon:
   - {fileID: 21300000, guid: 6cfb889181102974caffa15ea16bb5ed, type: 3}
-  - {fileID: 21300000, guid: 6cfb889181102974caffa15ea16bb5ed, type: 3}
   - {fileID: 21300000, guid: 172ea3d91abd09d46959032ddbc14db3, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 9f6323429ee95764ab0c2e3cb5ae26a8, type: 3}
   hasInteracted: 0
   myPos: {x: 0, y: 0, z: 0}
   destPos: {x: 0, y: 0, z: 0}
