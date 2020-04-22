@@ -17,6 +17,9 @@ public class WorldManager : MonoBehaviour
     }
     #endregion
 
+    public delegate void FadeScene(int scene);
+    public static event FadeScene OnFade;
+
     [Header("Shop Settings")]
     public int maxCustomers = 5; // Max customers allowed in the store.
 
@@ -32,5 +35,10 @@ public class WorldManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    public void FadeToScene(int id)
+    {
+        OnFade(id);
     }
 }
