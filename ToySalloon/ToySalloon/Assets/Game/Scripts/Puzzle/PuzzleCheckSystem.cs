@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class PuzzleCheckSystem : MonoBehaviour
 {
-    //
+    public void OnConfirm()
+    {
+        Application.LoadLevel(1);
+    }
 }
