@@ -60,6 +60,8 @@ public class NpcGoStation : State
         {
             // Found an availible stand
             c.destination = c.manager.buyStations[pickedStation].standingPoints[pickedPoint].standingPoint;
+
+            // Saving location
             c.destinationStation = pickedStation;
             c.destinationPoint = pickedPoint;
         }

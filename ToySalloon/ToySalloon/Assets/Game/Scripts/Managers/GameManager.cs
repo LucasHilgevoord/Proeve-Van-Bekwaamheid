@@ -18,9 +18,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [Header("Store data")]
-    [SerializeField]
     public int storeMoney = 0; // The ammount of money the player has.
-    [SerializeField]
     public int storeRating = 0; // Current rated stars of the store.
 
     private void Awake()

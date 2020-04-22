@@ -15,9 +15,22 @@ public class InputManager : MonoBehaviour
     public static event MultiTouch OnMultiTouch;
 
     private float touchDelay = 0.5f;
+    private bool disableTouch = false;
+
+    private void OnEnable()
+    {
+        UIWindow.OnWindowOverlay += AllowTouch;
+    }
+
+    private void AllowTouch(bool t)
+    {
+        disableTouch = t;
+    }
 
     private void Update()
     {
+        if (disableTouch) return;
+
         if (Application.isEditor)
         {
             MouseInput();
@@ -29,7 +42,7 @@ public class InputManager : MonoBehaviour
 
     private void MouseInput()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

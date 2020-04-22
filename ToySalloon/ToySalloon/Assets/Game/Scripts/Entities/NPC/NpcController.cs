@@ -13,7 +13,7 @@ public class NpcController : StateMachine
     public NpcGoals.goals purpose; // Purpose of the npc that is entering the store.
     public NpcStates.states currentState; // Current state the npc is in.
     public NpcStates.states prevState;
-    public StateID[] states = {
+    private StateID[] states = {
         new StateID(NpcStates.states.BUYSTATION, typeof(NpcGoStation)),
         new StateID(NpcStates.states.CHECKING, typeof(NpcGoCheck)),
         new StateID(NpcStates.states.COUNTER, typeof(NpcGoCounter)),
@@ -36,6 +36,8 @@ public class NpcController : StateMachine
     public float destinationRange = 0.1f; // Max distance between npc and distance to have reached it. 
     public int destinationStation; // Station that hase been chosen to go to.
     public int destinationPoint; // Standing point that has been chosen to go to.
+
+    public SellableObject desiredItem; // Item which the npc will buy
 
     [Header("Values")]
     public int maxStationChange = 3; // Amount of times the npc can look at another station after the previous one.
@@ -64,7 +66,7 @@ public class NpcController : StateMachine
             AddState(states[i].stateName, states[i].stateScript);
         }
 
-        //Defining start states.
+        // Defining start states.
         if (purpose == NpcGoals.goals.LOOKAROUND || purpose == NpcGoals.goals.BUY)
         {
             ChangeState(NpcStates.states.BUYSTATION);
@@ -83,12 +85,12 @@ public class NpcController : StateMachine
             case NpcStates.states.BUYSTATION:
                 if (Vector3.Distance(myPos, destPos) < destinationRange)
                 {
-                    //When npc is close enough to the station point, make it look at the items.
+                    // When npc is close enough to the station point, make it look at the items.
                     ChangeState(NpcStates.states.CHECKING);
                 }
                 break;
             case NpcStates.states.CHECKING:
-                //Countdown for when npc the stops looking at items.
+                // Countdown for when npc the stops looking at items.
                 curLookTime -= Time.deltaTime;
                 if (curLookTime < 0)
                 {
@@ -96,17 +98,22 @@ public class NpcController : StateMachine
                     manager.buyStations[destinationStation].standingPoints[destinationPoint].isOccupied = false;
                     if (choice == 0 && curStationChange < maxStationChange)
                     {
-                        //Pick another station to look at.
+                        // Pick another station to look at.
                         ChangeState(NpcStates.states.BUYSTATION);
                         curStationChange++;
                     } else
                     {
-                        //Go to the next state if is done looking around
                         if (purpose == NpcGoals.goals.BUY)
                         {
+                            // Setting the Item which will be bought.
+                            BuyStation b = manager.buyStations[destinationStation];
+                            desiredItem = b.sellableObjects[Random.Range(0, b.sellableObjects.Length)];
+
+                            // Go to the next state if is done looking around.
                             ChangeState(NpcStates.states.COUNTER);
                         } else
                         {
+                            // Was looking around so will leave.
                             ChangeState(NpcStates.states.LEAVE);
                         }
                     }

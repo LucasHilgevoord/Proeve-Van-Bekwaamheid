@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     [SerializeField]
     private Vector3 targetOffset;
-    private bool isManual;
+    private bool isManual = true;
 
     private void OnEnable()
     {
@@ -37,13 +37,12 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        FollowTarget(target);
     }
 
     void FixedUpdate()
     {
         //Follow the target
-        if (!isManual)
+        if (!isManual && target != null)
         {
             Vector3 desiredPos = target.position + targetOffset;
             transform.position = Vector3.Lerp(transform.position, desiredPos, followSpeed);

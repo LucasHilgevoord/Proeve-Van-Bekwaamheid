@@ -9,8 +9,7 @@ public class BuyStation : MonoBehaviour
 
     [SerializeField]
     private bool isPreplaced; // Is the station already in the level.
-    [SerializeField]
-    private SellableObject[] sellableObjects; // Items that the station sells.
+    public SellableObject[] sellableObjects; // Items that the station sells.
 
     private void Start()
     {
