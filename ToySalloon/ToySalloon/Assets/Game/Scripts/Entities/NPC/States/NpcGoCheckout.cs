@@ -16,7 +16,7 @@ public class NpcGoCheckout : State
     /// </summary>
     private void Checkout()
     {
-        c.currentState = NpcStates.states.CHECKOUT;
+        c.currentState = NpcStates.CHECKOUT;
         c.checkoutIconObj.gameObject.SetActive(true);
         c.checkoutIconObj.sprite = c.checkoutIcon[(int)c.purpose];
     }

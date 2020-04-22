@@ -16,7 +16,7 @@ public class NpcGoStation : State
     /// </summary>
     public void WalkToStation()
     {
-        c.currentState = NpcStates.states.BUYSTATION;
+        c.currentState = NpcStates.BUYSTATION;
         c.destination = PickStation();
         c.agent.destination = c.destination.position;
     }
@@ -53,7 +53,7 @@ public class NpcGoStation : State
             else
             {
                 // No stands availible within max tries
-                c.ChangeState(NpcStates.states.LEAVE);
+                c.ChangeState(NpcStates.LEAVE);
             }
         }
         else

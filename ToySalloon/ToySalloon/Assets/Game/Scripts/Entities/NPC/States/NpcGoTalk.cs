@@ -17,7 +17,7 @@ public class NpcGoTalk : State
     {
         c.prevState = c.currentState;
         c.agent.destination = transform.position;
-        c.currentState = NpcStates.states.TALK;
+        c.currentState = NpcStates.TALK;
         c.conversationObj.SetActive(true);
     }
 }

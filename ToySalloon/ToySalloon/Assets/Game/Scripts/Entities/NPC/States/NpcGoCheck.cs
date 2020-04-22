@@ -15,6 +15,6 @@ public class NpcGoCheck : State
     /// </summary>
     private void LookAtStuff()
     {
-        c.currentState = NpcStates.states.CHECKING;
+        c.currentState = NpcStates.CHECKING;
     }
 }

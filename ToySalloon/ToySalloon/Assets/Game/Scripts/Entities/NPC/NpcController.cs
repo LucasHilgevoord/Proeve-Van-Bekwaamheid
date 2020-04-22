@@ -10,16 +10,16 @@ public class NpcController : StateMachine
     public WorldManager manager;
 
     [Header("States")]
-    public NpcGoals.goals purpose; // Purpose of the npc that is entering the store.
-    public NpcStates.states currentState; // Current state the npc is in.
-    public NpcStates.states prevState;
+    public NpcGoals purpose; // Purpose of the npc that is entering the store.
+    public NpcStates currentState; // Current state the npc is in.
+    public NpcStates prevState;
     private StateID[] states = {
-        new StateID(NpcStates.states.BUYSTATION, typeof(NpcGoStation)),
-        new StateID(NpcStates.states.CHECKING, typeof(NpcGoCheck)),
-        new StateID(NpcStates.states.COUNTER, typeof(NpcGoCounter)),
-        new StateID(NpcStates.states.CHECKOUT, typeof(NpcGoCheckout)),
-        new StateID(NpcStates.states.LEAVE, typeof(NpcGoLeave)),
-        new StateID(NpcStates.states.TALK, typeof(NpcGoTalk)),
+        new StateID(NpcStates.BUYSTATION, typeof(NpcGoStation)),
+        new StateID(NpcStates.CHECKING, typeof(NpcGoCheck)),
+        new StateID(NpcStates.COUNTER, typeof(NpcGoCounter)),
+        new StateID(NpcStates.CHECKOUT, typeof(NpcGoCheckout)),
+        new StateID(NpcStates.LEAVE, typeof(NpcGoLeave)),
+        new StateID(NpcStates.TALK, typeof(NpcGoTalk)),
     };
 
     [Header("Interaction")]
@@ -58,7 +58,7 @@ public class NpcController : StateMachine
         destination = transform;
 
         //Testing!!!
-        purpose = NpcGoals.goals.BUY;
+        purpose = NpcGoals.BUY;
 
         //Adding all states
         for (int i = 0; i < states.Length; i++)
@@ -67,12 +67,12 @@ public class NpcController : StateMachine
         }
 
         // Defining start states.
-        if (purpose == NpcGoals.goals.LOOKAROUND || purpose == NpcGoals.goals.BUY)
+        if (purpose == NpcGoals.LOOKAROUND || purpose == NpcGoals.BUY)
         {
-            ChangeState(NpcStates.states.BUYSTATION);
-        } else if (purpose == NpcGoals.goals.REPAIR || purpose == NpcGoals.goals.SELL)
+            ChangeState(NpcStates.BUYSTATION);
+        } else if (purpose == NpcGoals.REPAIR || purpose == NpcGoals.SELL)
         {
-            ChangeState(NpcStates.states.COUNTER);
+            ChangeState(NpcStates.COUNTER);
         }
     }
 
@@ -82,14 +82,14 @@ public class NpcController : StateMachine
         destPos = new Vector3(destination.position.x, 0, destination.position.z);
         switch (currentState)
         {
-            case NpcStates.states.BUYSTATION:
+            case NpcStates.BUYSTATION:
                 if (Vector3.Distance(myPos, destPos) < destinationRange)
                 {
                     // When npc is close enough to the station point, make it look at the items.
-                    ChangeState(NpcStates.states.CHECKING);
+                    ChangeState(NpcStates.CHECKING);
                 }
                 break;
-            case NpcStates.states.CHECKING:
+            case NpcStates.CHECKING:
                 // Countdown for when npc the stops looking at items.
                 curLookTime -= Time.deltaTime;
                 if (curLookTime < 0)
@@ -99,38 +99,38 @@ public class NpcController : StateMachine
                     if (choice == 0 && curStationChange < maxStationChange)
                     {
                         // Pick another station to look at.
-                        ChangeState(NpcStates.states.BUYSTATION);
+                        ChangeState(NpcStates.BUYSTATION);
                         curStationChange++;
                     } else
                     {
-                        if (purpose == NpcGoals.goals.BUY)
+                        if (purpose == NpcGoals.BUY)
                         {
                             // Setting the Item which will be bought.
                             BuyStation b = manager.buyStations[destinationStation];
                             desiredItem = b.sellableObjects[Random.Range(0, b.sellableObjects.Length)];
 
                             // Go to the next state if is done looking around.
-                            ChangeState(NpcStates.states.COUNTER);
+                            ChangeState(NpcStates.COUNTER);
                         } else
                         {
                             // Was looking around so will leave.
-                            ChangeState(NpcStates.states.LEAVE);
+                            ChangeState(NpcStates.LEAVE);
                         }
                     }
                     curLookTime = Random.Range(minLookTime, maxLookTime);
                 }
                 break;
-            case NpcStates.states.COUNTER:
+            case NpcStates.COUNTER:
                 if (Vector3.Distance(myPos, destPos) < destinationRange)
                 {
-                    ChangeState(NpcStates.states.CHECKOUT);
+                    ChangeState(NpcStates.CHECKOUT);
                 }
                 break;
-            case NpcStates.states.CHECKOUT:
+            case NpcStates.CHECKOUT:
                 break;
-            case NpcStates.states.LEAVE:
+            case NpcStates.LEAVE:
                 break;
-            case NpcStates.states.TALK:
+            case NpcStates.TALK:
                 break;
             default:
                 break;
@@ -141,13 +141,13 @@ public class NpcController : StateMachine
     {
         if (hasInteracted) return;
 
-        if (currentState == NpcStates.states.CHECKOUT)
+        if (currentState == NpcStates.CHECKOUT)
         {
             checkoutObj.SetActive(true);
         }
         else
         {
-            ChangeState(NpcStates.states.TALK);
+            ChangeState(NpcStates.TALK);
         }
     }
 }

@@ -21,11 +21,7 @@ public class MoneyHandler : MonoBehaviour
 
     private void UpdateMoney(int price)
     {
-        Debug.Log("Money is updated");
         float money = GameManager.SharedInstance.storeMoney;
-        Debug.Log(money);
-        Debug.Log(price);
-
         DOTween.To(() => money, f => money = f, money + price, changeSpeed).OnUpdate(() =>
         {
             int m = (int)money;

@@ -39,13 +39,14 @@ public class CheckoutMenu : UIWindow
 
     private void Start()
     {
+
         actionText.text = action[(int)npc.purpose].text;
         actionImage.sprite = action[(int)npc.purpose].image;
 
-        if (npc.purpose == NpcGoals.goals.REPAIR)
+        if (npc.purpose == NpcGoals.REPAIR)
         {
             itemWindow.SetActive(false);
-        } else if (npc.purpose == NpcGoals.goals.BUY)
+        } else if (npc.purpose == NpcGoals.BUY)
         {
             itemName.text = npc.desiredItem.itemName;
             itemPrice.text = "$" + npc.desiredItem.price.ToString();
@@ -60,16 +61,14 @@ public class CheckoutMenu : UIWindow
     {
         switch (npc.purpose)
         {
-            case NpcGoals.goals.BUY:
-                DisableWindow();
+            case NpcGoals.BUY:
                 OnItemBought(npc.desiredItem.price);
-                Debug.Log(npc.desiredItem.price);
-
-                npc.ChangeState(NpcStates.states.LEAVE);
+                npc.ChangeState(NpcStates.LEAVE);
+                DisableWindow();
                 break;
-            case NpcGoals.goals.SELL:
+            case NpcGoals.SELL:
                 break;
-            case NpcGoals.goals.REPAIR:
+            case NpcGoals.REPAIR:
                 npc.manager.FadeToScene(0);
                 break;
             default:
@@ -85,7 +84,7 @@ public class CheckoutMenu : UIWindow
     public void OnRefuse()
     {
         DisableWindow();
-        npc.ChangeState(NpcStates.states.LEAVE);
+        npc.ChangeState(NpcStates.LEAVE);
     }
 
     private void DisableWindow()

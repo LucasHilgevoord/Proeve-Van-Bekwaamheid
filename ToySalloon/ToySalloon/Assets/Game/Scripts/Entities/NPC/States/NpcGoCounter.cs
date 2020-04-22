@@ -15,7 +15,7 @@ public class NpcGoCounter : State
     /// </summary>
     private void WalkToCounter()
     {
-        c.currentState = NpcStates.states.COUNTER;
+        c.currentState = NpcStates.COUNTER;
         c.destination = PickCounter();
         c.agent.destination = c.destination.position;
     }
@@ -37,7 +37,7 @@ public class NpcGoCounter : State
         if (pickedPoint < 0)
         {
             // No counter spots availible
-            c.ChangeState(NpcStates.states.LEAVE);
+            c.ChangeState(NpcStates.LEAVE);
         }
         else
         {

@@ -5,9 +5,9 @@ using System;
 
 public class StateID
 {
-    public NpcStates.states stateName;
+    public NpcStates stateName;
     public Type stateScript;
-    public StateID(NpcStates.states state, Type script)
+    public StateID(NpcStates state, Type script)
     {
         stateName = state;
         stateScript = script;
@@ -16,7 +16,7 @@ public class StateID
 
 public class StateMachine : MonoBehaviour
 {
-    private Dictionary<NpcStates.states, Type> states = new Dictionary<NpcStates.states, Type>();
+    private Dictionary<NpcStates, Type> states = new Dictionary<NpcStates, Type>();
     private State _currentState = null;
 
     /// <summary>
@@ -24,7 +24,7 @@ public class StateMachine : MonoBehaviour
     /// </summary>
     /// <param name="id"></param>
     /// <param name="state"></param>
-    protected void AddState(NpcStates.states id, Type state)
+    protected void AddState(NpcStates id, Type state)
     {
         states.Add(id, state);
     }
@@ -34,7 +34,7 @@ public class StateMachine : MonoBehaviour
     /// </summary>
     /// <param name="id"></param>
     /// <param name="args"></param>
-    public void ChangeState(NpcStates.states id)
+    public void ChangeState(NpcStates id)
     {
         Destroy(_currentState);
         if (!states.ContainsKey(id))
