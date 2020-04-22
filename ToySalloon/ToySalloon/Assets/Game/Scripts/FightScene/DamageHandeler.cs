@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class DamageHandeler : MonoBehaviour
 {
-    [SerializeField]
-    private RatStats rat;
+    public RatStats rat;
 
     [SerializeField]
     private Text damageText;
@@ -17,11 +16,11 @@ public class DamageHandeler : MonoBehaviour
     [SerializeField]
     private Animator animatorBar;
 
-    private FightTimeBar bar;
+    private RatDefend bar;
 
     private void Start()
     {
-        bar = GetComponent<FightTimeBar>();
+        bar = GetComponent<RatDefend>();
     }
 
     public void DealDamage(int damage, float sliderValue)
