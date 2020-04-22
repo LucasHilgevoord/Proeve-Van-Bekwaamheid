@@ -15,6 +15,9 @@ public class RatAttack : MonoBehaviour
     [SerializeField]
     private Transform clawParent;
 
+    [SerializeField]
+    private GameObject attackPrefab;
+
     private StateManager states;
 
     private float xpos;
@@ -23,11 +26,13 @@ public class RatAttack : MonoBehaviour
     {
         StartCoroutine(SpawnTimer());
         clawParent.GetComponent<Animator>().SetTrigger("FadeIn");
+        attackPrefab.SetActive(true);
     }
 
     private void OnDisable()
     {
         clawParent.GetComponent<Animator>().SetTrigger("FadeOut");
+        attackPrefab.SetActive(false);
     }
 
     private void Start()
