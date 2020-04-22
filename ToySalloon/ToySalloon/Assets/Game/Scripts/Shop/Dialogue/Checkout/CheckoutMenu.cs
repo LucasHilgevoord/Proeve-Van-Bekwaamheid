@@ -26,6 +26,8 @@ public class CheckoutMenu : UIWindow
     private Text actionText; // Text for the purpose button
     [SerializeField]
     private Image actionImage; // Image for the purpose button
+    [SerializeField]
+    private AudioClip cash;
 
     [Header("Desired Item values")]
     [SerializeField]
@@ -64,6 +66,7 @@ public class CheckoutMenu : UIWindow
             case NpcGoals.BUY:
                 OnItemBought(npc.desiredItem.price);
                 npc.ChangeState(NpcStates.LEAVE);
+                npc.audioSrc.PlayOneShot(cash);
                 DisableWindow();
                 break;
             case NpcGoals.SELL:
