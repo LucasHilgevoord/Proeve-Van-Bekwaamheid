@@ -382,7 +382,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2.1, y: 2}
-  m_SizeDelta: {x: 77.3, y: 80.3}
+  m_SizeDelta: {x: 77.3, y: 42.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &409626563
 CanvasRenderer:
@@ -1234,7 +1234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: -4419372555423311955}
-  fader: {fileID: 0}
   action:
   - text: Verkopen
     image: {fileID: 21300000, guid: e00fec407e8ee3d47ac1d4296dfbbbbd, type: 3}
@@ -1244,6 +1243,10 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 2909206cb7b0d9749a838ef82e0a34d1, type: 3}
   actionText: {fileID: 2015171686}
   actionImage: {fileID: 672853540}
+  itemWindow: {fileID: 1143816169}
+  itemName: {fileID: 2066103873}
+  itemPrice: {fileID: 409626562}
+  itemImage: {fileID: 1605758622}
 --- !u!1 &1605758620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 504132627593621266}
   m_Layer: 5
-  m_Name: Refuse
+  m_Name: Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2219,7 +2222,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3626058329788557696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2139184974987355481}
+        m_MethodName: DisableWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4429714899318893695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,6 +2491,7 @@ GameObject:
   - component: {fileID: 5423510881963612066}
   - component: {fileID: 6052681288867020003}
   - component: {fileID: 4273678407878337042}
+  - component: {fileID: 2139184974987355481}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -2568,6 +2583,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2139184974987355481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299270964623373670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee917f3382719b2479d5f87eb596201f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: -4419372555423311955}
 --- !u!1 &6490199368586546829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,10 +2964,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6cfb889181102974caffa15ea16bb5ed, type: 3}
   - {fileID: 21300000, guid: 172ea3d91abd09d46959032ddbc14db3, type: 3}
   hasInteracted: 0
+  myPos: {x: 0, y: 0, z: 0}
+  destPos: {x: 0, y: 0, z: 0}
   destination: {fileID: 0}
   destinationRange: 0.1
   destinationStation: 0
   destinationPoint: 0
+  desiredItem: {fileID: 0}
   maxStationChange: 3
   curStationChange: 0
   maxPickCount: 20
