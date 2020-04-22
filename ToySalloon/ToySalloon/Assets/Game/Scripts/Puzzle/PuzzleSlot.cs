@@ -5,7 +5,12 @@ using UnityEngine.EventSystems;
 
 public class PuzzleSlot : MonoBehaviour, IDropHandler
 {
-    private bool checkIfEmpty = true;
+    [SerializeField]
+    private PlaceHolderManager manager;
+
+    public bool checkIfEmpty = true;
+
+    private RectTransform rect;
 
     // Check when this object or another object ha
     public void OnDrop(PointerEventData eventData)
@@ -14,13 +19,14 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
         
         if (eventData.pointerDrag != null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
-            checkIfEmpty = false;
+            eventData.pointerDrag.GetComponent<RectTransform>().position = rect.position;
+            manager.placedPieces.Add(eventData.pointerDrag);
         } 
     }
 
     void Start()
     {
         transform.SetParent(GameObject.FindGameObjectWithTag("ParentHolder").transform, false);
+        rect = GetComponent<RectTransform>();
     }
 }

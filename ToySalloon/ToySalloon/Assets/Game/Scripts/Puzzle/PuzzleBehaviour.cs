@@ -15,6 +15,7 @@ public class PuzzleBehaviour : MonoBehaviour,
     private CanvasGroup canvasGroup; // Reference to the canvas group on transform
     private RectTransform rectTransform; // Reference to transform with this script
 
+
     // Gets called on awake
     private void Awake()
     {
