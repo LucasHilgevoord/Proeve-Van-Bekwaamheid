@@ -18,6 +18,12 @@ public class CheckoutMenu : UIWindow
 
     [SerializeField]
     private NpcController npc;
+    [SerializeField]
+    private Animator animator;
+    private int repairScene = 3;
+
+    private bool willWait;
+    private bool hasBought;
 
     [Header("Purpose button values")]
     [SerializeField]
@@ -39,7 +45,6 @@ public class CheckoutMenu : UIWindow
 
     private void Start()
     {
-
         actionText.text = action[(int)npc.purpose].text;
         actionImage.sprite = action[(int)npc.purpose].image;
 
@@ -48,8 +53,25 @@ public class CheckoutMenu : UIWindow
             itemWindow.SetActive(false);
         } else if (npc.purpose == NpcGoals.BUY)
         {
-            itemPrice.text = "$" + npc.desiredItem.price.ToString();
+            itemPrice.text = npc.desiredItem.price.ToString();
             itemImage.sprite = npc.desiredItem.itemImage;
+        }
+    }
+
+    private void Update()
+    {
+        if (animator.GetBool("shouldClose") && AnimatorIsPlaying())
+        {
+            gameObject.SetActive(false);
+            if (!willWait)
+            {
+                if (hasBought)
+                    OnItemBought(npc.desiredItem.price);
+                npc.ChangeState(NpcStates.LEAVE);
+            }
+
+            willWait = false;
+            animator.SetBool("shouldClose", false);
         }
     }
 
@@ -61,15 +83,14 @@ public class CheckoutMenu : UIWindow
         switch (npc.purpose)
         {
             case NpcGoals.BUY:
-                OnItemBought(npc.desiredItem.price);
-                npc.ChangeState(NpcStates.LEAVE);
                 npc.audioSrc.PlayOneShot(cash);
-                DisableWindow();
+                animator.SetBool("shouldClose", true);
+                hasBought = true;
                 break;
             case NpcGoals.SELL:
                 break;
             case NpcGoals.REPAIR:
-                npc.manager.FadeToScene(3);
+                npc.manager.FadeToScene(repairScene);
                 break;
             default:
                 break;
@@ -78,17 +99,17 @@ public class CheckoutMenu : UIWindow
 
     public void OnWait()
     {
-        DisableWindow();
+        animator.SetBool("shouldClose", true);
+        willWait = true;
     }
 
     public void OnRefuse()
     {
-        DisableWindow();
-        npc.ChangeState(NpcStates.LEAVE);
+        animator.SetBool("shouldClose", true);
     }
 
-    private void DisableWindow()
+    public bool AnimatorIsPlaying()
     {
-        gameObject.SetActive(false);
+        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime % 1 > 0.99f;
     }
 }
