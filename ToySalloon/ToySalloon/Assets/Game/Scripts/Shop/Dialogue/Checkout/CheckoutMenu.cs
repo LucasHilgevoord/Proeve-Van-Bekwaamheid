@@ -33,8 +33,6 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private GameObject itemWindow;
     [SerializeField]
-    private Text itemName;
-    [SerializeField]
     private Text itemPrice;
     [SerializeField]
     private Image itemImage;
@@ -50,7 +48,6 @@ public class CheckoutMenu : UIWindow
             itemWindow.SetActive(false);
         } else if (npc.purpose == NpcGoals.BUY)
         {
-            itemName.text = npc.desiredItem.itemName;
             itemPrice.text = "$" + npc.desiredItem.price.ToString();
             itemImage.sprite = npc.desiredItem.itemImage;
         }
