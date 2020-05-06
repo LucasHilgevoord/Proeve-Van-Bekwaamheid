@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,11 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private AudioClip cash;
 
+    [SerializeField]
+    private GameObject dialogue;
+    private Vector2 repairTextPos = new Vector2(14, -15);
+    private float repairTextWidth = 1250;
+
     [Header("Desired Item values")]
     [SerializeField]
     private GameObject itemWindow;
@@ -51,6 +57,11 @@ public class CheckoutMenu : UIWindow
         if (npc.purpose == NpcGoals.REPAIR)
         {
             itemWindow.SetActive(false);
+
+            //Moving text to the right position.
+            RectTransform rt = dialogue.GetComponent<RectTransform>();
+            rt.localPosition = repairTextPos;
+            rt.sizeDelta = new Vector2(repairTextWidth, rt.sizeDelta.y);
         } else if (npc.purpose == NpcGoals.BUY)
         {
             itemPrice.text = npc.desiredItem.price.ToString();
@@ -91,6 +102,7 @@ public class CheckoutMenu : UIWindow
                 break;
             case NpcGoals.REPAIR:
                 npc.manager.FadeToScene(repairScene);
+                animator.SetBool("shouldClose", true);
                 break;
             default:
                 break;
