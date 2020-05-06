@@ -19,6 +19,11 @@ public class MoneyHandler : MonoBehaviour
         CheckoutMenu.OnItemBought -= UpdateMoney;
     }
 
+    private void Start()
+    {
+        UIMoneyText.text = GameManager.SharedInstance.storeMoney.ToString();
+    }
+
     private void UpdateMoney(int price)
     {
         float money = GameManager.SharedInstance.storeMoney;

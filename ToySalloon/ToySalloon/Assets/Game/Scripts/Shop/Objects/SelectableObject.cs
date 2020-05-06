@@ -21,11 +21,17 @@ public class SelectableObject : MonoBehaviour
 
     private void OnSelected(Transform t)
     {
-        if (t.gameObject.tag == "Selectable" && t.gameObject != selectedObject)
+        if (t.gameObject.tag == "Selectable")
         {
-            selectedObject = t.gameObject;
-            myScale = selectedObject.transform.localScale;
-            Resize();
+            if (t.gameObject != selectedObject)
+            {
+                selectedObject = t.gameObject;
+                myScale = selectedObject.transform.localScale;
+                Resize();
+            } else
+            {
+
+            }
         }
     }
 
