@@ -1190,7 +1190,7 @@ RectTransform:
   m_LocalScale: {x: 0.28749996, y: 0.28749996, z: 0.24999994}
   m_Children: []
   m_Father: {fileID: 3180531237866310019}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hey <color=purple>[name]<color=black>! Wat ziet de winkel er weer <size=120%>geweldig
+  m_text: Hey <color=purple>[name]<color=black>! Wat ziet de winkel er weer <size=140%>geweldig
     <size=100%>uit vandaag! Ik kan niet wachten tot ik weer iets moois vind.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -1822,7 +1822,6 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4251223889728332682}
-  - {fileID: 4559204732580292127}
   - {fileID: 1343164597230820741}
   m_Father: {fileID: 795821333406336556}
   m_RootOrder: 1
@@ -2291,84 +2290,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Isabelle
---- !u!1 &5130065315979273255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4559204732580292127}
-  - component: {fileID: 2699921990505880106}
-  - component: {fileID: 5687075331532034493}
-  m_Layer: 5
-  m_Name: Dialogue Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &4559204732580292127
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130065315979273255}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.28749996, y: 0.28749996, z: 0.24999994}
-  m_Children: []
-  m_Father: {fileID: 3180531237866310019}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.08626, y: -15.224962}
-  m_SizeDelta: {x: 700, y: 430}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2699921990505880106
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130065315979273255}
-  m_CullTransparentMesh: 0
---- !u!114 &5687075331532034493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130065315979273255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 0
-    m_MaxSize: 86
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: <speler naam>, Ik heb van mijn tante een magische pop gekregen maar hij
-    doet het niet meer... Kan jij mij helpen?
 --- !u!1 &5162454410323966134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,8 +2634,9 @@ GameObject:
   - component: {fileID: 6052681288867020003}
   - component: {fileID: 4273678407878337042}
   - component: {fileID: 2139184974987355481}
+  - component: {fileID: 7605907845521408939}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: SmallTalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2814,6 +2736,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: -4419372555423311955}
+  animator: {fileID: 7605907845521408939}
+--- !u!95 &7605907845521408939
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299270964623373670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4caca16fdab9f8b44ba71e4b48840961, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6617000217286258191
 GameObject:
   m_ObjectHideFlags: 0
