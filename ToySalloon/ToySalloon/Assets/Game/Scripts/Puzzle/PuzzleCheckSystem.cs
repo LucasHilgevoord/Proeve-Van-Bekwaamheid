@@ -22,6 +22,7 @@ public class PuzzleCheckSystem : MonoBehaviour
         correctOrder.Add(4);
 
         manager = GameObject.FindObjectOfType(typeof(PlaceHolderManager)) as PlaceHolderManager;
+
         confirmButton.enabled = false;
         correctPieces = 0;
     }
@@ -76,6 +77,10 @@ public class PuzzleCheckSystem : MonoBehaviour
     // Clear the arrays
     public void OnClear()
     {
+        foreach (GameObject piece in manager.placedPieces)
+        {
+            piece.transform.position = new Vector3(piece.transform.position.x * 2, piece.transform.position.y, piece.transform.position.z);
+        }
         manager.placedPieces.Clear();
         manager.puzzleOrder.Clear();
     }
