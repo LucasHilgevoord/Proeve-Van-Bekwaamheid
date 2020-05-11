@@ -66,4 +66,9 @@ public class PuzzleCheckSystem : MonoBehaviour
             return;
         }
     }
+
+    public void OnClear()
+    {
+        manager.placedPieces.Clear();
+    }
 }
