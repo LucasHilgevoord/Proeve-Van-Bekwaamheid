@@ -15,6 +15,7 @@ public class PlaceHolderManager : MonoBehaviour
 
     private Vector3 startPos;
     private float offset = 0;
+    public float placeHolderCount = 0;
 
     void Start()
     {
@@ -32,6 +33,8 @@ public class PlaceHolderManager : MonoBehaviour
     // Create the placeholder
     void CreatePlaceHolder(Vector3 spawnPosition)
     {
+        placeHolderCount += 1;
+        Debug.Log("PlaceHolders: " + placeHolderCount);
         Instantiate(placeHolder, spawnPosition, Quaternion.identity);
     }
 }

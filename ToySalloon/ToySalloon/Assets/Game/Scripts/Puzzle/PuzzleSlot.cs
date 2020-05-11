@@ -31,7 +31,7 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
             manager.placedPieces.Add(eventData.pointerDrag);
             manager.puzzleOrder.Add(eventData.pointerDrag.GetComponent<PuzzleBehaviour>().puzzleNumber);
 
-            if (manager.placedPieces.Count < 4)
+            if (manager.placedPieces.Count < 4 && manager.placeHolderCount < 3)
             {
                 manager.SpawnPlaceHolder();
             }
