@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +13,13 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
 
     private RectTransform rect;
 
+    void Start()
+    {
+        transform.SetParent(GameObject.FindGameObjectWithTag("ParentHolder").transform, false);
+        rect = GetComponent<RectTransform>();
+        manager = GameObject.FindObjectOfType(typeof(PlaceHolderManager)) as PlaceHolderManager;
+    }
+
     // Check when this object or another object ha
     public void OnDrop(PointerEventData eventData)
     {
@@ -21,12 +29,14 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
         {
             eventData.pointerDrag.GetComponent<RectTransform>().position = rect.position;
             manager.placedPieces.Add(eventData.pointerDrag);
+            manager.puzzleOrder.Add(eventData.pointerDrag.GetComponent<PuzzleBehaviour>().puzzleNumber);
+            Debug.Log(eventData.pointerDrag.GetComponent<PuzzleBehaviour>().puzzleNumber);
+
+            if (manager.placedPieces.Count < 4)
+            {
+                manager.SpawnPlaceHolder();
+            }
         } 
     }
-
-    void Start()
-    {
-        transform.SetParent(GameObject.FindGameObjectWithTag("ParentHolder").transform, false);
-        rect = GetComponent<RectTransform>();
-    }
+    
 }

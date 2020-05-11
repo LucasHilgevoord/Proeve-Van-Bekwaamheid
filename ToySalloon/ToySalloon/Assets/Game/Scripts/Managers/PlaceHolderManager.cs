@@ -10,6 +10,7 @@ public class PlaceHolderManager : MonoBehaviour
     public GameObject placeHolder;
 
     public List<GameObject> placedPieces = new List<GameObject>();
+    public List<int> puzzleOrder = new List<int>();
 
     private Vector3 startPos;
     private float offset = 0;
@@ -19,18 +20,13 @@ public class PlaceHolderManager : MonoBehaviour
         startPos = prefabPos.GetComponent<RectTransform>().anchoredPosition;
     }
 
-    void Update()
+    public void SpawnPlaceHolder()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            offset += 160;
-            createPlaceHolder(new Vector3(startPos.x, startPos.y - offset, startPos.z));
-        }
-
-        Debug.Log(placedPieces);
+        offset += 160;
+        CreatePlaceHolder(new Vector3(startPos.x, startPos.y - offset, startPos.z));
     }
 
-    void createPlaceHolder(Vector3 spawnPosition)
+    void CreatePlaceHolder(Vector3 spawnPosition)
     {
         Instantiate(placeHolder, spawnPosition, Quaternion.identity);
     }

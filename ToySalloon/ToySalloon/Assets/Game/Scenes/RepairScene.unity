@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -756,6 +756,7 @@ MonoBehaviour:
   placeHolder: {fileID: 981182204648196987, guid: 19ff89e1a515b874a90f1bee72a8b640,
     type: 3}
   placedPieces: []
+  puzzleOrder: 
 --- !u!1 &465884450
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +918,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: muziek.speel();
+  m_Text: AlsTeddyStart
 --- !u!222 &770377247
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1205,7 +1206,7 @@ GameObject:
   - component: {fileID: 955505125}
   - component: {fileID: 955505124}
   m_Layer: 5
-  m_Name: Piece (2)
+  m_Name: Piece 3
   m_TagString: PuzzlePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1949345595}
+  puzzleNumber: 2
 --- !u!114 &955505126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Beweeg(rechts)
+  m_Text: muziek.speel();
 --- !u!222 &1186169707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2080,6 +2082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c707d3a0efaa942ade4f2332fb540b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  confirmButton: {fileID: 1926864405}
 --- !u!114 &1431717524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2087,7 +2091,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431717519}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
@@ -2239,7 +2243,7 @@ GameObject:
   - component: {fileID: 1485806006}
   - component: {fileID: 1485806005}
   m_Layer: 5
-  m_Name: Piece (3)
+  m_Name: Piece 4
   m_TagString: PuzzlePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2290,6 +2294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1949345595}
+  puzzleNumber: 4
 --- !u!114 &1485806007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2508,6 +2513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1949345595}
+  puzzleNumber: 3
 --- !u!225 &1545717318
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2534,7 +2540,7 @@ GameObject:
   - component: {fileID: 1733008631}
   - component: {fileID: 1733008630}
   m_Layer: 5
-  m_Name: Piece (1)
+  m_Name: Piece 2
   m_TagString: PuzzlePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2585,6 +2591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1949345595}
+  puzzleNumber: 1
 --- !u!114 &1733008632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2909,7 +2916,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ZodraAanraak()
+  m_Text: ZodraAanraak
 --- !u!222 &1899670796
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2929,7 +2936,6 @@ GameObject:
   - component: {fileID: 1926864404}
   - component: {fileID: 1926864407}
   - component: {fileID: 1926864406}
-  - component: {fileID: 1926864408}
   - component: {fileID: 1926864405}
   m_Layer: 5
   m_Name: Confirm Button
@@ -3001,7 +3007,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926864408}
+      - m_Target: {fileID: 1431717523}
         m_MethodName: OnConfirm
         m_Mode: 1
         m_Arguments:
@@ -3048,18 +3054,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926864403}
   m_CullTransparentMesh: 0
---- !u!114 &1926864408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926864403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69c707d3a0efaa942ade4f2332fb540b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1949345592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,7 +3317,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: herhaal 2x
+  m_Text: StartTeddy()
 --- !u!222 &1974323777
 CanvasRenderer:
   m_ObjectHideFlags: 0
