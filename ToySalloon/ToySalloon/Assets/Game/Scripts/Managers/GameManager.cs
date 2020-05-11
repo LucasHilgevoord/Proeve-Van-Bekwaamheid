@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [Header("Store data")]
     public int storeMoney = 0; // The ammount of money the player has.
     public int storeRating = 0; // Current rated stars of the store.
+    public int playerLevel = 0; // The level of the player.
 
     private void Awake()
     {

@@ -10,30 +10,48 @@ public class MoneyHandler : MonoBehaviour
     private Text UIMoneyText;
     private float changeSpeed = 1f;
 
+    private AudioSource audioSrc;
+    [SerializeField] private AudioClip cash;
+
     private void OnEnable()
     {
         CheckoutMenu.OnItemBought += UpdateMoney;
+        SkinWindow.OnItemBought += UpdateMoney;
     }
     private void OnDisable()
     {
         CheckoutMenu.OnItemBought -= UpdateMoney;
+        SkinWindow.OnItemBought -= UpdateMoney;
     }
 
     private void Start()
     {
+        audioSrc = GetComponent<AudioSource>();
         UIMoneyText.text = GameManager.SharedInstance.storeMoney.ToString();
+    }
+
+    private void Update()
+    {
+        if (Application.isEditor)
+        {
+            if (Input.GetKeyDown("m"))
+            {
+                UpdateMoney(500);
+            }
+        }
     }
 
     private void UpdateMoney(int price)
     {
+        audioSrc.PlayOneShot(cash);
+
         float money = GameManager.SharedInstance.storeMoney;
+        GameManager.SharedInstance.storeMoney += price;
+
         DOTween.To(() => money, f => money = f, money + price, changeSpeed).OnUpdate(() =>
         {
             int m = (int)money;
             UIMoneyText.text = m.ToString();
-        }).SetEase(Ease.Linear).OnComplete(() =>
-        {
-            GameManager.SharedInstance.storeMoney += price;
-        });
+        }).SetEase(Ease.Linear);
     }
 }

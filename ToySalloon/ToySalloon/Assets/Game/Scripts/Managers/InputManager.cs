@@ -21,6 +21,10 @@ public class InputManager : MonoBehaviour
     {
         UIWindow.OnWindowOverlay += AllowTouch;
     }
+    private void OnDisable()
+    {
+        UIWindow.OnWindowOverlay -= AllowTouch;
+    }
 
     private void AllowTouch(bool t)
     {
