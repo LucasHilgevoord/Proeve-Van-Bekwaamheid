@@ -20,7 +20,7 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
         manager = GameObject.FindObjectOfType(typeof(PlaceHolderManager)) as PlaceHolderManager;
     }
 
-    // Check when this object or another object ha
+    // Check when puzzle piece is in placeholder
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
@@ -30,7 +30,6 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().position = rect.position;
             manager.placedPieces.Add(eventData.pointerDrag);
             manager.puzzleOrder.Add(eventData.pointerDrag.GetComponent<PuzzleBehaviour>().puzzleNumber);
-            Debug.Log(eventData.pointerDrag.GetComponent<PuzzleBehaviour>().puzzleNumber);
 
             if (manager.placedPieces.Count < 4)
             {

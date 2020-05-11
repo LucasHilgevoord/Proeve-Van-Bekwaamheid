@@ -17,15 +17,18 @@ public class PlaceHolderManager : MonoBehaviour
 
     void Start()
     {
+        // Where the first placeholder should be put
         startPos = prefabPos.GetComponent<RectTransform>().anchoredPosition;
     }
 
+    // Put placeholders on board
     public void SpawnPlaceHolder()
     {
         offset += 160;
         CreatePlaceHolder(new Vector3(startPos.x, startPos.y - offset, startPos.z));
     }
 
+    // Create the placeholder
     void CreatePlaceHolder(Vector3 spawnPosition)
     {
         Instantiate(placeHolder, spawnPosition, Quaternion.identity);

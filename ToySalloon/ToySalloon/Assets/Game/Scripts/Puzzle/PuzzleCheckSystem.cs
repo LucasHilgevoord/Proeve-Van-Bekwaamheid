@@ -15,6 +15,7 @@ public class PuzzleCheckSystem : MonoBehaviour
     public Button confirmButton;
     void Start()
     {
+        // Assign the correct order
         correctOrder.Add(1);
         correctOrder.Add(2);
         correctOrder.Add(3);
@@ -27,11 +28,13 @@ public class PuzzleCheckSystem : MonoBehaviour
 
     void Update()
     {
+        // Check if all pieces are placed down
         if (manager.placedPieces.Count >= 4)
         {
             confirmButton.enabled = true;
         }
 
+        // Change button alpha
         if (confirmButton.enabled)
         {
             confirmButton.image.color = new Color(255f, 255f, 255f, 1f);
@@ -42,8 +45,10 @@ public class PuzzleCheckSystem : MonoBehaviour
         }
     }
 
+    // Function to check whether all conditions are met
     public void OnConfirm()
     {
+        // Iterate through all pieces
         for (int i = 0; i < correctOrder.Count; i++)
         {
             if (manager.puzzleOrder[i] != correctOrder[i])
@@ -55,6 +60,7 @@ public class PuzzleCheckSystem : MonoBehaviour
             }
         }
 
+        // Check how many pieces are correct
         if (correctPieces >= 4)
         {
             Debug.Log("PASSED!");
@@ -67,8 +73,10 @@ public class PuzzleCheckSystem : MonoBehaviour
         }
     }
 
+    // Clear the arrays
     public void OnClear()
     {
         manager.placedPieces.Clear();
+        manager.puzzleOrder.Clear();
     }
 }
