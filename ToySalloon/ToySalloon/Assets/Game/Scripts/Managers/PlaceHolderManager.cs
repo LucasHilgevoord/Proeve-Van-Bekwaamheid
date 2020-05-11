@@ -34,7 +34,6 @@ public class PlaceHolderManager : MonoBehaviour
     void CreatePlaceHolder(Vector3 spawnPosition)
     {
         placeHolderCount += 1;
-        Debug.Log("PlaceHolders: " + placeHolderCount);
         Instantiate(placeHolder, spawnPosition, Quaternion.identity);
     }
 }

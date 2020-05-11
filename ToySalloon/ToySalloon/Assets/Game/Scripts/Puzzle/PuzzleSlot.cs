@@ -9,8 +9,6 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
     [SerializeField]
     private PlaceHolderManager manager;
 
-    public bool checkIfEmpty = true;
-
     private RectTransform rect;
 
     void Start()

@@ -64,12 +64,10 @@ public class PuzzleCheckSystem : MonoBehaviour
         // Check how many pieces are correct
         if (correctPieces >= 4)
         {
-            Debug.Log("PASSED!");
             Application.LoadLevel(1);
         }
         else
         {
-            Debug.Log("Try again");
             return;
         }
     }
