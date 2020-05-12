@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4259724240163117802}
   - component: {fileID: 8995475018379321095}
   - component: {fileID: -3520714774264639492}
+  - component: {fileID: -3315533673235480088}
   - component: {fileID: 4988792487680463788}
+  - component: {fileID: 4320821898373922355}
   m_Layer: 0
   m_Name: Claw
   m_TagString: Untagged
@@ -95,6 +97,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfbc1a62ebb977940a02b341e76b2056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3315533673235480088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025210354091457543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667a7546d1660fb4bb779998b7e1882b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!111 &4988792487680463788
 Animation:
   m_ObjectHideFlags: 0
@@ -111,3 +125,16 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!65 &4320821898373922355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025210354091457543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6, y: 3.6, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
