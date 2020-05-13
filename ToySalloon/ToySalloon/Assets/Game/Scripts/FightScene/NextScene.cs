@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class NextScene : MonoBehaviour
 {
-    void Update()
+    public void SceneSwitch()
     {
-        if(Input.GetKeyDown(KeyCode.N))
-        {
-            //doe iets lucas, help me
-        }
+        //hier kan je je kut scene doen lucas, shit developer...
+        Debug.Log("Scene switch");
     }
 }
