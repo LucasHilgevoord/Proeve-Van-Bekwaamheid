@@ -14,12 +14,18 @@ public class InputManager : MonoBehaviour
     public delegate void MultiTouch();
     public static event MultiTouch OnMultiTouch;
 
+    private float touchReset = 0.5f;
+    private float touchResetDelay = 0f;
     private float touchDelay = 0.5f;
     private bool disableTouch = false;
 
     private void OnEnable()
     {
         UIWindow.OnWindowOverlay += AllowTouch;
+    }
+    private void OnDisable()
+    {
+        UIWindow.OnWindowOverlay -= AllowTouch;
     }
 
     private void AllowTouch(bool t)
@@ -65,12 +71,22 @@ public class InputManager : MonoBehaviour
 
     private void MobileInput()
     {
+        if (touchResetDelay > 0)
+        {
+            touchResetDelay -= Time.deltaTime;
+        }
+
         //Single touch
         if (Input.touchCount == 1)
         {
             Touch t = Input.GetTouch(0);
-            if (t.phase == TouchPhase.Ended && t.deltaTime < touchDelay)
+            if (t.phase == TouchPhase.Moved)
             {
+                //Hold action
+                OnTouchHold();
+            } else if (t.phase == TouchPhase.Ended && t.deltaTime < touchDelay && touchResetDelay <= 0)
+            {
+                touchResetDelay = touchReset;
                 //Tap action
                 Ray ray = Camera.main.ScreenPointToRay(t.position);
                 RaycastHit hit;
@@ -80,14 +96,8 @@ public class InputManager : MonoBehaviour
                     OnObjectClicked(hitObj);
                 }
             }
-
-            if (t.phase == TouchPhase.Moved)
-            {
-                //Hold action
-                OnTouchHold();
-            }
         }
-        else if(Input.touchCount > 1)
+        else if (Input.touchCount > 1)
         {
             //Multi hold action
             OnMultiTouch();
