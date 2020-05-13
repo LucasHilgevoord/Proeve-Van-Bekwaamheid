@@ -50,7 +50,7 @@ public class CameraController : MonoBehaviour
     void FixedUpdate()
     {
         //Follow the target
-        if (!isManual)
+        if (!isManual && target)
         {
             Vector3 desiredPos = target.position + targetOffset;
             transform.position = Vector3.Lerp(transform.position, desiredPos, followSpeed);

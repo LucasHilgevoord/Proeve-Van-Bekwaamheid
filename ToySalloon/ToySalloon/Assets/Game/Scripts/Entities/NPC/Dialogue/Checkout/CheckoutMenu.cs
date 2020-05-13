@@ -27,11 +27,14 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private Image actionImage; // Image for the purpose button
 
+    [SerializeField]
+    private RectTransform dialogue;
+    private Vector2 repairTextPos = new Vector2(14, -15);
+    private float repairTextWidth = 1250;
+
     [Header("Desired Item values")]
     [SerializeField]
     private GameObject itemWindow;
-    [SerializeField]
-    private Text itemName;
     [SerializeField]
     private Text itemPrice;
     [SerializeField]
@@ -45,9 +48,12 @@ public class CheckoutMenu : UIWindow
         if (npc.purpose == NpcGoals.REPAIR)
         {
             itemWindow.SetActive(false);
+
+            //Moving text to the right position.
+            dialogue.localPosition = repairTextPos;
+            dialogue.sizeDelta = new Vector2(repairTextWidth, dialogue.sizeDelta.y);
         } else if (npc.purpose == NpcGoals.BUY)
         {
-            itemName.text = npc.desiredItem.itemName;
             itemPrice.text = "$" + npc.desiredItem.price.ToString();
             itemImage.sprite = npc.desiredItem.itemImage;
         }

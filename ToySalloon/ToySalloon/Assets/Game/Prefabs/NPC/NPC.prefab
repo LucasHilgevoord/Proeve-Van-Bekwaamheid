@@ -472,7 +472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: -4419372555423311955}
-  animator: {fileID: 4306623603786232526}
   action:
   - text: Verkopen
     image: {fileID: 21300000, guid: e00fec407e8ee3d47ac1d4296dfbbbbd, type: 3}
@@ -484,8 +483,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 2909206cb7b0d9749a838ef82e0a34d1, type: 3}
   actionText: {fileID: 6059471008497069234}
   actionImage: {fileID: 7661321356325113793}
-  cash: {fileID: 8300000, guid: a096351132beb7541b27e47ce3e4f883, type: 3}
-  dialogue: {fileID: 1340133780367447594}
+  dialogue: {fileID: 4973058619623823235}
   itemWindow: {fileID: 1143816169}
   itemPrice: {fileID: 409626562}
   itemImage: {fileID: 1605758622}
@@ -3450,7 +3448,6 @@ MonoBehaviour:
   purpose: 0
   currentState: 0
   prevState: 0
-  audioSrc: {fileID: 0}
   conversationObj: {fileID: 6299270964623373670}
   checkoutObj: {fileID: 1428426508}
   checkoutIconObj: {fileID: 1400024853026268044}
