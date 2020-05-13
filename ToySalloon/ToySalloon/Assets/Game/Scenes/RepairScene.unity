@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -757,6 +757,7 @@ MonoBehaviour:
     type: 3}
   placedPieces: []
   puzzleOrder: 
+  placeHolderCount: 0
 --- !u!1 &465884450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,6 +3534,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974323774}
   m_CullTransparentMesh: 0
+--- !u!1001 &2006541242
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1987699772417609140, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_Name
+      value: PVB export teddybeer 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8111333
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5848614
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -108.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300825928548319143, guid: fd1d3d258679eeb4e95f24067ec1d1e2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd1d3d258679eeb4e95f24067ec1d1e2, type: 3}
 --- !u!1 &2028503641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3717,7 +3802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2091924667
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3886,7 +3971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  checkIfEmpty: 1
 --- !u!222 &3391487590541085877
 CanvasRenderer:
   m_ObjectHideFlags: 0

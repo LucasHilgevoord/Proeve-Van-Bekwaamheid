@@ -30,6 +30,5 @@ public class RatStats : MonoBehaviour
         ratAnimator.SetTrigger("Flee");
         yield return new WaitForSeconds(1f);
         victoryCanvas.gameObject.SetActive(true);
-        Debug.Log(":)");
     }
 }
