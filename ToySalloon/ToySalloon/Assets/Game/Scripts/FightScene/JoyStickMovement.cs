@@ -51,5 +51,23 @@ public class JoyStickMovement : MonoBehaviour
     void moveCharacter(Vector2 direction)
     {
         player.Translate(direction * speed * Time.deltaTime);
+
+        if (player.position.x <= -6)
+        {
+            player.transform.position = new Vector3(-6, player.position.y, player.position.z);
+        }
+        else if (player.position.x >= 6)
+        {
+            player.transform.position = new Vector3(6, player.position.y, player.position.z);
+        }
+
+        if (player.position.y <= -2)
+        {
+            player.transform.position = new Vector3(player.position.x, -2, player.position.z);
+        }
+        else if (player.position.y >= 4)
+        {
+            player.transform.position = new Vector3(player.position.x, 4, player.position.z);
+        }
     }
 }
