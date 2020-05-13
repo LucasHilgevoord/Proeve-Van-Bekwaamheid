@@ -26,22 +26,6 @@ public class StateManager : MonoBehaviour
         ChangeBehaviour(RatState.TAKEDAMAGE);
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ChangeBehaviour(RatState.ATTACK);
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ChangeBehaviour(RatState.TAKEDAMAGE);
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            ChangeBehaviour(RatState.IDLE);
-        }
-    }
-
     public void ChangeBehaviour(RatState newState)
     {
         state = newState;

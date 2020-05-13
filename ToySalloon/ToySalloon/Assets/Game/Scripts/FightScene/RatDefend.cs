@@ -128,6 +128,13 @@ public class RatDefend : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         bar.GetComponent<Animator>().SetTrigger("UnEquip");
+        if (ratAni.GetComponent<RatStats>().health <= 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(ratAni.GetComponent<RatStats>().Flee());
+            states.ChangeBehaviour(StateManager.RatState.IDLE);
+            yield break;
+        }
         camAni.SetTrigger("Rage");
         ratAni.SetTrigger("Rage");
         yield return new WaitForSeconds(0.8f);

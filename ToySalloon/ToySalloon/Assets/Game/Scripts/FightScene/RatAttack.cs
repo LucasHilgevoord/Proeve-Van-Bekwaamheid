@@ -18,6 +18,9 @@ public class RatAttack : MonoBehaviour
     [SerializeField]
     private GameObject attackPrefab;
 
+    [SerializeField]
+    private PlayerManager player;
+
     private StateManager states;
 
     private float xpos;
@@ -48,9 +51,28 @@ public class RatAttack : MonoBehaviour
             yield return new WaitForSeconds(spawnCooldown);
             SpawnClaws();
             num -= 1;
+            if(player.playerHealth <= 0)
+            {
+                states.ChangeBehaviour(StateManager.RatState.IDLE);
+                yield break;
+            }
+        }
+        if (player.playerHealth <= 0)
+        {
+            states.ChangeBehaviour(StateManager.RatState.IDLE);
+            yield break;
         }
         yield return new WaitForSeconds(2.5f);
-        states.ChangeBehaviour(StateManager.RatState.TAKEDAMAGE);
+        if(!player.damageReady)
+        {
+            yield return new WaitForSeconds(player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + player.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime);
+            states.ChangeBehaviour(StateManager.RatState.TAKEDAMAGE);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+            states.ChangeBehaviour(StateManager.RatState.TAKEDAMAGE);
+        }
     }
 
     private void SpawnClaws()
