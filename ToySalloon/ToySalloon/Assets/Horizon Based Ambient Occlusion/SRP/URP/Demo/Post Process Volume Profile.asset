@@ -34,7 +34,7 @@ MonoBehaviour:
     m_Value: 0
   radius:
     m_OverrideState: 1
-    m_Value: 2.26
+    m_Value: 5
     min: 0.25
     max: 5
   maxRadiusPixels:
