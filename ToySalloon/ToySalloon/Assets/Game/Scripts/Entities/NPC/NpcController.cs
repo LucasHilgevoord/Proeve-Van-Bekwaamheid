@@ -146,6 +146,7 @@ public class NpcController : StateMachine
         }
         else
         {
+            if (currentState == NpcStates.LEAVE) return;
             ChangeState(NpcStates.TALK);
         }
     }

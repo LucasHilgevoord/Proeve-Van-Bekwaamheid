@@ -17,10 +17,8 @@ public class NpcGoLeave : State
 
     private void Update()
     {
-        Debug.Log("Test");
         if (!hasLeft && Vector2.Distance(c.myPos, c.destPos) < c.destinationRange)
         {
-            Debug.Log("Left");
             OnNpcLeave(c);
             hasLeft = true;
         }

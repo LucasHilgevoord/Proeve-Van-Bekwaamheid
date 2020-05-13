@@ -16,7 +16,6 @@ public class TalkMenu : UIWindow
             npc.currentState = npc.prevState;
             npc.agent.destination = npc.destination.position;
             animator.SetBool("shouldClose", false);
-            Debug.Log(npc.currentState.ToString());
             gameObject.SetActive(false);
         }
     }
