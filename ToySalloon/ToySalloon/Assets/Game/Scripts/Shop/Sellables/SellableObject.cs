@@ -20,6 +20,5 @@ public class SellableObject : ScriptableObject
     private objectType type; // The type of the sellable object.
 
     public Sprite itemImage; // The image displayed in the buy window.
-    public string itemName; // The name displayed in the buy window.
     public int price; // The price of the object.
 }
