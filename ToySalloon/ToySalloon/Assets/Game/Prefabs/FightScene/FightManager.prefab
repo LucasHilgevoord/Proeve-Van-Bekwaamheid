@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3201807733527546966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3201807733527546960}
+  - component: {fileID: 3201807733527546961}
+  - component: {fileID: 3201807733527546962}
+  - component: {fileID: 3201807733527546963}
+  - component: {fileID: 3201807733527546967}
+  m_Layer: 0
+  m_Name: FightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3201807733527546960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201807733527546966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5472348, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3201807733527546961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201807733527546966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 758834442b63f064998ec293c8346078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rat: {fileID: 0}
+  damageText: {fileID: 0}
+  cam: {fileID: 0}
+  animatorBar: {fileID: 0}
+--- !u!114 &3201807733527546962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201807733527546966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643e9d046152c96499f8caf3ec08bd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 2
+--- !u!114 &3201807733527546963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201807733527546966}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febc78c68b00171459084e133d14e940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clawSpeed: 4
+  spawnCooldown: 0.5
+  claw: {fileID: 1025210354091457543, guid: 928cd99e54b8b8842a61150322fbd661, type: 3}
+  clawParent: {fileID: 0}
+--- !u!114 &3201807733527546967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201807733527546966}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2e5b637190c4149ab2f44167d4caf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalDamage: 0
+  slider: {fileID: 0}
+  damageText: {fileID: 0}
+  speed: 20
+  bar: {fileID: 0}
