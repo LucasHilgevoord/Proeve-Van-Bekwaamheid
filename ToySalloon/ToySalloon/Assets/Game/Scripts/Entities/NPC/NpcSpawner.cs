@@ -16,6 +16,9 @@ public class NpcSpawner : MonoBehaviour
     private Transform parent; // Object where the npc needs to be the child off.
 
     private float fadeSpeed = 1;
+    private float npcMaxTimer = 10f;
+    private float npcMinTimer = 20f;
+    private float curNpcTimer = 0f;
 
     private GameObject newNpc;
     private AudioSource audioSrc;
@@ -34,6 +37,8 @@ public class NpcSpawner : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         manager = WorldManager.SharedInstance;
+
+        curNpcTimer = Random.Range(npcMinTimer, npcMaxTimer);
     }
 
     void Update()
@@ -41,6 +46,16 @@ public class NpcSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && manager.npcs.Count < manager.maxCustomers)
         {
             SpawnNPC();
+        }
+
+        curNpcTimer -= Time.deltaTime;
+        if (curNpcTimer < 0)
+        {
+            curNpcTimer = Random.Range(npcMinTimer, npcMaxTimer);
+            if (manager.npcs.Count < manager.maxCustomers)
+            {
+                SpawnNPC();
+            }
         }
     }
 
@@ -53,7 +68,17 @@ public class NpcSpawner : MonoBehaviour
         newNpc = Instantiate(npcPrefab, parent);
         newNpc.transform.position = spawnPoint.position;
         NpcController c = newNpc.GetComponent<NpcController>();
-        c.purpose = (NpcGoals)Random.Range(0, 2);
+
+        //c.purpose = (NpcGoals)Random.Range(0, 2);
+        //Quick fix so there won't spawn as many repair customers.
+        int random = Random.Range(0, 100);
+        if (random > 70)
+        {
+            c.purpose = NpcGoals.REPAIR;
+        } else
+        {
+            c.purpose = NpcGoals.BUY;
+        }
         manager.npcs.Add(c);
 
         //Playing door audio
