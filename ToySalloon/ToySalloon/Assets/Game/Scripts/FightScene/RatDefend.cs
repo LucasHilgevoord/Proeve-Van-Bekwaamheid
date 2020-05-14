@@ -24,6 +24,14 @@ public class RatDefend : MonoBehaviour
     [SerializeField]
     private Animator camAni;
 
+    [Header("AudioSources")]
+    [SerializeField]
+    private PlayAudio audio;
+    [SerializeField]
+    private AudioClip screech;
+    [SerializeField]
+    private AudioClip hit;
+
     private StateManager states;
 
     private float damageAmount;
@@ -126,6 +134,7 @@ public class RatDefend : MonoBehaviour
     /// </summary>
     private IEnumerator ManageState()
     {
+        audio.Play(hit);
         yield return new WaitForSeconds(0.5f);
         bar.GetComponent<Animator>().SetTrigger("UnEquip");
         if (ratAni.GetComponent<RatStats>().health <= 0)
@@ -137,6 +146,7 @@ public class RatDefend : MonoBehaviour
         }
         camAni.SetTrigger("Rage");
         ratAni.SetTrigger("Rage");
+        audio.Play(screech);
         yield return new WaitForSeconds(0.8f);
         states.ChangeBehaviour(StateManager.RatState.ATTACK);
     }
