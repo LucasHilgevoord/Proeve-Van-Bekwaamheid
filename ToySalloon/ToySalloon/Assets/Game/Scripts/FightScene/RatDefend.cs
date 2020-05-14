@@ -28,8 +28,6 @@ public class RatDefend : MonoBehaviour
     [SerializeField]
     private PlayAudio audio;
     [SerializeField]
-    private AudioClip screech;
-    [SerializeField]
     private AudioClip hit;
 
     private StateManager states;
@@ -146,7 +144,6 @@ public class RatDefend : MonoBehaviour
         }
         camAni.SetTrigger("Rage");
         ratAni.SetTrigger("Rage");
-        audio.Play(screech);
         yield return new WaitForSeconds(0.8f);
         states.ChangeBehaviour(StateManager.RatState.ATTACK);
     }
