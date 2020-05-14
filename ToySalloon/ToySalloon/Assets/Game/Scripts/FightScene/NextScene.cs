@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class NextScene : MonoBehaviour
 {
-    void Update()
+    public void SceneSwitch()
     {
-        if(Input.GetKeyDown(KeyCode.N))
-        {
-            Application.LoadLevel(1);
-        }
+        Application.LoadLevel(1);
     }
 }

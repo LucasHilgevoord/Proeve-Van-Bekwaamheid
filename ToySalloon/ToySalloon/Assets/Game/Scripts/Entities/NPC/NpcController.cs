@@ -23,7 +23,6 @@ public class NpcController : StateMachine
     };
 
     [Header("Interaction")]
-    public AudioSource audioSrc;
     public GameObject conversationObj; // Link to object which shows the conversation
     public GameObject checkoutObj; // Link to object which shows the menu when you checkout
     public SpriteRenderer checkoutIconObj; // Link to icon object shown when NPC reaches the counter
@@ -55,7 +54,6 @@ public class NpcController : StateMachine
         //Setting values
         manager = WorldManager.SharedInstance;
         agent = GetComponent<NavMeshAgent>();
-        audioSrc = GetComponent<AudioSource>();
         curLookTime = Random.Range(minLookTime, maxLookTime);
         destination = transform;
 
@@ -146,6 +144,7 @@ public class NpcController : StateMachine
         }
         else
         {
+            if (currentState == NpcStates.LEAVE) return;
             ChangeState(NpcStates.TALK);
         }
     }

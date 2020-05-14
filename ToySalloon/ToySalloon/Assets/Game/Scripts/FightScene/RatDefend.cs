@@ -5,19 +5,30 @@ using UnityEngine.UI;
 
 public class RatDefend : MonoBehaviour
 {
+    [Header("Damage Info")]
     public float totalDamage;
-
-    [SerializeField]
-    private Slider slider;
-
     [SerializeField]
     private Text damageText;
 
-    [SerializeField, Tooltip("10 - 20 voor beste resultaat.")]
+    [Header("Slider Info")]
+    [SerializeField, Range(10f, 20f)]
     private float speed;
-
     [SerializeField]
     private GameObject bar;
+    [SerializeField]
+    private Slider slider;
+
+    [Header("Animators")]
+    [SerializeField]
+    private Animator ratAni;
+    [SerializeField]
+    private Animator camAni;
+
+    [Header("AudioSources")]
+    [SerializeField]
+    private PlayAudio audio;
+    [SerializeField]
+    private AudioClip hit;
 
     private StateManager states;
 
@@ -26,6 +37,9 @@ public class RatDefend : MonoBehaviour
 
     private DamageHandeler damage;
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void Start()
     {
         sliderSpeed = 1;
@@ -33,23 +47,27 @@ public class RatDefend : MonoBehaviour
         states = GetComponent<StateManager>();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void OnEnable()
     {
         bar.SetActive(true);
         sliderSpeed = 1;
     }
 
-    private void OnDisable()
-    {
-        bar.GetComponent<Animator>().SetTrigger("UnEquip");
-    }
-
+    /// <summary>
+    /// 
+    /// </summary>
     private void Update()
     {
         HandleDamage();
         SliderLink();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void HandleDamage()
     {
         damageAmount += sliderSpeed * Time.deltaTime * (speed * 10);
@@ -66,15 +84,24 @@ public class RatDefend : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             sliderSpeed = 0;
+
             CalculateDamage();
+            ShowcaseDamage();
+            StartCoroutine(ManageState());
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void SliderLink()
     {
         slider.value = damageAmount;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void CalculateDamage()
     {
         if(damageAmount <= 50)
@@ -90,13 +117,34 @@ public class RatDefend : MonoBehaviour
         }
 
         damage.DealDamage((int)totalDamage, slider.value);
-        StartCoroutine(ShowcaseDamage());
     }
 
-    private IEnumerator ShowcaseDamage()
+    /// <summary>
+    /// 
+    /// </summary>
+    private void ShowcaseDamage()
     {
         damageText.text = "Damage: " + totalDamage;
-        yield return new WaitForSeconds(1f);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private IEnumerator ManageState()
+    {
+        audio.Play(hit);
+        yield return new WaitForSeconds(0.5f);
+        bar.GetComponent<Animator>().SetTrigger("UnEquip");
+        if (ratAni.GetComponent<RatStats>().health <= 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(ratAni.GetComponent<RatStats>().Flee());
+            states.ChangeBehaviour(StateManager.RatState.IDLE);
+            yield break;
+        }
+        camAni.SetTrigger("Rage");
+        ratAni.SetTrigger("Rage");
+        yield return new WaitForSeconds(0.8f);
         states.ChangeBehaviour(StateManager.RatState.ATTACK);
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
     [SerializeField]
     private Transform target;
     private Rigidbody rb;
@@ -14,8 +13,16 @@ public class CameraController : MonoBehaviour
     private float followSpeed = 0.1f;
     private float dragSpeedTouch = 0.01f;
     private float dragSpeedMouse = 0.2f;
-    private float zoomSpeedTouch = 0.001f;
     private float zoomSpeedMouse = 5f;
+
+    //Zoom Values
+    private Vector3 startPosition;
+    private Vector3 position;
+    private float maxDistance = 5;
+    private float minDistance = -5f;
+    private float zoomSpeed = 1.5f;
+    private float currentDistance;
+    private float desiredDistance;
 
     [SerializeField]
     private Vector3 targetOffset;
@@ -37,12 +44,13 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        startPosition = transform.position;
     }
 
     void FixedUpdate()
     {
         //Follow the target
-        if (!isManual && target != null)
+        if (!isManual && target)
         {
             Vector3 desiredPos = target.position + targetOffset;
             transform.position = Vector3.Lerp(transform.position, desiredPos, followSpeed);
@@ -65,6 +73,7 @@ public class CameraController : MonoBehaviour
             Touch t = Input.GetTouch(0);
             Vector3 desiredPos = transform.position - new Vector3(t.deltaPosition.x, 0, t.deltaPosition.y);
             transform.position = Vector3.Lerp(transform.position, desiredPos, dragSpeedTouch);
+            startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }
 
@@ -81,16 +90,25 @@ public class CameraController : MonoBehaviour
             newPos.y += -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
             newPos.z -= -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
             transform.position = newPos;
-        } else
+        }
+        else
         {
-            Touch firstTouch = Input.GetTouch(0);
-            Touch secondTouch = Input.GetTouch(1);
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
+            Vector2 touchZeroPreviousPosition = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePreviousPosition = touchOne.position - touchOne.deltaPosition;
 
-            Vector2 firstTouchPos = firstTouch.position - firstTouch.deltaPosition;
-            Vector2 secondTouchPos = secondTouch.position - secondTouch.deltaPosition;
-            float prevMag = (firstTouchPos - secondTouchPos).magnitude;
-            float curMag = (firstTouch.position - secondTouch.position).magnitude;
-            float difference = curMag - prevMag * zoomSpeedTouch;
+            float prevTouchDeltaMag = (touchZeroPreviousPosition - touchOnePreviousPosition).magnitude;
+            float TouchDeltaMag = (touchZero.position - touchOne.position).magnitude;
+            float deltaMagDiff = prevTouchDeltaMag - TouchDeltaMag;
+
+            desiredDistance += deltaMagDiff;
+            desiredDistance = Mathf.Clamp(desiredDistance, minDistance, maxDistance);
+            currentDistance = Mathf.Lerp(currentDistance, desiredDistance, Time.deltaTime * zoomSpeed);
+
+            position = (transform.rotation * Vector3.forward * -currentDistance);
+            position = position + startPosition;
+            transform.position = position;
         }
     }
 
@@ -100,7 +118,7 @@ public class CameraController : MonoBehaviour
     /// <param name="_target"></param>
     public void FollowTarget(Transform _target)
     {
-        if (_target.gameObject.tag == "Entity")
+        if (_target.gameObject.tag == "Entity" || _target.gameObject.tag == "Selectable")
         {
             target = _target;
             isManual = false;
