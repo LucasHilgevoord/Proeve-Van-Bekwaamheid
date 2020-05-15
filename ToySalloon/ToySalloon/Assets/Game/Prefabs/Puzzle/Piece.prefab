@@ -90,6 +90,8 @@ GameObject:
   - component: {fileID: 3222504997833939541}
   - component: {fileID: 8076597730481950618}
   - component: {fileID: -878987771010000698}
+  - component: {fileID: 6692039831845161567}
+  - component: {fileID: 5574456323115625908}
   m_Layer: 5
   m_Name: Piece
   m_TagString: PuzzlePiece
@@ -179,4 +181,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab9e28f02c327d4d9a7f84de169c449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalParent: {fileID: 0}
+--- !u!225 &6692039831845161567
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222504997833939543}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &5574456323115625908
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222504997833939543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fe79250c22a35544b2feace29c80984, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
