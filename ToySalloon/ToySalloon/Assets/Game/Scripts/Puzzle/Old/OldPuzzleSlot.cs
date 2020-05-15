@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PuzzleSlot : MonoBehaviour, IDropHandler
+public class OldPuzzleSlot : MonoBehaviour, IDropHandler
 {
     [SerializeField]
     private PlaceHolderManager manager;
@@ -33,7 +33,9 @@ public class PuzzleSlot : MonoBehaviour, IDropHandler
             {
                 manager.SpawnPlaceHolder();
             }
-        } 
+        }
+
+        Debug.Log(eventData);
     }
     
 }

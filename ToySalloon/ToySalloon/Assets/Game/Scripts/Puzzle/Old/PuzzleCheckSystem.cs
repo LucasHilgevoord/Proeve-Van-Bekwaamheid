@@ -34,6 +34,10 @@ public class PuzzleCheckSystem : MonoBehaviour
         {
             confirmButton.enabled = true;
         }
+        else
+        {
+            confirmButton.enabled = false;
+        }
 
         // Change button alpha
         if (confirmButton.enabled)
