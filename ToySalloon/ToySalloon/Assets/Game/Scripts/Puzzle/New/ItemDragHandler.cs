@@ -8,49 +8,54 @@ public class ItemDragHandler : MonoBehaviour,
     IPointerDownHandler,
     IBeginDragHandler,
     IEndDragHandler,
-    IDragHandler,
-    IDropHandler
+    IDragHandler
 {
     private Transform originalParent;
-
-    public Canvas canvas;
-
+    private Canvas canvas;
     private RectTransform rectTransform;
+
+    private CanvasGroup canvasGroup;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Clicked");
         Cursor.visible = false;
-        originalParent = GetComponentInParent<ContentSizeFitter>().transform;
-        canvas = GetComponentInParent<Image>().GetComponentInParent<ScrollRect>().GetComponentInParent<Canvas>();
+        if(originalParent == null)
+        {
+            originalParent = GetComponentInParent<ContentSizeFitter>().transform;
+        }
+        if(canvas == null)
+        {
+            canvas = transform.root.GetComponentInChildren<Canvas>();
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Started dragging");
+        canvasGroup.blocksRaycasts = false;
+        canvasGroup.alpha = .6f;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("dragging");
         transform.parent = canvas.transform;
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("Ended dragging");
         Cursor.visible = true;
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1f;
     }
 
-    public void OnDrop(PointerEventData eventData)
+    public void SnapBack()
     {
-        Debug.Log("Dropped");
         transform.parent = originalParent;
     }
 }
