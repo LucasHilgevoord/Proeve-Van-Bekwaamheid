@@ -1,0 +1,118 @@
+
+hair_back.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hair/Skin19_Hair
+  rotate: false
+  xy: 0, 1251
+  size: 463, 319
+  orig: 463, 319
+  offset: 0, 0
+  index: -1
+hair/Skin20_Hair
+  rotate: false
+  xy: 385, 818
+  size: 463, 319
+  orig: 463, 319
+  offset: 0, 0
+  index: -1
+hair/Skin21_Hair
+  rotate: false
+  xy: 714, 493
+  size: 463, 319
+  orig: 463, 319
+  offset: 0, 0
+  index: -1
+hair/Skin22_Hair
+  rotate: true
+  xy: 1178, 349
+  size: 463, 319
+  orig: 463, 319
+  offset: 0, 0
+  index: -1
+hair/Skin23_Hair
+  rotate: false
+  xy: 849, 1192
+  size: 356, 378
+  orig: 356, 378
+  offset: 0, 0
+  index: -1
+hair/Skin24_Hair
+  rotate: false
+  xy: 849, 813
+  size: 356, 378
+  orig: 356, 378
+  offset: 0, 0
+  index: -1
+hair/Skin25_Hair
+  rotate: false
+  xy: 0, 439
+  size: 356, 378
+  orig: 356, 378
+  offset: 0, 0
+  index: -1
+hair/Skin26_Hair
+  rotate: false
+  xy: 357, 439
+  size: 356, 378
+  orig: 356, 378
+  offset: 0, 0
+  index: -1
+hair/Skin27_Hair
+  rotate: true
+  xy: 1206, 1256
+  size: 314, 364
+  orig: 314, 364
+  offset: 0, 0
+  index: -1
+hair/Skin28_Hair
+  rotate: true
+  xy: 1206, 941
+  size: 314, 364
+  orig: 314, 364
+  offset: 0, 0
+  index: -1
+hair/Skin29_Hair
+  rotate: false
+  xy: 714, 128
+  size: 314, 364
+  orig: 314, 364
+  offset: 0, 0
+  index: -1
+hair/Skin30_Hair
+  rotate: false
+  xy: 0, 74
+  size: 314, 364
+  orig: 314, 364
+  offset: 0, 0
+  index: -1
+hair/Skin43_Hair
+  rotate: true
+  xy: 464, 1138
+  size: 432, 384
+  orig: 432, 384
+  offset: 0, 0
+  index: -1
+hair/Skin44_Hair
+  rotate: true
+  xy: 0, 818
+  size: 432, 384
+  orig: 432, 384
+  offset: 0, 0
+  index: -1
+hair/Skin48_Hair
+  rotate: true
+  xy: 315, 114
+  size: 324, 303
+  orig: 324, 303
+  offset: 0, 0
+  index: -1
+hair/Skin49_Hair
+  rotate: false
+  xy: 1029, 45
+  size: 324, 303
+  orig: 324, 303
+  offset: 0, 0
+  index: -1
