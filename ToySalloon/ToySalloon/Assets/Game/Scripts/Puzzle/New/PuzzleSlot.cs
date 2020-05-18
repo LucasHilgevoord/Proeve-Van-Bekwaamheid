@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class PuzzleSlot : MonoBehaviour,
@@ -21,10 +22,14 @@ public class PuzzleSlot : MonoBehaviour,
             eventData.pointerDrag.transform.parent = preview.parent;
             preview.SetAsLastSibling();
 
+            eventData.pointerDrag.GetComponent<Animator>().SetTrigger("Drop");
+
             if (preview.parent.childCount - 1 == puzzle.puzzle.lines.Length)
             {
                 preview.gameObject.SetActive(false);
             }
+
+            puzzle.ScrollDown(2); 
         }
         else
         {
@@ -34,6 +39,9 @@ public class PuzzleSlot : MonoBehaviour,
                 if (preview.parent.childCount - 1 < puzzle.puzzle.lines.Length)
                 {
                     preview.gameObject.SetActive(true);
+                    eventData.pointerDrag.GetComponent<Animator>().SetTrigger("Snap");
+                    puzzle.ScrollDown(1);
+                    Canvas.ForceUpdateCanvases();
                 }
             }
         }

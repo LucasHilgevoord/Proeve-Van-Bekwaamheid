@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aec04b4a09759f34fab9719f24cdf9ea, type: 3}
-  m_Name: TeddyBeer
+  m_Name: Blue Robot
   m_EditorClassIdentifier: 
-  puzzleName: Teddy beer
-  coinReward: 136.57
-  expReward: 500
-  model: {fileID: 7246430420547657939, guid: 3b7d43883667bf94cb49582812dcd522, type: 3}
-  tip: Probeer het nog eens! Anders verlies je het geld.
+  puzzleName: Blauwe Robot
+  coinReward: 340.1
+  expReward: 1500
+  model: {fileID: 2384398386816600496, guid: b1311af4460cb9348af04a6e1893224d, type: 3}
+  tip: 'BEEP BOOP!
+
+    Error ontstaan, activeer zelf vernietegings protocol!'
   lines:
   - Aanknop
-  - Start syteem
-  - Activeer stem
-  - Speel geluid af
+  - Activeer stroom
+  - Bereken bestemming
+  - Draaien
+  - Zet stappen
+  - Bestemming bereikt

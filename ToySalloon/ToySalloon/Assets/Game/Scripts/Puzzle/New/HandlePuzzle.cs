@@ -5,15 +5,20 @@ using UnityEngine.UI;
 
 public class HandlePuzzle : MonoBehaviour
 {
+    [Header("Current Puzzle")]
     public InfoPuzzle puzzle;
 
+    [Header("Prefab")]
     [SerializeField]
     private PuzzlePiece puzzlePiece;
 
+    [Header("PlayFields")]
     [SerializeField]
     private ContentSizeFitter content;
     [SerializeField]
     private ContentSizeFitter fieldContent;
+
+    private Transform model;
 
     private EndCondition endCondition;
 
@@ -27,6 +32,15 @@ public class HandlePuzzle : MonoBehaviour
     {
         StartCoroutine(InstantiatePieces(0.1f));
         endCondition = GetComponent<EndCondition>();
+
+        model = puzzle.model;
+
+        SpawnModel();
+    }
+
+    private void SpawnModel()
+    {
+        Instantiate(model);
     }
 
     //Instantiates all the pieces of the correct puzzle.
@@ -48,6 +62,11 @@ public class HandlePuzzle : MonoBehaviour
 
         for (int i = 0; i < pieces; i++)
         {
+            if(i > 3)
+            {
+                ScrollDown(1);
+            }
+
             content.transform.GetChild(i).gameObject.SetActive(true);
             yield return new WaitForSeconds(0.2f);
         }
@@ -91,7 +110,7 @@ public class HandlePuzzle : MonoBehaviour
         }
         else
         {
-            Debug.Log("Didnt reach length!");
+            return;
         }
 
         if(correctPieces == puzzle.lines.Length)
@@ -101,7 +120,6 @@ public class HandlePuzzle : MonoBehaviour
         }
         else
         {
-            Debug.Log("Incorrect!");
             endCondition.Lose();
         }
     }
@@ -112,4 +130,23 @@ public class HandlePuzzle : MonoBehaviour
 
         ResetPieces();
     }
+
+    public void ScrollDown(int c)
+    {
+        if(c == 1)
+        {
+            if(content.transform.childCount > 4 && content.transform.childCount != puzzle.lines.Length + 1)
+            {
+                content.transform.parent.GetComponentInParent<ScrollRect>().velocity = new Vector2(0f, 1000f);
+            }
+        }
+        else
+        {
+            if (fieldContent.transform.childCount > 4 && fieldContent.transform.childCount != puzzle.lines.Length + 1)
+            {
+                fieldContent.transform.parent.GetComponentInParent<ScrollRect>().velocity = new Vector2(0f, 1000f);
+            }
+        }
+    }
+
 }
