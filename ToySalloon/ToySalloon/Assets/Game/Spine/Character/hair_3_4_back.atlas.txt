@@ -39,14 +39,14 @@ hair/Skin23_Hair
   orig: 354, 378
   offset: 0, 0
   index: -1
-hair/Skin25_Hair
+hair/Skin24_Hair
   rotate: false
   xy: 380, 721
   size: 354, 378
   orig: 354, 378
   offset: 0, 0
   index: -1
-hair/Skin26_Hair
+hair/Skin25_Hair
   rotate: true
   xy: 380, 366
   size: 354, 378

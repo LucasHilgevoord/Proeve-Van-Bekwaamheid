@@ -1,1 +1,1973 @@
-{"skeleton":{"hash":"Rbzy50JREUg9akNtwtdXIAwOlwo","spine":"3.8.95","x":-170.47,"y":-3.46,"width":370,"height":861.81},"bones":[{"name":"root"},{"name":"body","parent":"root","x":4.8,"y":453.83},{"name":"R_arm","parent":"body","length":218.4,"rotation":-70.31,"x":36.55,"y":6.86},{"name":"L_arm","parent":"body","length":195.62,"rotation":-111.14,"x":-21.17,"y":28.22},{"name":"hips","parent":"body","x":-5.04,"y":-84.67},{"name":"R_leg","parent":"hips","length":158.8,"rotation":-85.27,"x":39.31,"y":-19.15},{"name":"R_knee","parent":"R_leg","length":158.52,"rotation":-1.45,"x":158.8},{"name":"L_leg","parent":"hips","length":167.84,"rotation":-94.48,"x":-21.17,"y":-23.18},{"name":"L_knee","parent":"L_leg","length":144.28,"rotation":-2.75,"x":167.84},{"name":"neck","parent":"body","x":11.09,"y":73.58},{"name":"head","parent":"neck","x":3.02,"y":144.14}],"slots":[{"name":"skins/Skin01_L_Arm","bone":"L_arm","attachment":"skins/Skin01_L_Arm"},{"name":"clothing/Skin13_L_Sleeve","bone":"L_arm","attachment":"clothing/Skin13_L_Sleeve"},{"name":"skins/Skin01_L_Legg","bone":"L_leg","attachment":"skins/Skin01_L_Legg"},{"name":"skins/Skin01_R_Legg","bone":"R_leg","attachment":"skins/Skin01_R_Legg"},{"name":"skins/Skin01_Body","bone":"body","attachment":"skins/Skin01_Body"},{"name":"clothing/Skin08_L_Jeans","bone":"L_leg","attachment":"clothing/Skin08_L_Jeans"},{"name":"clothing/Skin08_R_Jeans","bone":"R_leg","attachment":"clothing/Skin08_R_Jeans"},{"name":"skins/Skin01_Neck","bone":"neck","attachment":"skins/Skin01_Neck"},{"name":"skins/Skin01_Head","bone":"head","attachment":"skins/Skin01_Head"},{"name":"clothing/Skin13_Shirt","bone":"body","attachment":"clothing/Skin13_Shirt"},{"name":"skins/Skin01_R_Arm","bone":"R_arm","attachment":"skins/Skin01_R_Arm"},{"name":"clothing/Skin13_R_Sleeve","bone":"R_arm","attachment":"clothing/Skin13_R_Sleeve"}],"skins":[{"name":"f_skin01","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"type":"mesh","uvs":[0.42524,0,0.21415,0.02078,0.12972,0.08785,0.09353,0.24306,0.07936,0.3181,0.05735,0.43469,0.04474,0.51963,0.02719,0.63781,0,0.77578,0,0.89842,0.00307,0.97124,0.19606,1,0.60014,1,0.77504,0.93291,0.82328,0.80069,0.84138,0.66081,0.8802,0.56742,0.92581,0.45768,0.95957,0.37137,1,0.26797,1,0.10318,0.95597,0,0.49761,0],"triangles":[13,12,9,9,12,11,11,10,9,13,9,14,9,8,14,14,8,15,8,7,15,15,7,16,7,6,16,16,6,17,6,5,17,17,5,18,5,4,18,18,4,19,19,4,3,20,19,3,20,3,2,2,22,20,1,0,22,22,2,1,22,21,20],"vertices":[1,7,-57.85,-24.33,1,1,7,-47.31,-50.82,1,1,7,-19.31,-59.55,1,1,7,43.88,-59.29,1,2,7,74.39,-58.73,0.97967,8,-90.53,-63.14,0.02033,2,7,121.8,-57.86,0.86096,8,-43.21,-60,0.13904,2,7,156.31,-56.79,0.64734,8,-8.79,-57.28,0.35266,2,7,204.32,-55.3,0.11462,8,39.09,-53.49,0.88538,1,8,95.1,-49.93,1,1,8,144.5,-43.67,1,1,8,173.78,-39.56,1,1,8,182.23,-13.39,1,1,8,175.68,38.32,1,1,8,145.82,57.28,1,1,8,91.78,56.7,1,2,7,205.43,50.13,0.03116,8,35.15,51.88,0.96884,2,7,167.24,52.17,0.45393,8,-3.1,52.08,0.54607,2,7,122.37,54.55,0.9507,8,-48.04,52.31,0.0493,2,7,87.09,56.16,0.97313,8,-83.35,52.23,0.02687,1,7,44.83,58.08,1,1,7,-21.87,52.86,1,1,7,-63.19,43.92,1,1,7,-58.57,-15.02,1],"hull":23}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"type":"mesh","uvs":[0.40933,0,0.12309,0.02885,0,0.07136,0,0.24142,0,0.36045,0,0.47737,0.02338,0.59235,0.04235,0.68569,0.06484,0.80941,0.07905,0.88763,0.16713,0.9684,0.37998,1,0.69558,1,0.98182,0.93864,1,0.85149,1,0.80685,1,0.67931,1,0.59215,1,0.47099,1,0.30944,1,0.10538,1,0],"triangles":[5,4,18,13,12,14,12,9,14,11,10,9,9,12,11,9,8,14,8,15,14,15,8,16,8,7,16,16,7,17,7,6,17,17,6,18,6,5,18,4,19,18,19,4,20,20,2,0,20,4,3,2,1,0,20,3,2,0,21,20],"vertices":[1,5,-12.24,4.05,1,1,5,-4.22,-27.06,1,1,5,10.21,-41.35,1,1,5,72.24,-46.48,1,1,5,115.65,-50.08,1,1,6,0.86,-53.6,1,1,6,43.02,-53.54,1,2,5,234.65,-55.43,0.00781,6,77.24,-53.49,0.99219,1,6,122.58,-53.7,1,1,6,151.25,-53.83,1,1,6,181.3,-46.2,1,1,6,194.13,-24.34,1,1,6,196.05,9.06,1,1,6,175.37,40.64,1,1,6,143.63,44.39,1,1,6,127.32,45.32,1,1,6,80.72,47.99,1,2,5,208.91,48.56,0.0096,6,48.87,49.82,0.9904,2,5,164.72,52.22,0.41423,6,4.6,52.36,0.58577,2,5,105.79,57.1,0.99151,6,-54.43,55.74,0.00849,1,5,31.36,63.26,1,1,5,-7.08,66.45,1],"hull":22}}}},{"name":"f_skin02","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin02_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin02_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin02_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin02_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin02_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin02_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin02_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"f_skin03","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin03_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin03_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin03_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin03_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin03_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin03_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin03_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"f_skin04","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin04_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin04_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin04_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin04_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin04_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin04_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin04_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"f_skin05","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin05_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin05_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin05_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin05_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin05_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin05_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin05_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"f_skin06","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":186,"height":183}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":188,"height":184}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"x":55.94,"y":-16.74,"rotation":110.17,"width":127,"height":136}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"x":34.27,"y":-0.18,"rotation":69.34,"width":126,"height":134}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"x":8.56,"y":-30.62,"rotation":-0.97,"width":217,"height":250}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin06_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin06_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin06_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin06_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin06_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin06_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin06_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin01","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin02","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin02_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin02_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin02_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin02_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin02_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin02_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin02_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin03","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin03_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin03_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin03_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin03_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin03_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin03_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin03_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin04","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin04_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin04_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin04_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin04_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin04_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin04_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin04_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin05","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin05_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin05_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin05_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin05_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin05_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin05_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin05_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}},{"name":"m_skin06","attachments":{"clothing/Skin08_L_Jeans":{"clothing/Skin08_L_Jeans":{"name":"clothing/Skin04_L_Jeans","x":72.48,"y":-1.02,"scaleX":0.9332,"scaleY":0.9332,"rotation":94.48,"width":172,"height":194}},"clothing/Skin08_R_Jeans":{"clothing/Skin08_R_Jeans":{"name":"clothing/Skin04_R_Jeans","x":80.16,"y":8.67,"scaleX":0.9073,"scaleY":0.9073,"rotation":85.27,"width":175,"height":193}},"clothing/Skin13_L_Sleeve":{"clothing/Skin13_L_Sleeve":{"name":"clothing/Skin17_L_Sleeve","x":27.48,"y":-27.2,"rotation":110.17,"width":119,"height":108}},"clothing/Skin13_R_Sleeve":{"clothing/Skin13_R_Sleeve":{"name":"clothing/Skin17_R_Sleeve","x":-3.66,"y":13.4,"rotation":69.34,"width":142,"height":84}},"clothing/Skin13_Shirt":{"clothing/Skin13_Shirt":{"name":"clothing/Skin17_Shirt","x":8.56,"y":-30.62,"rotation":-0.97,"width":189,"height":202}},"skins/Skin01_Body":{"skins/Skin01_Body":{"name":"skins/Skin06_Body","x":10.47,"y":-36.84,"width":184,"height":222}},"skins/Skin01_Head":{"skins/Skin01_Head":{"name":"skins/Skin06_Head","x":-4.39,"y":29.8,"width":370,"height":314}},"skins/Skin01_L_Arm":{"skins/Skin01_L_Arm":{"name":"skins/Skin06_L_Arm","x":110.32,"y":2.14,"rotation":111.14,"width":159,"height":283}},"skins/Skin01_L_Legg":{"skins/Skin01_L_Legg":{"name":"skins/Skin06_L_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_L_Legg"}},"skins/Skin01_Neck":{"skins/Skin01_Neck":{"name":"skins/Skin06_Neck","x":-2.34,"y":7.45,"width":56,"height":82}},"skins/Skin01_R_Arm":{"skins/Skin01_R_Arm":{"name":"skins/Skin06_R_Arm","x":121.1,"y":6.25,"rotation":70.31,"width":166,"height":283}},"skins/Skin01_R_Legg":{"skins/Skin01_R_Legg":{"name":"skins/Skin06_R_Legg","type":"linkedmesh","skin":"f_skin01","parent":"skins/Skin01_R_Legg"}}}}],"animations":{"walk":{"bones":{"R_leg":{"rotate":[{"angle":16.37},{"time":0.1667,"angle":2.59,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":-19.41,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.5,"angle":14.46,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":16.37}],"translate":[{},{"time":0.1667,"x":-15.98,"curve":0.498,"c2":0.01,"c3":0.704,"c4":0.6},{"time":0.5,"x":-23.84,"y":-6.24,"curve":0.265,"c2":0.57,"c3":0.569,"c4":0.99},{"time":0.6667}]},"L_knee":{"rotate":[{"angle":-27.17},{"time":0.1667,"angle":-72.67,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":-3.57},{"time":0.5,"angle":-0.54,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":-27.17}],"translate":[{"x":24.4,"y":-10.08},{"time":0.1667,"x":4.45,"y":-2.94,"curve":0.491,"c2":0.01,"c3":0.723,"c4":0.56},{"time":0.2667,"x":15.12,"y":-0.8,"curve":0.262,"c2":0.54,"c3":0.553,"c4":0.99},{"time":0.3333,"x":40.93,"y":10.85,"curve":0.369,"c2":0.03,"c3":0.7,"c4":0.39},{"time":0.4,"x":8.26,"y":1.48,"curve":0.35,"c2":0.28,"c3":0.682,"c4":0.62},{"time":0.4333,"x":-3.71,"y":9.13,"curve":0.363,"c2":0.27,"c3":0.692,"c4":0.62},{"time":0.5,"x":-20.26,"y":7.64,"curve":0.353,"c2":0.31,"c3":0.682,"c4":0.65},{"time":0.6,"x":-1.54,"y":0.44,"curve":0.339,"c2":0.33,"c3":0.67,"c4":0.66},{"time":0.6667,"x":24.4,"y":-10.08}]},"R_knee":{"rotate":[{"angle":2.93},{"time":0.1667,"angle":-4.59,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":-15.57,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.5,"angle":-72.01,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":2.93}],"translate":[{"x":21.78,"y":3.93},{"time":0.1667,"x":-21.69,"y":-1.15,"curve":0.491,"c2":0.01,"c3":0.723,"c4":0.56},{"time":0.3333,"x":32.33,"y":-8.6,"curve":0.388,"c2":0.02,"c3":0.714,"c4":0.4},{"time":0.4333,"x":-3.6,"y":-14.41,"curve":0.363,"c2":0.27,"c3":0.692,"c4":0.62},{"time":0.5,"x":-8.14,"y":-11.2,"curve":0.353,"c2":0.31,"c3":0.682,"c4":0.65},{"time":0.6,"x":2.13,"y":0.22,"curve":0.339,"c2":0.33,"c3":0.67,"c4":0.66},{"time":0.6667,"x":21.78,"y":3.93}]},"R_arm":{"rotate":[{"angle":-37.92,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":5.37,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":-37.92}]},"L_arm":{"rotate":[{"angle":46.15,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":-6.64,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":46.15}],"translate":[{"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"x":1.78,"y":-0.91,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667}]},"body":{"translate":[{},{"time":0.1667,"y":-24.27,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333},{"time":0.5,"y":-24.27,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667}]},"L_leg":{"rotate":[{"angle":-6.65},{"time":0.1667,"angle":33.4,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"angle":33.61},{"time":0.5,"angle":7.66,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"angle":-6.65}],"translate":[{"x":11.99,"y":-17.32},{"time":0.1667,"x":12.01,"y":0.67,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.3333,"x":5.38,"y":1.35},{"time":0.5,"x":16.01,"y":3.34,"curve":0.48,"c2":0.01,"c3":0.537,"c4":0.99},{"time":0.6667,"x":11.99,"y":-17.32}]}}}}}
+{
+  "skeleton": {
+    "hash": "Rbzy50JREUg9akNtwtdXIAwOlwo",
+    "spine": "3.8.95",
+    "x": -170.47,
+    "y": -3.46,
+    "width": 370,
+    "height": 861.81
+  },
+  "bones": [
+    { "name": "root" },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": 4.8,
+      "y": 453.83
+    },
+    {
+      "name": "R_arm",
+      "parent": "body",
+      "length": 218.4,
+      "rotation": -70.31,
+      "x": 36.55,
+      "y": 6.86
+    },
+    {
+      "name": "L_arm",
+      "parent": "body",
+      "length": 195.62,
+      "rotation": -111.14,
+      "x": -21.17,
+      "y": 28.22
+    },
+    {
+      "name": "hips",
+      "parent": "body",
+      "x": -5.04,
+      "y": -84.67
+    },
+    {
+      "name": "R_leg",
+      "parent": "hips",
+      "length": 158.8,
+      "rotation": -85.27,
+      "x": 39.31,
+      "y": -19.15
+    },
+    {
+      "name": "R_knee",
+      "parent": "R_leg",
+      "length": 158.52,
+      "rotation": -1.45,
+      "x": 158.8
+    },
+    {
+      "name": "L_leg",
+      "parent": "hips",
+      "length": 167.84,
+      "rotation": -94.48,
+      "x": -21.17,
+      "y": -23.18
+    },
+    {
+      "name": "L_knee",
+      "parent": "L_leg",
+      "length": 144.28,
+      "rotation": -2.75,
+      "x": 167.84
+    },
+    {
+      "name": "neck",
+      "parent": "body",
+      "x": 11.09,
+      "y": 73.58
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "x": 3.02,
+      "y": 144.14
+    }
+  ],
+  "slots": [
+    {
+      "name": "skins/Skin01_L_Arm",
+      "bone": "L_arm",
+      "attachment": "skins/Skin01_L_Arm"
+    },
+    {
+      "name": "clothing/Skin13_L_Sleeve",
+      "bone": "L_arm",
+      "attachment": "clothing/Skin13_L_Sleeve"
+    },
+    {
+      "name": "skins/Skin01_L_Legg",
+      "bone": "L_leg",
+      "attachment": "skins/Skin01_L_Legg"
+    },
+    {
+      "name": "skins/Skin01_R_Legg",
+      "bone": "R_leg",
+      "attachment": "skins/Skin01_R_Legg"
+    },
+    {
+      "name": "skins/Skin01_Body",
+      "bone": "body",
+      "attachment": "skins/Skin01_Body"
+    },
+    {
+      "name": "clothing/Skin08_L_Jeans",
+      "bone": "L_leg",
+      "attachment": "clothing/Skin08_L_Jeans"
+    },
+    {
+      "name": "clothing/Skin08_R_Jeans",
+      "bone": "R_leg",
+      "attachment": "clothing/Skin08_R_Jeans"
+    },
+    {
+      "name": "skins/Skin01_Neck",
+      "bone": "neck",
+      "attachment": "skins/Skin01_Neck"
+    },
+    {
+      "name": "skins/Skin01_Head",
+      "bone": "head",
+      "attachment": "skins/Skin01_Head"
+    },
+    {
+      "name": "clothing/Skin13_Shirt",
+      "bone": "body",
+      "attachment": "clothing/Skin13_Shirt"
+    },
+    {
+      "name": "skins/Skin01_R_Arm",
+      "bone": "R_arm",
+      "attachment": "skins/Skin01_R_Arm"
+    },
+    {
+      "name": "clothing/Skin13_R_Sleeve",
+      "bone": "R_arm",
+      "attachment": "clothing/Skin13_R_Sleeve"
+    }
+  ],
+  "skins": [
+    {
+      "name": "f_skin01",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "type": "mesh",
+            "uvs": [ 0.42524, 0, 0.21415, 0.02078, 0.12972, 0.08785, 0.09353, 0.24306, 0.07936, 0.3181, 0.05735, 0.43469, 0.04474, 0.51963, 0.02719, 0.63781, 0, 0.77578, 0, 0.89842, 0.00307, 0.97124, 0.19606, 1, 0.60014, 1, 0.77504, 0.93291, 0.82328, 0.80069, 0.84138, 0.66081, 0.8802, 0.56742, 0.92581, 0.45768, 0.95957, 0.37137, 1, 0.26797, 1, 0.10318, 0.95597, 0, 0.49761, 0 ],
+            "triangles": [ 13, 12, 9, 9, 12, 11, 11, 10, 9, 13, 9, 14, 9, 8, 14, 14, 8, 15, 8, 7, 15, 15, 7, 16, 7, 6, 16, 16, 6, 17, 6, 5, 17, 17, 5, 18, 5, 4, 18, 18, 4, 19, 19, 4, 3, 20, 19, 3, 20, 3, 2, 2, 22, 20, 1, 0, 22, 22, 2, 1, 22, 21, 20 ],
+            "vertices": [ 1, 7, -57.85, -24.33, 1, 1, 7, -47.31, -50.82, 1, 1, 7, -19.31, -59.55, 1, 1, 7, 43.88, -59.29, 1, 2, 7, 74.39, -58.73, 0.97967, 8, -90.53, -63.14, 0.02033, 2, 7, 121.8, -57.86, 0.86096, 8, -43.21, -60, 0.13904, 2, 7, 156.31, -56.79, 0.64734, 8, -8.79, -57.28, 0.35266, 2, 7, 204.32, -55.3, 0.11462, 8, 39.09, -53.49, 0.88538, 1, 8, 95.1, -49.93, 1, 1, 8, 144.5, -43.67, 1, 1, 8, 173.78, -39.56, 1, 1, 8, 182.23, -13.39, 1, 1, 8, 175.68, 38.32, 1, 1, 8, 145.82, 57.28, 1, 1, 8, 91.78, 56.7, 1, 2, 7, 205.43, 50.13, 0.03116, 8, 35.15, 51.88, 0.96884, 2, 7, 167.24, 52.17, 0.45393, 8, -3.1, 52.08, 0.54607, 2, 7, 122.37, 54.55, 0.9507, 8, -48.04, 52.31, 0.0493, 2, 7, 87.09, 56.16, 0.97313, 8, -83.35, 52.23, 0.02687, 1, 7, 44.83, 58.08, 1, 1, 7, -21.87, 52.86, 1, 1, 7, -63.19, 43.92, 1, 1, 7, -58.57, -15.02, 1 ],
+            "hull": 23
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "type": "mesh",
+            "uvs": [ 0.40933, 0, 0.12309, 0.02885, 0, 0.07136, 0, 0.24142, 0, 0.36045, 0, 0.47737, 0.02338, 0.59235, 0.04235, 0.68569, 0.06484, 0.80941, 0.07905, 0.88763, 0.16713, 0.9684, 0.37998, 1, 0.69558, 1, 0.98182, 0.93864, 1, 0.85149, 1, 0.80685, 1, 0.67931, 1, 0.59215, 1, 0.47099, 1, 0.30944, 1, 0.10538, 1, 0 ],
+            "triangles": [ 5, 4, 18, 13, 12, 14, 12, 9, 14, 11, 10, 9, 9, 12, 11, 9, 8, 14, 8, 15, 14, 15, 8, 16, 8, 7, 16, 16, 7, 17, 7, 6, 17, 17, 6, 18, 6, 5, 18, 4, 19, 18, 19, 4, 20, 20, 2, 0, 20, 4, 3, 2, 1, 0, 20, 3, 2, 0, 21, 20 ],
+            "vertices": [ 1, 5, -12.24, 4.05, 1, 1, 5, -4.22, -27.06, 1, 1, 5, 10.21, -41.35, 1, 1, 5, 72.24, -46.48, 1, 1, 5, 115.65, -50.08, 1, 1, 6, 0.86, -53.6, 1, 1, 6, 43.02, -53.54, 1, 2, 5, 234.65, -55.43, 0.00781, 6, 77.24, -53.49, 0.99219, 1, 6, 122.58, -53.7, 1, 1, 6, 151.25, -53.83, 1, 1, 6, 181.3, -46.2, 1, 1, 6, 194.13, -24.34, 1, 1, 6, 196.05, 9.06, 1, 1, 6, 175.37, 40.64, 1, 1, 6, 143.63, 44.39, 1, 1, 6, 127.32, 45.32, 1, 1, 6, 80.72, 47.99, 1, 2, 5, 208.91, 48.56, 0.0096, 6, 48.87, 49.82, 0.9904, 2, 5, 164.72, 52.22, 0.41423, 6, 4.6, 52.36, 0.58577, 2, 5, 105.79, 57.1, 0.99151, 6, -54.43, 55.74, 0.00849, 1, 5, 31.36, 63.26, 1, 1, 5, -7.08, 66.45, 1 ],
+            "hull": 22
+          }
+        }
+      }
+    },
+    {
+      "name": "f_skin02",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin02_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin02_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin02_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin02_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin02_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin02_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin02_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "f_skin03",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin03_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin03_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin03_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin03_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin03_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin03_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin03_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "f_skin04",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin04_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin04_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin04_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin04_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin04_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin04_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin04_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "f_skin05",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin05_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin05_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin05_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin05_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin05_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin05_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin05_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "f_skin06",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 186,
+            "height": 183
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 188,
+            "height": 184
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "x": 55.94,
+            "y": -16.74,
+            "rotation": 110.17,
+            "width": 127,
+            "height": 136
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "x": 34.27,
+            "y": -0.18,
+            "rotation": 69.34,
+            "width": 126,
+            "height": 134
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 217,
+            "height": 250
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin06_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin06_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin06_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin06_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin06_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin06_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin06_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin01",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin02",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin02_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin02_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin02_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin02_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin02_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin02_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin02_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin03",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin03_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin03_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin03_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin03_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin03_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin03_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin03_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin04",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin04_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin04_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin04_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin04_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin04_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin04_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin04_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin05",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin05_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin05_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin05_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin05_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin05_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin05_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin05_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    },
+    {
+      "name": "m_skin06",
+      "attachments": {
+        "clothing/Skin08_L_Jeans": {
+          "clothing/Skin08_L_Jeans": {
+            "name": "clothing/Skin04_L_Jeans",
+            "x": 72.48,
+            "y": -1.02,
+            "scaleX": 0.9332,
+            "scaleY": 0.9332,
+            "rotation": 94.48,
+            "width": 172,
+            "height": 194
+          }
+        },
+        "clothing/Skin08_R_Jeans": {
+          "clothing/Skin08_R_Jeans": {
+            "name": "clothing/Skin04_R_Jeans",
+            "x": 80.16,
+            "y": 8.67,
+            "scaleX": 0.9073,
+            "scaleY": 0.9073,
+            "rotation": 85.27,
+            "width": 175,
+            "height": 193
+          }
+        },
+        "clothing/Skin13_L_Sleeve": {
+          "clothing/Skin13_L_Sleeve": {
+            "name": "clothing/Skin17_L_Sleeve",
+            "x": 27.48,
+            "y": -27.2,
+            "rotation": 110.17,
+            "width": 119,
+            "height": 108
+          }
+        },
+        "clothing/Skin13_R_Sleeve": {
+          "clothing/Skin13_R_Sleeve": {
+            "name": "clothing/Skin17_R_Sleeve",
+            "x": -3.66,
+            "y": 13.4,
+            "rotation": 69.34,
+            "width": 142,
+            "height": 84
+          }
+        },
+        "clothing/Skin13_Shirt": {
+          "clothing/Skin13_Shirt": {
+            "name": "clothing/Skin17_Shirt",
+            "x": 8.56,
+            "y": -30.62,
+            "rotation": -0.97,
+            "width": 189,
+            "height": 202
+          }
+        },
+        "skins/Skin01_Body": {
+          "skins/Skin01_Body": {
+            "name": "skins/Skin06_Body",
+            "x": 10.47,
+            "y": -36.84,
+            "width": 184,
+            "height": 222
+          }
+        },
+        "skins/Skin01_Head": {
+          "skins/Skin01_Head": {
+            "name": "skins/Skin06_Head",
+            "x": -4.39,
+            "y": 29.8,
+            "width": 370,
+            "height": 314
+          }
+        },
+        "skins/Skin01_L_Arm": {
+          "skins/Skin01_L_Arm": {
+            "name": "skins/Skin06_L_Arm",
+            "x": 110.32,
+            "y": 2.14,
+            "rotation": 111.14,
+            "width": 159,
+            "height": 283
+          }
+        },
+        "skins/Skin01_L_Legg": {
+          "skins/Skin01_L_Legg": {
+            "name": "skins/Skin06_L_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_L_Legg"
+          }
+        },
+        "skins/Skin01_Neck": {
+          "skins/Skin01_Neck": {
+            "name": "skins/Skin06_Neck",
+            "x": -2.34,
+            "y": 7.45,
+            "width": 56,
+            "height": 82
+          }
+        },
+        "skins/Skin01_R_Arm": {
+          "skins/Skin01_R_Arm": {
+            "name": "skins/Skin06_R_Arm",
+            "x": 121.1,
+            "y": 6.25,
+            "rotation": 70.31,
+            "width": 166,
+            "height": 283
+          }
+        },
+        "skins/Skin01_R_Legg": {
+          "skins/Skin01_R_Legg": {
+            "name": "skins/Skin06_R_Legg",
+            "type": "linkedmesh",
+            "skin": "f_skin01",
+            "parent": "skins/Skin01_R_Legg"
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "walk": {
+      "bones": {
+        "R_leg": {
+          "rotate": [
+            { "angle": 16.37 },
+            {
+              "time": 0.1667,
+              "angle": 2.59,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": -19.41,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.5,
+              "angle": 14.46,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": 16.37
+            }
+          ],
+          "translate": [
+            {},
+            {
+              "time": 0.1667,
+              "x": -15.98,
+              "curve": 0.498,
+              "c2": 0.01,
+              "c3": 0.704,
+              "c4": 0.6
+            },
+            {
+              "time": 0.5,
+              "x": -23.84,
+              "y": -6.24,
+              "curve": 0.265,
+              "c2": 0.57,
+              "c3": 0.569,
+              "c4": 0.99
+            },
+            { "time": 0.6667 }
+          ]
+        },
+        "L_knee": {
+          "rotate": [
+            { "angle": -27.17 },
+            {
+              "time": 0.1667,
+              "angle": -72.67,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": -3.57
+            },
+            {
+              "time": 0.5,
+              "angle": -0.54,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": -27.17
+            }
+          ],
+          "translate": [
+            {
+              "x": 24.4,
+              "y": -10.08
+            },
+            {
+              "time": 0.1667,
+              "x": 4.45,
+              "y": -2.94,
+              "curve": 0.491,
+              "c2": 0.01,
+              "c3": 0.723,
+              "c4": 0.56
+            },
+            {
+              "time": 0.2667,
+              "x": 15.12,
+              "y": -0.8,
+              "curve": 0.262,
+              "c2": 0.54,
+              "c3": 0.553,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "x": 40.93,
+              "y": 10.85,
+              "curve": 0.369,
+              "c2": 0.03,
+              "c3": 0.7,
+              "c4": 0.39
+            },
+            {
+              "time": 0.4,
+              "x": 8.26,
+              "y": 1.48,
+              "curve": 0.35,
+              "c2": 0.28,
+              "c3": 0.682,
+              "c4": 0.62
+            },
+            {
+              "time": 0.4333,
+              "x": -3.71,
+              "y": 9.13,
+              "curve": 0.363,
+              "c2": 0.27,
+              "c3": 0.692,
+              "c4": 0.62
+            },
+            {
+              "time": 0.5,
+              "x": -20.26,
+              "y": 7.64,
+              "curve": 0.353,
+              "c2": 0.31,
+              "c3": 0.682,
+              "c4": 0.65
+            },
+            {
+              "time": 0.6,
+              "x": -1.54,
+              "y": 0.44,
+              "curve": 0.339,
+              "c2": 0.33,
+              "c3": 0.67,
+              "c4": 0.66
+            },
+            {
+              "time": 0.6667,
+              "x": 24.4,
+              "y": -10.08
+            }
+          ]
+        },
+        "R_knee": {
+          "rotate": [
+            { "angle": 2.93 },
+            {
+              "time": 0.1667,
+              "angle": -4.59,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": -15.57,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.5,
+              "angle": -72.01,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": 2.93
+            }
+          ],
+          "translate": [
+            {
+              "x": 21.78,
+              "y": 3.93
+            },
+            {
+              "time": 0.1667,
+              "x": -21.69,
+              "y": -1.15,
+              "curve": 0.491,
+              "c2": 0.01,
+              "c3": 0.723,
+              "c4": 0.56
+            },
+            {
+              "time": 0.3333,
+              "x": 32.33,
+              "y": -8.6,
+              "curve": 0.388,
+              "c2": 0.02,
+              "c3": 0.714,
+              "c4": 0.4
+            },
+            {
+              "time": 0.4333,
+              "x": -3.6,
+              "y": -14.41,
+              "curve": 0.363,
+              "c2": 0.27,
+              "c3": 0.692,
+              "c4": 0.62
+            },
+            {
+              "time": 0.5,
+              "x": -8.14,
+              "y": -11.2,
+              "curve": 0.353,
+              "c2": 0.31,
+              "c3": 0.682,
+              "c4": 0.65
+            },
+            {
+              "time": 0.6,
+              "x": 2.13,
+              "y": 0.22,
+              "curve": 0.339,
+              "c2": 0.33,
+              "c3": 0.67,
+              "c4": 0.66
+            },
+            {
+              "time": 0.6667,
+              "x": 21.78,
+              "y": 3.93
+            }
+          ]
+        },
+        "R_arm": {
+          "rotate": [
+            {
+              "angle": -37.92,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": 5.37,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": -37.92
+            }
+          ]
+        },
+        "L_arm": {
+          "rotate": [
+            {
+              "angle": 46.15,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": -6.64,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": 46.15
+            }
+          ],
+          "translate": [
+            {
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "x": 1.78,
+              "y": -0.91,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            { "time": 0.6667 }
+          ]
+        },
+        "body": {
+          "translate": [
+            {},
+            {
+              "time": 0.1667,
+              "y": -24.27,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            { "time": 0.3333 },
+            {
+              "time": 0.5,
+              "y": -24.27,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            { "time": 0.6667 }
+          ]
+        },
+        "L_leg": {
+          "rotate": [
+            { "angle": -6.65 },
+            {
+              "time": 0.1667,
+              "angle": 33.4,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "angle": 33.61
+            },
+            {
+              "time": 0.5,
+              "angle": 7.66,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "angle": -6.65
+            }
+          ],
+          "translate": [
+            {
+              "x": 11.99,
+              "y": -17.32
+            },
+            {
+              "time": 0.1667,
+              "x": 12.01,
+              "y": 0.67,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.3333,
+              "x": 5.38,
+              "y": 1.35
+            },
+            {
+              "time": 0.5,
+              "x": 16.01,
+              "y": 3.34,
+              "curve": 0.48,
+              "c2": 0.01,
+              "c3": 0.537,
+              "c4": 0.99
+            },
+            {
+              "time": 0.6667,
+              "x": 11.99,
+              "y": -17.32
+            }
+          ]
+        }
+      }
+    }
+  }
+}
