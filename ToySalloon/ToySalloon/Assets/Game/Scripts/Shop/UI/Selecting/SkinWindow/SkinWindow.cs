@@ -87,7 +87,7 @@ public class SkinWindow : MonoBehaviour
     private void UpdateVisuals(SkinItem s)
     {
         ObjectSkinLock locked = selectedObject.skins.mySkins[s.id].locked;
-        if (locked.levelRequirement > GameManager.SharedInstance.playerLevel)
+        if (locked.levelRequirement > GameManager.Instance.playerLevel)
         {
             s.SetLevelLock(locked.levelRequirement);
         } else if (locked.price != 0)
@@ -107,7 +107,7 @@ public class SkinWindow : MonoBehaviour
         // Check if item is bound to a price
         if (selected.locked.price > 0)
         {
-            if (selected.locked.price > GameManager.SharedInstance.storeMoney) return;
+            if (selected.locked.price > GameManager.Instance.storeMoney) return;
 
             s.DisableMoney();
             OnItemBought(-selectedObject.skins.mySkins[s.id].locked.price);
