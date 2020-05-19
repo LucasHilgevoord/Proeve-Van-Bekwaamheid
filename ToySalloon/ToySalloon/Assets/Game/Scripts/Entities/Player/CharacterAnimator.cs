@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum CharacterAspects
 {
@@ -28,6 +29,7 @@ public class PlayerSkeletons
 public class CharacterAnimator : MonoBehaviour
 {
     public CharacterAspects currentAnim;
+    private NavMeshAgent nav;
 
     public SkeletonAnimation body;
     public SkeletonAnimation hair;
@@ -35,10 +37,83 @@ public class CharacterAnimator : MonoBehaviour
     public PlayerSkeletons hairData;
 
     private int animStateLenght;
+    private float errorMargin = 1f;
 
     private void Start()
     {
         animStateLenght = System.Enum.GetValues(typeof(CharacterAspects)).Length;
+        ReloadSkin();
+
+        nav = GetComponent<NavMeshAgent>();
+    }
+
+    private void Update()
+    {
+        if (nav)
+            UpdateAnimation();
+    }
+
+    private void UpdateAnimation()
+    {
+        Vector3 v = transform.InverseTransformDirection(nav.velocity);
+        
+
+        if (v.x == 0 && v.z == 0)
+        {
+            //Debug.Log("IDLE");
+            CheckNewAspect(CharacterAspects.FRONT);
+            SetAnimation("idle");
+        } else
+        {
+            if (Mathf.Abs(v.x) < errorMargin && v.z > 0)
+            {
+                CheckNewAspect(CharacterAspects.BACK);
+            }
+            else if (Mathf.Abs(v.x) < errorMargin && v.z < 0)
+            {
+                CheckNewAspect(CharacterAspects.FRONT);
+            }
+            else if (Mathf.Abs(v.z) < errorMargin && v.x < 0)
+            {
+                CheckNewAspect(CharacterAspects.LEFT);
+            }
+            else if (Mathf.Abs(v.z) < errorMargin && v.x > 0)
+            {
+                CheckNewAspect(CharacterAspects.RIGHT);
+            } else if (v.z > errorMargin && v.x < errorMargin)
+            {
+                CheckNewAspect(CharacterAspects.BACK_L_QUARTER);
+            }
+            else if (v.z < errorMargin && v.x > errorMargin)
+            {
+                CheckNewAspect(CharacterAspects.FRONT_R_QUARTER);
+            }
+            else if (v.z > errorMargin && v.x > errorMargin)
+            {
+                CheckNewAspect(CharacterAspects.BACK_R_QUARTER);
+            }
+            else if (v.z < errorMargin && v.x < errorMargin)
+            {
+                CheckNewAspect(CharacterAspects.FRONT_L_QUARTER);
+            }
+            SetAnimation("walk");
+        }
+
+    }
+
+    private void CheckNewAspect(CharacterAspects newAspect)
+    {
+        if (newAspect == currentAnim) return;
+        ChangeAspect(newAspect);
+    }
+
+    private void SetAnimation(string animationName)
+    {
+        if (body.AnimationName != animationName)
+            body.AnimationState.SetAnimation(0, animationName, true);
+
+        if (hair.AnimationName != animationName)
+            hair.AnimationState.SetAnimation(0, animationName, true);
     }
 
     public void ChangeAspect(CharacterAspects state)
