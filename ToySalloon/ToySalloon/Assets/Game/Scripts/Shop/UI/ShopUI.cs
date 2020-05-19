@@ -52,6 +52,6 @@ public class ShopUI : MonoBehaviour
 
     public void OnCustomizationButton()
     {
-        WorldManager.SharedInstance.FadeToScene(0);
+        SceneManager.Instance.FadeToScene(0);
     }
 }

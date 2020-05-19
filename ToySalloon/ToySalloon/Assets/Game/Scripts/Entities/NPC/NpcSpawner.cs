@@ -36,7 +36,7 @@ public class NpcSpawner : MonoBehaviour
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        manager = WorldManager.SharedInstance;
+        manager = WorldManager.Instance;
 
         curNpcTimer = Random.Range(npcMinTimer, npcMaxTimer);
     }

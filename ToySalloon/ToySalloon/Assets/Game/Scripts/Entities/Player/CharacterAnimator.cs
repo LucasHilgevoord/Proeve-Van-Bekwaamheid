@@ -56,11 +56,8 @@ public class CharacterAnimator : MonoBehaviour
     private void UpdateAnimation()
     {
         Vector3 v = transform.InverseTransformDirection(nav.velocity);
-        
-
         if (v.x == 0 && v.z == 0)
         {
-            //Debug.Log("IDLE");
             CheckNewAspect(CharacterAspects.FRONT);
             SetAnimation("idle");
         } else

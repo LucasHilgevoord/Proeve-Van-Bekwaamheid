@@ -52,7 +52,7 @@ public class NpcController : StateMachine
     void Start()
     {
         //Setting values
-        manager = WorldManager.SharedInstance;
+        manager = WorldManager.Instance;
         agent = GetComponent<NavMeshAgent>();
         curLookTime = Random.Range(minLookTime, maxLookTime);
         destination = transform;

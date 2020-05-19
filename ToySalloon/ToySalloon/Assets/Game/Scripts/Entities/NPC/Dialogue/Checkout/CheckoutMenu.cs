@@ -74,7 +74,7 @@ public class CheckoutMenu : UIWindow
             case NpcGoals.SELL:
                 break;
             case NpcGoals.REPAIR:
-                npc.manager.FadeToScene(3);
+                SceneManager.Instance.FadeToScene(3);
                 break;
             default:
                 break;
