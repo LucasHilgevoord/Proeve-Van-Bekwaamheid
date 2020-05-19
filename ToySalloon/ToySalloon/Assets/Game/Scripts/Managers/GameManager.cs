@@ -2,31 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonBehaviour<GameManager>
 {
-    #region SingleTon
-    private static GameManager instance = null;
-    public static GameManager SharedInstance {
-        get {
-            if (instance == null)
-            {
-                instance = new GameManager();
-            }
-            return instance;
-        }
-    }
-    #endregion
+    private bool isCreated;
 
     [Header("Store data")]
     public int storeMoney = 0; // The ammount of money the player has.
     public int storeRating = 0; // Current rated stars of the store.
     public int playerLevel = 0; // The level of the player.
 
-    private void Awake()
+    [Header("Player data")]
+    public string playerName = "";
+    public string hairSkin = "skin01";
+    public string bodySkin = "f_skin03";
+    public Gender gender = Gender.FEMALE;
+
+    internal override void Awake()
     {
-        if (instance == null)
+        base.Awake();
+        if (!isCreated)
         {
-            instance = this;
+            DontDestroyOnLoad(gameObject);
+            isCreated = true;
         }
+    }
+
+    private void SaveData()
+    {
+
+    }
+
+    private void LoadData()
+    {
+
     }
 }
