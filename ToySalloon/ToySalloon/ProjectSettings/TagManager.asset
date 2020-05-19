@@ -9,6 +9,7 @@ TagManager:
   - Entity
   - Ground
   - Selectable
+  - RatWaypoint
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,6 @@ TagManager:
   - Pieces
   - Post Processing
   - Entities
-  - 
   - 
   - 
   - 
