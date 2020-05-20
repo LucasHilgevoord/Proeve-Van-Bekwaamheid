@@ -25,6 +25,9 @@ public class RatController : MonoBehaviour
     public float speed = 5;
     float wPradius = 1;
 
+    private bool isFighting = false;
+    private Animator ratAnim;
+
 
     private void Start()
     {
@@ -33,19 +36,27 @@ public class RatController : MonoBehaviour
         ratState = RatState.WALKING;
         current = Random.Range(0, 4);
 
-        Debug.Log(current);
+        ratAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //ActivateFightScene();
-        if (ratState == RatState.WALKING)
+        switch (ratState)
         {
-            RatToWayPoint();
-        } else
-        {
-            return;
+            case RatState.IDLE:
+                Debug.Log("IDLE");
+                break;
+            case RatState.WALKING:
+                Debug.Log("WALKING");
+                RatToWayPoint();
+                break;
+            case RatState.FIGHTING:
+                Debug.Log("FIGHTING");
+                RatAttack();
+                break;
+            default:
+                break; 
         }
     }
 
@@ -56,6 +67,7 @@ public class RatController : MonoBehaviour
         {
             isCaught = true;
             WorldManager.SharedInstance.FadeToScene(2);
+            Destroy(gameObject);
         }
     }
 
@@ -67,5 +79,14 @@ public class RatController : MonoBehaviour
             ratState = RatState.FIGHTING;
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
+    }
+
+    void RatAttack()
+    {
+        if (ratState == RatState.FIGHTING)
+        {
+            ratAnim.SetBool("isFighting", true);
+            ActivateFightScene();
+        }
     }
 }
