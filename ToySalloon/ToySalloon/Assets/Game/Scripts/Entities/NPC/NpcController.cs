@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class NpcController : StateMachine
 {
@@ -136,7 +137,7 @@ public class NpcController : StateMachine
 
     private void OnMouseDown()
     {
-        if (hasInteracted) return;
+        if (hasInteracted || EventSystem.current.IsPointerOverGameObject()) return;
 
         if (currentState == NpcStates.CHECKOUT)
         {
