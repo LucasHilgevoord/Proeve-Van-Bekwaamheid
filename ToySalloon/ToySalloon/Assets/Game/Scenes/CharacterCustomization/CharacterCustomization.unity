@@ -7575,7 +7575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5216a9d066b46240864e5825c076c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 944607116}
+  character: {fileID: 0}
   body: {fileID: 828477058}
   hair: {fileID: 1987908221}
 --- !u!1 &502590695
@@ -15579,7 +15579,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 944607115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5018fc5eb02eac44e91d8d91650fcb65, type: 3}
+  m_Script: {fileID: 11500000, guid: 650955522918964479b9d6b11adde105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentAnim: 0
@@ -23231,7 +23231,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 944607116}
+      - m_Target: {fileID: 0}
         m_MethodName: NextState
         m_Mode: 1
         m_Arguments:
@@ -30550,6 +30550,16 @@ PrefabInstance:
     - target: {fileID: 8592058687731903427, guid: 549a137fe9b1ce04293cd345255b73df,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592058687731903437, guid: 549a137fe9b1ce04293cd345255b73df,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592058687738851303, guid: 549a137fe9b1ce04293cd345255b73df,
+        type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8592058688313900376, guid: 549a137fe9b1ce04293cd345255b73df,

@@ -39,7 +39,9 @@ public class CharacterAnimator : MonoBehaviour
     private int animStateLenght;
     private float errorMargin = 1f;
 
-    private void Start()
+    internal string bodySkinName;
+
+    protected virtual void Start()
     {
         animStateLenght = System.Enum.GetValues(typeof(CharacterAspects)).Length;
         ReloadSkin();
@@ -60,7 +62,8 @@ public class CharacterAnimator : MonoBehaviour
         {
             CheckNewAspect(CharacterAspects.FRONT);
             SetAnimation("idle");
-        } else
+        }
+        else
         {
             if (Mathf.Abs(v.x) < errorMargin && v.z > 0)
             {
@@ -77,7 +80,8 @@ public class CharacterAnimator : MonoBehaviour
             else if (Mathf.Abs(v.z) < errorMargin && v.x > 0)
             {
                 CheckNewAspect(CharacterAspects.RIGHT);
-            } else if (v.z > errorMargin && v.x < errorMargin)
+            }
+            else if (v.z > errorMargin && v.x < errorMargin)
             {
                 CheckNewAspect(CharacterAspects.BACK_L_QUARTER);
             }
@@ -109,7 +113,7 @@ public class CharacterAnimator : MonoBehaviour
         if (body.AnimationName != animationName)
             body.AnimationState.SetAnimation(0, animationName, true);
 
-        if (hair.AnimationName != animationName)
+        if (hair != null && hair.AnimationName != animationName)
             hair.AnimationState.SetAnimation(0, animationName, true);
     }
 
@@ -117,7 +121,8 @@ public class CharacterAnimator : MonoBehaviour
     {
         currentAnim = state;
         body.ClearState();
-        hair.ClearState();
+
+        if (hair != null) hair.ClearState();
 
         switch (currentAnim)
         {
@@ -149,21 +154,22 @@ public class CharacterAnimator : MonoBehaviour
                 break;
         }
         body.Initialize(true);
-        hair.Initialize(true);
+        if (hair != null) hair.Initialize(true);
         ReloadSkin();
     }
 
     private void SetAspect(SkeletonDataAsset bodyData, SkeletonDataAsset hairData, float xScale = 1)
     {
         body.skeletonDataAsset = bodyData;
-        hair.skeletonDataAsset = hairData;
+        if (hair != null) hair.skeletonDataAsset = hairData;
+
         body.gameObject.transform.localScale = new Vector2(xScale, 1);
     }
 
     public void ReloadSkin()
     {
-        hair.skeleton.SetSkin(GameManager.Instance.hairSkin);
-        body.skeleton.SetSkin(GameManager.Instance.bodySkin);
+        body.skeleton.SetSkin(bodySkinName);
+        if (hair != null) hair.skeleton.SetSkin(GameManager.Instance.hairSkin);
     }
 
     public void NextState()
