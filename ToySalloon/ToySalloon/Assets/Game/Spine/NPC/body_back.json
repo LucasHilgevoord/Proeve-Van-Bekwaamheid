@@ -1,14 +1,18 @@
 {
   "skeleton": {
-    "hash": "+bhQiPmEoy7Rzd6LKpVqYhuW1ow",
+    "hash": "35DIMjw/yuZOSUsi/R6sblDoZCU",
     "spine": "3.8.95",
-    "x": -234.65,
-    "y": 1.23,
-    "width": 461.36,
-    "height": 908.51
+    "x": -117.32,
+    "y": 0.61,
+    "width": 230.68,
+    "height": 450.92
   },
   "bones": [
-    { "name": "root" },
+    {
+      "name": "root",
+      "scaleX": 0.5,
+      "scaleY": 0.5
+    },
     {
       "name": "body",
       "parent": "root",
@@ -696,7 +700,7 @@
         },
         "skins/Skin02_Body": {
           "skins/Skin02_Body": {
-            "name": "skins/Skin04_Body",
+            "name": "skins/Skin05_Body",
             "x": 3.52,
             "y": -15.63,
             "width": 184,
@@ -705,7 +709,7 @@
         },
         "skins/Skin02_Head": {
           "skins/Skin02_Head": {
-            "name": "skins/Skin04_Head",
+            "name": "skins/Skin05_Head",
             "x": 10.62,
             "y": 19.99,
             "width": 416,
@@ -714,7 +718,7 @@
         },
         "skins/Skin02_L_Arm": {
           "skins/Skin02_L_Arm": {
-            "name": "skins/Skin04_L_Arm",
+            "name": "skins/Skin05_L_Arm",
             "x": 126.33,
             "y": -5.52,
             "rotation": 129.21,
@@ -724,7 +728,7 @@
         },
         "skins/Skin02_L_Legg": {
           "skins/Skin02_L_Legg": {
-            "name": "skins/Skin04_L_Legg",
+            "name": "skins/Skin05_L_Legg",
             "type": "linkedmesh",
             "skin": "f_skin01",
             "parent": "skins/Skin02_L_Legg"
@@ -732,7 +736,7 @@
         },
         "skins/Skin02_Neck": {
           "skins/Skin02_Neck": {
-            "name": "skins/Skin04_Neck",
+            "name": "skins/Skin05_Neck",
             "x": -0.39,
             "y": 6.75,
             "width": 54,
@@ -741,7 +745,7 @@
         },
         "skins/Skin02_R_Arm": {
           "skins/Skin02_R_Arm": {
-            "name": "skins/Skin04_R_Arm",
+            "name": "skins/Skin05_R_Arm",
             "x": 124.84,
             "y": 2.53,
             "rotation": 54.17,
@@ -751,7 +755,7 @@
         },
         "skins/Skin02_R_Legg": {
           "skins/Skin02_R_Legg": {
-            "name": "skins/Skin04_R_Legg",
+            "name": "skins/Skin05_R_Legg",
             "type": "linkedmesh",
             "skin": "f_skin01",
             "parent": "skins/Skin02_R_Legg"
@@ -1571,34 +1575,76 @@
     }
   ],
   "animations": {
+    "inactive": {
+      "bones": {
+        "L_leg": { "rotate": [ { "angle": 6.98 } ] },
+        "R_leg": { "rotate": [ { "angle": -7.19 } ] },
+        "R_arm": { "rotate": [ { "angle": -17.71 } ] },
+        "L_arm": { "rotate": [ { "angle": 16.28 } ] }
+      }
+    },
     "walk": {
       "bones": {
         "body": {
           "translate": [
             {
+              "curve": 0.311,
+              "c3": 0.646,
+              "c4": 0.35
+            },
+            {
+              "time": 0.1,
+              "y": -30.4,
+              "curve": 0.322,
+              "c2": 0.26,
+              "c3": 0.656,
+              "c4": 0.59
+            },
+            {
+              "time": 0.1667,
+              "y": 1,
+              "curve": 0.324,
+              "c2": 0.29,
+              "c3": 0.658,
+              "c4": 0.62
+            },
+            {
+              "time": 0.2333,
+              "y": -26.17,
+              "curve": 0.322,
+              "c2": 0.29,
+              "c3": 0.656,
+              "c4": 0.63
+            },
+            {
+              "time": 0.3333,
               "curve": 0.276,
               "c3": 0.621,
               "c4": 0.4
             },
             {
-              "time": 0.1667,
-              "y": -11.56,
-              "curve": 0.333,
-              "c2": 0.33,
-              "c3": 0.758
-            },
-            {
-              "time": 0.3333,
-              "curve": 0.299,
-              "c3": 0.636,
-              "c4": 0.36
+              "time": 0.4333,
+              "y": -30.4,
+              "curve": 0.322,
+              "c2": 0.26,
+              "c3": 0.656,
+              "c4": 0.59
             },
             {
               "time": 0.5,
-              "y": -7.98,
-              "curve": 0.333,
-              "c2": 0.33,
-              "c3": 0.758
+              "y": 1,
+              "curve": 0.324,
+              "c2": 0.29,
+              "c3": 0.658,
+              "c4": 0.62
+            },
+            {
+              "time": 0.5667,
+              "y": -26.17,
+              "curve": 0.322,
+              "c2": 0.29,
+              "c3": 0.656,
+              "c4": 0.63
             },
             { "time": 0.6667 }
           ]
@@ -1611,7 +1657,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "angle": 12.7,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "angle": 7.25,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "angle": 12.7,
               "curve": 0.25,
               "c3": 0.75
@@ -1629,7 +1687,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "x": 0.917,
+              "y": 0.917,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "curve": 0.25,
               "c3": 0.75
             },
@@ -1648,7 +1718,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "angle": 0.32,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "angle": -7.9,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "angle": 0.32,
               "curve": 0.25,
               "c3": 0.75
@@ -1664,7 +1746,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "x": 0.928,
+              "y": 0.928,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "x": 0.928,
               "y": 0.928,
               "curve": 0.25,
@@ -1682,7 +1776,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "x": 0.911,
+              "y": 0.911,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "x": 0.911,
               "y": 0.911,
               "curve": 0.25,
@@ -1698,7 +1804,18 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "x": 0.901,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "x": 0.901,
               "curve": 0.25,
               "c3": 0.75
@@ -1716,7 +1833,19 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "x": 0.909,
+              "y": 0.909,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "curve": 0.25,
               "c3": 0.75
             },
@@ -1735,7 +1864,18 @@
               "c3": 0.75
             },
             {
+              "time": 0.1667,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
               "time": 0.3333,
+              "x": 0.917,
+              "curve": 0.25,
+              "c3": 0.75
+            },
+            {
+              "time": 0.5,
               "curve": 0.25,
               "c3": 0.75
             },
