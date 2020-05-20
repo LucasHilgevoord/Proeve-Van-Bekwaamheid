@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -91,12 +92,15 @@ public class NpcSpawner : MonoBehaviour
     private void RemoveNPC(NpcController npc)
     {
         SpriteRenderer npcRend = npc.gameObject.GetComponent<SpriteRenderer>();
+        NpcAnimator skel = npc.gameObject.GetComponent<NpcAnimator>();
         float alpha = 1f;
     
         DOTween.To(() => alpha, f => alpha = f, 0f, fadeSpeed).OnUpdate(() =>
         {
-            //npc.Skeleton.SetColor(new Color(1, 1, 1, alpha));
-            npcRend.color = new Color(1, 1, 1, alpha);
+            Debug.Log(alpha);
+            Debug.Log(skel);
+            skel.body.Skeleton.SetColor(new Color(1, 1, 1, alpha));
+            //npcRend.color = new Color(1, 1, 1, alpha);
         }).SetEase(Ease.Linear).OnComplete(() =>
         {
             audioSrc.PlayOneShot(doorBell);
