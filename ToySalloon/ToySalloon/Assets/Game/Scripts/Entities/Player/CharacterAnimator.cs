@@ -38,6 +38,7 @@ public class CharacterAnimator : MonoBehaviour
 
     private int animStateLenght;
     private float errorMargin = 1f;
+    private Vector3 bodyScale;
 
     internal string bodySkinName;
 
@@ -47,6 +48,7 @@ public class CharacterAnimator : MonoBehaviour
         ReloadSkin();
 
         nav = GetComponent<NavMeshAgent>();
+        bodyScale = body.gameObject.transform.localScale;
     }
 
     private void Update()
@@ -127,28 +129,28 @@ public class CharacterAnimator : MonoBehaviour
         switch (currentAnim)
         {
             case CharacterAspects.FRONT:
-                SetAspect(bodyData.front, hairData.front, 1);
+                SetAspect(bodyData.front, hairData.front, false);
                 break;
             case CharacterAspects.FRONT_R_QUARTER:
-                SetAspect(bodyData.frontQuarter, hairData.frontQuarter, 1);
+                SetAspect(bodyData.frontQuarter, hairData.frontQuarter, false);
                 break;
             case CharacterAspects.RIGHT:
-                SetAspect(bodyData.side, hairData.side, 1);
+                SetAspect(bodyData.side, hairData.side, false);
                 break;
             case CharacterAspects.BACK_R_QUARTER:
-                SetAspect(bodyData.backQuarter, hairData.backQuarter, 1);
+                SetAspect(bodyData.backQuarter, hairData.backQuarter, false);
                 break;
             case CharacterAspects.BACK:
-                SetAspect(bodyData.back, hairData.back, 1);
+                SetAspect(bodyData.back, hairData.back, false);
                 break;
             case CharacterAspects.BACK_L_QUARTER:
-                SetAspect(bodyData.backQuarter, hairData.backQuarter, -1);
+                SetAspect(bodyData.backQuarter, hairData.backQuarter, true);
                 break;
             case CharacterAspects.LEFT:
-                SetAspect(bodyData.side, hairData.side, -1);
+                SetAspect(bodyData.side, hairData.side, true);
                 break;
             case CharacterAspects.FRONT_L_QUARTER:
-                SetAspect(bodyData.frontQuarter, hairData.frontQuarter, -1);
+                SetAspect(bodyData.frontQuarter, hairData.frontQuarter, true);
                 break;
             default:
                 break;
@@ -158,12 +160,13 @@ public class CharacterAnimator : MonoBehaviour
         ReloadSkin();
     }
 
-    private void SetAspect(SkeletonDataAsset bodyData, SkeletonDataAsset hairData, float xScale = 1)
+    private void SetAspect(SkeletonDataAsset bodyData, SkeletonDataAsset hairData, bool flipX)
     {
         body.skeletonDataAsset = bodyData;
         if (hair != null) hair.skeletonDataAsset = hairData;
 
-        body.gameObject.transform.localScale = new Vector2(xScale, 1);
+        float xScale = flipX == true ? -bodyScale.x : bodyScale.x;
+        body.gameObject.transform.localScale = new Vector2(xScale, bodyScale.y);
     }
 
     public void ReloadSkin()
