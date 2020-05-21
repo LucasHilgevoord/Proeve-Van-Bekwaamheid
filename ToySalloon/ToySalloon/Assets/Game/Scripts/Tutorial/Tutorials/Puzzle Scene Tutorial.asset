@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Houdini
   bigMessage:
-  - <b><color=#F0B026>Hey!<color=#826D33></b> Dit is je eerste keer... Ik zal je
-    even helpen met deze klus!
-  - Ik zie dat dit speelgoed autotje niet meer goed werkt, laten we hem maken!
+  - Hey! Dit is je eerste keer... Ik zal je even uitleggen hoe dit werkt!
+  - Klanten komen met speelgoed naar je winkel toe..
+  - Meestal is dit speelgoed kapot, wat natuurlijk niet leuk is.
+  - Jij moet dit nu gaan reparen.. Kijk! Dan laat ik het zien.
   smallMessage:
-  - Eerste text
-  - Tweede text
-  - Derde text
+  - Dit is het veld waar je in werkt.
+  - Je zal de stukjes moeten neerleggen in logische volgorde.
+  - Als je denkt dat het klopt, klik je op 'Klaar'!
+  - Goedzo! Probeer het nu eens zelf.

@@ -11,28 +11,38 @@ public class HandleTutorial : MonoBehaviour
 
     private int textIndex = 0;
 
-    private void Start()
+    public enum tutState { BIG, SMALL};
+    private tutState currentState;
+
+    private void Awake()
     {
         tutorialInterface = GetComponent<GUITutorial>();
-        LinkInterface(textIndex);
+        currentState = tutState.BIG;
     }
 
-    private void LinkInterface(int index)
+    private void Start()
     {
-        tutorialInterface.LinkUI(sceneTutorial.title, sceneTutorial.bigMessage[index]);
-        textIndex++;
+        ManageBigTutorial();
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            ManageTutorial();
-        }
+            switch(currentState)
+            {
+                case tutState.BIG:
+                    ManageBigTutorial();
+                    break;
+                case tutState.SMALL:
+                    ManageSmallTutorial();
+                    break;
+            }
 
+        }
     }
 
-    private void ManageTutorial()
+    private void ManageBigTutorial()
     {
         if (textIndex < sceneTutorial.bigMessage.Length)
         {
@@ -40,7 +50,36 @@ public class HandleTutorial : MonoBehaviour
         }
         else
         {
-            Debug.Log("nope :)");
+            tutorialInterface.CloseBigTutorial();
+            currentState = tutState.SMALL;
+            textIndex = 0;
+            LinkInterface(textIndex);
         }
+    }
+
+    private void ManageSmallTutorial()
+    {
+        if (textIndex < sceneTutorial.smallMessage.Length)
+        {
+            LinkInterface(textIndex);
+        }
+        else
+        {
+            tutorialInterface.CloseSmallTutorial();
+        }
+    }
+
+    private void LinkInterface(int index)
+    {
+        switch (currentState)
+        {
+            case tutState.BIG:
+                tutorialInterface.LinkUI(sceneTutorial.title, sceneTutorial.bigMessage[index], currentState, textIndex);
+                break;
+            case tutState.SMALL:
+                tutorialInterface.LinkUI(sceneTutorial.title, sceneTutorial.smallMessage[index], currentState, textIndex);
+                break;
+        }
+        textIndex++;
     }
 }
