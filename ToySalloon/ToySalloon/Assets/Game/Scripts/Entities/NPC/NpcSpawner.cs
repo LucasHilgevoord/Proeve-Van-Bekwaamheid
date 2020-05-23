@@ -97,10 +97,7 @@ public class NpcSpawner : MonoBehaviour
     
         DOTween.To(() => alpha, f => alpha = f, 0f, fadeSpeed).OnUpdate(() =>
         {
-            Debug.Log(alpha);
-            Debug.Log(skel);
             skel.body.Skeleton.SetColor(new Color(1, 1, 1, alpha));
-            //npcRend.color = new Color(1, 1, 1, alpha);
         }).SetEase(Ease.Linear).OnComplete(() =>
         {
             audioSrc.PlayOneShot(doorBell);

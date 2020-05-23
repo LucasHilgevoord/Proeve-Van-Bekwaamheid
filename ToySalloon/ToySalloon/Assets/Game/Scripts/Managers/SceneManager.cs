@@ -1,7 +1,6 @@
 ﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneManager : SingletonBehaviour<SceneManager>
@@ -12,6 +11,11 @@ public class SceneManager : SingletonBehaviour<SceneManager>
 
     [SerializeField]
     private bool fadeWhenStart = true;
+
+    private void OnEnable()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnLevelLoaded;
+    }
 
     /// <summary>
     /// Fade the screen and go to assigned scene if needed.
@@ -25,11 +29,11 @@ public class SceneManager : SingletonBehaviour<SceneManager>
             overlay.color = new Color(0, 0, 0, alpha);
         }).SetEase(Ease.Linear).OnComplete(() =>
         {
-            Application.LoadLevel(sceneID);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneID);
         });
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnLevelLoaded(Scene scene, LoadSceneMode mode)
     {
         FadeOut();
     }
