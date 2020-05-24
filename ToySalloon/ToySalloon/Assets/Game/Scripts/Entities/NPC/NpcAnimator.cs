@@ -22,7 +22,6 @@ public class NpcAnimator : CharacterAnimator
     private void CreateNewSkin()
     {
         int id = Random.Range(minSkinId, maxSkinId);
-        Debug.Log(id);
         string newSkin = id < 10 ? "skin0" + id : "skin" + id;
         bodySkinName = PickGender() + newSkin;
     }
