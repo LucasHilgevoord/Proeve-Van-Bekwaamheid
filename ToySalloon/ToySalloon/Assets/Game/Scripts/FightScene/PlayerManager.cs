@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Spine.Unity;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -17,6 +18,14 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField]
     private Animator camAni;
+
+    [SerializeField] SkeletonAnimation hair;
+
+    private void Start()
+    {
+        if(GameManager.Instance != null)
+            hair.skeleton.SetSkin(GameManager.Instance.hairSkin);
+    }
 
     private void Update()
     {

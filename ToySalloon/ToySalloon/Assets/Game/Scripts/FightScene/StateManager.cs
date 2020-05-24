@@ -22,7 +22,7 @@ public class StateManager : MonoBehaviour
 
     private IEnumerator StartStates()
     {
-        yield return new WaitForSeconds(9.5f);
+        yield return new WaitForSeconds(12f);
         ChangeBehaviour(RatState.TAKEDAMAGE);
     }
 
