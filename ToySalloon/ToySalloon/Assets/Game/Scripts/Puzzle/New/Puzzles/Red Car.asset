@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec04b4a09759f34fab9719f24cdf9ea, type: 3}
+  m_Name: Red Car
+  m_EditorClassIdentifier: 
+  puzzleName: Rode Auto
+  coinReward: 130.51
+  expReward: 1100
+  model: {fileID: 3145922708152880972, guid: 4d2f9903ae2288942b85112e88f6953e, type: 3}
+  tip: Vroem! Deze puzzel scheurt als een auto voorbij, alleen snap ik hem niet..
+  lines:
+  - Verbind controller
+  - Klik rechts
+  - Roteer wielen
+  - Geef gas
