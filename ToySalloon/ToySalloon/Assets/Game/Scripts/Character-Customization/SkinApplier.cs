@@ -69,7 +69,15 @@ public class SkinApplier : MonoBehaviour
     private int StringToInt(string s)
     {
         string[] splitArray = s.Split(char.Parse("n"));
-        string id = splitArray[1];
+        string id;
+        if (s != "")
+        {
+            id = splitArray[1];
+        } else
+        {
+            // Default value
+            id = "1";
+        }
         bool success = System.Int32.TryParse(id, out int number);
         if (success)
         {
