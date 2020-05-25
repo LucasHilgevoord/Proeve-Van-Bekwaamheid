@@ -3391,7 +3391,6 @@ GameObject:
   - component: {fileID: 3017644095553136407}
   - component: {fileID: 6014678960584656119}
   - component: {fileID: 5705003437150338443}
-  - component: {fileID: 7949634045191446628}
   m_Layer: 5
   m_Name: NPC Skin
   m_TagString: Untagged
@@ -3565,15 +3564,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!170 &7949634045191446628
-AudioDistortionFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8123760112208547999}
-  m_Enabled: 1
-  m_DistortionLevel: 0.5
 --- !u!1 &8475899231757228895
 GameObject:
   m_ObjectHideFlags: 0
