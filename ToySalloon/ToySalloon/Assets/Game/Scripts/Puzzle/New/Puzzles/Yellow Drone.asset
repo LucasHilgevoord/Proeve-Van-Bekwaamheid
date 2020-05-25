@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Gele Drone
   coinReward: 834.61
   expReward: 5600
-  model: {fileID: 1192664137461775169, guid: a1ea29eb5d835894bb9358af7c532593, type: 3}
+  model: {fileID: 6248702264406536432, guid: ac03d96d85fec7f45a2b5dafaf7d0d7e, type: 3}
+  offset: {x: 0, y: -0.287, z: 0}
+  rot: {x: 0, y: 0.84979147, z: 0, w: 0.527119}
   tip: Dit is wel een hele moeilijke hoor! Probeer het nog eens..
   lines:
   - "Aanknop\t"

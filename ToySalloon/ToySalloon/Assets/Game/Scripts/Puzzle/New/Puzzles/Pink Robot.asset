@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Roze Robot
   coinReward: 670.15
   expReward: 4500
-  model: {fileID: 4516627415330169197, guid: 03e4224d8cce0254081a96ff4554e0be, type: 3}
+  model: {fileID: 101875135695006199, guid: e94417ef5b1e6ef4a9f10322257e1b2f, type: 3}
+  offset: {x: 0.4144188, y: -0.347, z: 0.6946236}
+  rot: {x: 0, y: 0.8458954, z: 0, w: 0.5333488}
   tip: 'Beep Boop!
 
     Fout gedetecteerd, beloning zal niet worden verkregen..'

@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Groene Auto
   coinReward: 75.75
   expReward: 300
-  model: {fileID: 6581357064015717882, guid: 803c87b466a3d5c44a7ea7ebd7fd2640, type: 3}
+  model: {fileID: 2119808192406905158, guid: d709bca742adc404a845a2719de3f49a, type: 3}
+  offset: {x: 0, y: -0.309, z: 0}
+  rot: {x: 0, y: -0.9022092, z: 0, w: 0.43129858}
   tip: Helaas! Volgende keer lukt het vast, miauw.
   lines:
   - Klik knop

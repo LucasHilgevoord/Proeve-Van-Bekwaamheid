@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Teddy beer
   coinReward: 136.57
   expReward: 500
-  model: {fileID: 7246430420547657939, guid: 3b7d43883667bf94cb49582812dcd522, type: 3}
+  model: {fileID: 1987699772417609140, guid: fd1d3d258679eeb4e95f24067ec1d1e2, type: 3}
+  offset: {x: 0, y: 0, z: 0}
+  rot: {x: 0, y: 0, z: 0, w: 0}
   tip: Probeer het nog eens! Anders verlies je het geld.
   lines:
   - Aanknop

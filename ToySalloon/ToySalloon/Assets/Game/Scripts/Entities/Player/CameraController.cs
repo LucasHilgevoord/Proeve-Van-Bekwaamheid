@@ -87,14 +87,7 @@ public class CameraController : MonoBehaviour
         isManual = true;
         if (Application.isMobilePlatform == false)
         {
-            Vector3 pos = transform.position;
-            if (pos.y < maxDistance && pos.y > minDistance)
-            {
-                position = transform.position;
-                transform.transform.Translate(Vector3.forward * zoomSpeedMouse * Input.GetAxis("Mouse ScrollWheel"));
-            }
-            else
-                transform.position = new Vector3(position.x, position.y, position.z);
+            transform.transform.Translate(Vector3.forward * zoomSpeedMouse * Input.GetAxis("Mouse ScrollWheel"));
         }
         else
         {

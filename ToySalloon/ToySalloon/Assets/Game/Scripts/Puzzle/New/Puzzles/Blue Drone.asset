@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Blauwe Drone
   coinReward: 210.5
   expReward: 1000
-  model: {fileID: 4823978014402399532, guid: dc4f897de54e8b34e94ea5914a1e7c37, type: 3}
+  model: {fileID: 6248702264406536432, guid: b65d12152cbee664fba09967e3207010, type: 3}
+  offset: {x: 0, y: -0.287, z: 0}
+  rot: {x: 0, y: 0.84979147, z: 0, w: 0.527119}
   tip: Oeps! Deze puzzel vliegt ons zo langs de oren.
   lines:
   - Klik omhoog

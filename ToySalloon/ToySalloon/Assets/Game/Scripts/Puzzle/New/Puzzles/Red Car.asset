@@ -15,7 +15,9 @@ MonoBehaviour:
   puzzleName: Rode Auto
   coinReward: 130.51
   expReward: 1100
-  model: {fileID: 3145922708152880972, guid: 4d2f9903ae2288942b85112e88f6953e, type: 3}
+  model: {fileID: 2119808192406905158, guid: 5bc9b1e5251538349853775edea286ba, type: 3}
+  offset: {x: 0, y: -0.314, z: 0}
+  rot: {x: 0, y: 0.8052406, z: 0, w: -0.59294826}
   tip: Vroem! Deze puzzel scheurt als een auto voorbij, alleen snap ik hem niet..
   lines:
   - Verbind controller
