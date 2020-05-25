@@ -1558,7 +1558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &461401523
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5092,7 +5092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1261575966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5133,7 +5133,8 @@ MonoBehaviour:
   m_text: Volgende
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b5e3a77443fb6344a1023f4456c2eb6, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 7089147550568281270, guid: 6b5e3a77443fb6344a1023f4456c2eb6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5210,7 +5211,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -7727,6 +7728,7 @@ GameObject:
   - component: {fileID: 1752946401}
   - component: {fileID: 1752946400}
   - component: {fileID: 1752946402}
+  - component: {fileID: 1752946403}
   m_Layer: 0
   m_Name: 'TutorialManager '
   m_TagString: Untagged
@@ -7782,6 +7784,18 @@ MonoBehaviour:
   smallTitle: {fileID: 2090754694}
   smallTextbox: {fileID: 884046758}
   next: {fileID: 1261575969}
+--- !u!114 &1752946403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752946399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2d9c5c30306084b821e835efa934a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   typeSpeed: 0.02
 --- !u!1 &1759421711
 GameObject:
