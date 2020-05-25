@@ -13,6 +13,12 @@ public class RatManager : MonoBehaviour
 
     private Vector3 startPos;
 
+    public List<GameObject> ratAmount = new List<GameObject>();
+    private float curRatTimer = 80;
+    private float ratMinTimer = 100;
+    private float ratMaxTimer = 150;
+    private int maxRats = 1;
+
     void Start()
     {
         // Where the first placeholder should be put
@@ -21,16 +27,22 @@ public class RatManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        curRatTimer -= Time.deltaTime;
+        if (curRatTimer < 0 && ratAmount.Count < maxRats)
         {
+            curRatTimer = Random.Range(ratMinTimer, ratMaxTimer);
+
             CreateRat(new Vector3(startPos.x, startPos.y, startPos.z));
         }
-       
+
+        Debug.Log(ratAmount.Count);
+        Debug.Log(curRatTimer);
+
     }
 
     // Create the rat
     void CreateRat(Vector3 spawnPosition)
     {
-        Instantiate(ratPrefab, spawnPosition, Quaternion.identity);
+        ratAmount.Add(Instantiate(ratPrefab, spawnPosition, Quaternion.identity));
     }
 }
