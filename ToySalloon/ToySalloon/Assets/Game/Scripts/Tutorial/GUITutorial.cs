@@ -30,12 +30,27 @@ public class GUITutorial : MonoBehaviour
     [SerializeField]
     private Animator next;
 
-    [Header("Typing speed")]
-    [SerializeField, Range(0.02f, 0.2f)]
-    private float typeSpeed;
+    private WriteText write;
 
     private string currentText;
     private bool active = true;
+
+    private bool nextActive = true;
+
+    private void OnEnable()
+    {
+        WriteText.OnFinished += ShowNext;
+    }
+
+    private void OnDisable()
+    {
+        WriteText.OnFinished -= ShowNext;
+    }
+
+    private void Awake()
+    {
+        write = GetComponent<WriteText>();
+    }
 
     public void LinkUI(string title, string textbox, HandleTutorial.tutState state, int index)
     {
@@ -47,7 +62,8 @@ public class GUITutorial : MonoBehaviour
                     this.bigTitle.text = title;
                 }
 
-                StartCoroutine(ShowMessage(textbox, bigTextbox));
+                ShowNext();
+                StartCoroutine(write.ShowMessage(textbox, bigTextbox));
 
                 break;
             case HandleTutorial.tutState.SMALL:
@@ -56,30 +72,26 @@ public class GUITutorial : MonoBehaviour
                     this.smallTitle.text = title;
                 }
 
-                StartCoroutine(ShowMessage(textbox, smallTextbox));
+                StartCoroutine(write.ShowMessage(textbox, smallTextbox));
                 sceneTutorial.SetInteger("NextPart", index);
 
                 break;
         }
     }
 
-    private IEnumerator ShowMessage(string mes, TextMeshProUGUI box)
+    public void ShowNext()
     {
-        box.text = "";
-        ShowNext(false);
-        foreach (char letter in mes.ToCharArray())
-        {
-            Debug.Log(letter);
-            box.text += letter;
-            yield return new WaitForSeconds(typeSpeed);
-        }
-        Debug.Log("works");
-        ShowNext(true);
-    }
+        nextActive = !nextActive;
+        next.gameObject.SetActive(nextActive);
 
-    public void ShowNext(bool a)
-    {
-        next.gameObject.SetActive(a);
+        if (nextActive)
+        {
+            //Stop Kat praten
+        }
+        else
+        {
+            //Start kat praten.
+        }
     }
 
     public void HandleSceneTutorial()
