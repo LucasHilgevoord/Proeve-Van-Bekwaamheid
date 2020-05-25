@@ -87,7 +87,7 @@ public class SkinWindow : MonoBehaviour
     private void UpdateVisuals(SkinItem s)
     {
         ObjectSkinLock locked = selectedObject.skins.mySkins[s.id].locked;
-        if (locked.levelRequirement > GameManager.Instance.playerLevel)
+        if (locked.levelRequirement > GameManager.Instance.storeLevel)
         {
             s.SetLevelLock(locked.levelRequirement);
         } else if (locked.price != 0)
