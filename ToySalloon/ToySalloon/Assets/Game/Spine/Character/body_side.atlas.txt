@@ -1,0 +1,377 @@
+
+body_side.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothing/Skin04_L_Jeans
+  rotate: false
+  xy: 1316, 1205
+  size: 216, 196
+  orig: 216, 196
+  offset: 0, 0
+  index: -1
+clothing/Skin04_R_jeans
+  rotate: false
+  xy: 1533, 1205
+  size: 216, 196
+  orig: 216, 196
+  offset: 0, 0
+  index: -1
+clothing/Skin08_L_Jeans
+  rotate: false
+  xy: 1263, 1403
+  size: 263, 181
+  orig: 263, 181
+  offset: 0, 0
+  index: -1
+clothing/Skin08_R_jeans
+  rotate: false
+  xy: 1527, 1402
+  size: 263, 181
+  orig: 263, 181
+  offset: 0, 0
+  index: -1
+clothing/Skin13_L_Sleeve
+  rotate: true
+  xy: 291, 1863
+  size: 111, 128
+  orig: 111, 128
+  offset: 0, 0
+  index: -1
+clothing/Skin13_R_Sleeve
+  rotate: true
+  xy: 420, 1836
+  size: 111, 128
+  orig: 111, 128
+  offset: 0, 0
+  index: -1
+clothing/Skin13_Shirt
+  rotate: true
+  xy: 1750, 1182
+  size: 216, 246
+  orig: 216, 246
+  offset: 0, 0
+  index: -1
+clothing/Skin17_L_Sleeve
+  rotate: false
+  xy: 559, 1926
+  size: 139, 107
+  orig: 139, 107
+  offset: 0, 0
+  index: -1
+clothing/Skin17_R_Sleeve
+  rotate: false
+  xy: 1863, 1923
+  size: 139, 110
+  orig: 140, 110
+  offset: 0, 0
+  index: -1
+clothing/Skin17_Shirt
+  rotate: true
+  xy: 1115, 1211
+  size: 191, 200
+  orig: 191, 200
+  offset: 0, 0
+  index: -1
+skin/Eyes Open
+  rotate: true
+  xy: 456, 1948
+  size: 85, 102
+  orig: 85, 102
+  offset: 0, 0
+  index: -1
+skin/Skin01_Body
+  rotate: true
+  xy: 1791, 1399
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin01_Head
+  rotate: false
+  xy: 0, 970
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin01_L_Arm
+  rotate: true
+  xy: 699, 1924
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin01_L_Been
+  rotate: true
+  xy: 726, 1585
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin01_Neck
+  rotate: true
+  xy: 0, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin01_R_Arm
+  rotate: true
+  xy: 990, 1924
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin01_R_Been
+  rotate: true
+  xy: 582, 1701
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1
+skin/Skin02_Body
+  rotate: true
+  xy: 0, 1287
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin02_Head
+  rotate: false
+  xy: 337, 970
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin02_L_Arm
+  rotate: true
+  xy: 1281, 1924
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin02_L_Been
+  rotate: true
+  xy: 1147, 1585
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin02_Neck
+  rotate: true
+  xy: 76, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin02_R_Arm
+  rotate: true
+  xy: 1572, 1924
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin02_R_Been
+  rotate: true
+  xy: 945, 1701
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1
+skin/Skin03_Body
+  rotate: true
+  xy: 223, 1284
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin03_Head
+  rotate: false
+  xy: 674, 970
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin03_L_Arm
+  rotate: true
+  xy: 0, 1865
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin03_L_Been
+  rotate: true
+  xy: 1568, 1584
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin03_Neck
+  rotate: true
+  xy: 152, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin03_R_Arm
+  rotate: true
+  xy: 549, 1814
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin03_R_Been
+  rotate: true
+  xy: 1308, 1701
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1
+skin/Skin04_Body
+  rotate: true
+  xy: 446, 1284
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin04_Head
+  rotate: false
+  xy: 1011, 891
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin04_L_Arm
+  rotate: true
+  xy: 840, 1814
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin04_L_Been
+  rotate: true
+  xy: 0, 1472
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin04_Neck
+  rotate: true
+  xy: 228, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin04_R_Arm
+  rotate: true
+  xy: 1131, 1814
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin04_R_Been
+  rotate: true
+  xy: 1671, 1700
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1
+skin/Skin05_Body
+  rotate: true
+  xy: 669, 1284
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin05_Head
+  rotate: false
+  xy: 1348, 891
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin05_L_Arm
+  rotate: true
+  xy: 1422, 1814
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin05_L_Been
+  rotate: true
+  xy: 421, 1469
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin05_Neck
+  rotate: true
+  xy: 304, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin05_R_Arm
+  rotate: true
+  xy: 1713, 1813
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin05_R_Been
+  rotate: true
+  xy: 0, 1591
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1
+skin/Skin06_Body
+  rotate: true
+  xy: 892, 1284
+  size: 184, 222
+  orig: 184, 222
+  offset: 0, 0
+  index: -1
+skin/Skin06_Head
+  rotate: false
+  xy: 1685, 868
+  size: 336, 313
+  orig: 336, 313
+  offset: 0, 0
+  index: -1
+skin/Skin06_L_Arm
+  rotate: true
+  xy: 0, 1755
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin06_L_Been
+  rotate: true
+  xy: 842, 1469
+  size: 115, 420
+  orig: 115, 420
+  offset: 0, 0
+  index: -1
+skin/Skin06_Neck
+  rotate: true
+  xy: 380, 1975
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+skin/Skin06_R_Arm
+  rotate: true
+  xy: 291, 1704
+  size: 109, 290
+  orig: 109, 290
+  offset: 0, 0
+  index: -1
+skin/Skin06_R_Been
+  rotate: true
+  xy: 363, 1588
+  size: 112, 362
+  orig: 112, 362
+  offset: 0, 0
+  index: -1

@@ -15,13 +15,15 @@ public class CameraController : MonoBehaviour
     private float dragSpeedMouse = 0.2f;
     private float zoomSpeedMouse = 5f;
 
-    //Zoom Values
+    //Zoom
     private Vector3 startPosition;
     private Vector3 position;
-    private float maxDistance = 5;
-    private float minDistance = -5f;
+
+    //Zoom Values mobile
+    private float maxDistance = 8f;
+    private float minDistance = 2.5f;
     private float zoomSpeed = 1.5f;
-    private float currentDistance;
+    private float currentDistance = 0;
     private float desiredDistance;
 
     [SerializeField]
@@ -83,13 +85,16 @@ public class CameraController : MonoBehaviour
     private void Zoom()
     {
         isManual = true;
-        if (!Application.isMobilePlatform)
+        if (Application.isMobilePlatform == false)
         {
-            //Zoom in/out
-            Vector3 newPos = transform.position;
-            newPos.y += -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
-            newPos.z -= -Input.GetAxis("Mouse ScrollWheel") * zoomSpeedMouse;
-            transform.position = newPos;
+            Vector3 pos = transform.position;
+            if (pos.y < maxDistance && pos.y > minDistance)
+            {
+                position = transform.position;
+                transform.transform.Translate(Vector3.forward * zoomSpeedMouse * Input.GetAxis("Mouse ScrollWheel"));
+            }
+            else
+                transform.position = new Vector3(position.x, position.y, position.z);
         }
         else
         {

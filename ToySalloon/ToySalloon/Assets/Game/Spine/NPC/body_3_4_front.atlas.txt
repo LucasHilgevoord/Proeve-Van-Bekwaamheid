@@ -1,0 +1,552 @@
+
+body_3_4_front.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothing/Skin01_L_Jeans
+  rotate: false
+  xy: 378, 397
+  size: 91, 128
+  orig: 91, 128
+  offset: 0, 0
+  index: -1
+clothing/Skin01_L_Sleeve
+  rotate: false
+  xy: 901, 333
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+clothing/Skin01_R_Jeans
+  rotate: false
+  xy: 510, 2
+  size: 87, 126
+  orig: 87, 126
+  offset: 0, 0
+  index: -1
+clothing/Skin01_R_Sleeve
+  rotate: true
+  xy: 955, 145
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+clothing/Skin01_Shirt
+  rotate: false
+  xy: 824, 485
+  size: 94, 90
+  orig: 94, 90
+  offset: 0, 0
+  index: -1
+clothing/Skin02_L_Sleeve
+  rotate: false
+  xy: 636, 211
+  size: 81, 122
+  orig: 82, 122
+  offset: 0, 0
+  index: -1
+clothing/Skin02_R_Sleeve
+  rotate: true
+  xy: 663, 417
+  size: 82, 125
+  orig: 82, 125
+  offset: 0, 0
+  index: -1
+clothing/Skin02_Shirt
+  rotate: false
+  xy: 901, 386
+  size: 98, 98
+  orig: 98, 98
+  offset: 0, 0
+  index: -1
+clothing/Skin03_L_Jeans
+  rotate: false
+  xy: 378, 268
+  size: 91, 128
+  orig: 91, 128
+  offset: 0, 0
+  index: -1
+clothing/Skin03_L_Sleeve
+  rotate: true
+  xy: 867, 585
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+clothing/Skin03_R_Jeans
+  rotate: false
+  xy: 894, 660
+  size: 87, 126
+  orig: 87, 126
+  offset: 0, 0
+  index: -1
+clothing/Skin03_R_Sleeve
+  rotate: false
+  xy: 919, 508
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+clothing/Skin03_Shirt
+  rotate: false
+  xy: 860, 121
+  size: 94, 90
+  orig: 94, 90
+  offset: 0, 0
+  index: -1
+clothing/Skin04_L_Jeans
+  rotate: false
+  xy: 0, 7
+  size: 139, 92
+  orig: 139, 92
+  offset: 0, 0
+  index: -1
+clothing/Skin04_L_Sleeve
+  rotate: false
+  xy: 718, 211
+  size: 81, 122
+  orig: 82, 122
+  offset: 0, 0
+  index: -1
+clothing/Skin04_R_Jeans
+  rotate: false
+  xy: 800, 212
+  size: 95, 77
+  orig: 95, 77
+  offset: 0, 0
+  index: -1
+clothing/Skin04_R_Sleeve
+  rotate: true
+  xy: 622, 334
+  size: 82, 125
+  orig: 82, 125
+  offset: 0, 0
+  index: -1
+clothing/Skin04_Shirt
+  rotate: false
+  xy: 920, 561
+  size: 98, 98
+  orig: 98, 98
+  offset: 0, 0
+  index: -1
+clothing/Skin05_L_Jeans
+  rotate: false
+  xy: 418, 0
+  size: 91, 128
+  orig: 91, 128
+  offset: 0, 0
+  index: -1
+clothing/Skin05_R_Jeans
+  rotate: false
+  xy: 548, 168
+  size: 87, 126
+  orig: 87, 126
+  offset: 0, 0
+  index: -1
+clothing/Skin05_Shirt
+  rotate: false
+  xy: 800, 290
+  size: 100, 101
+  orig: 100, 101
+  offset: 0, 0
+  index: -1
+clothing/Skin06_L_Jeans
+  rotate: true
+  xy: 900, 885
+  size: 139, 92
+  orig: 139, 92
+  offset: 0, 0
+  index: -1
+clothing/Skin06_R_Jeans
+  rotate: false
+  xy: 896, 212
+  size: 95, 77
+  orig: 95, 77
+  offset: 0, 0
+  index: -1
+clothing/Skin06_Shirt
+  rotate: false
+  xy: 877, 19
+  size: 100, 101
+  orig: 100, 101
+  offset: 0, 0
+  index: -1
+hair/Skin19_Hair
+  rotate: false
+  xy: 176, 714
+  size: 180, 151
+  orig: 180, 151
+  offset: 0, 0
+  index: -1
+hair/Skin20_Hair
+  rotate: false
+  xy: 377, 873
+  size: 180, 151
+  orig: 180, 151
+  offset: 0, 0
+  index: -1
+hair/Skin23_Hair
+  rotate: false
+  xy: 0, 834
+  size: 175, 190
+  orig: 175, 190
+  offset: 0, 0
+  index: -1
+hair/Skin25_Hair
+  rotate: false
+  xy: 0, 643
+  size: 175, 190
+  orig: 175, 190
+  offset: 0, 0
+  index: -1
+hair/Skin30_Hair
+  rotate: true
+  xy: 214, 480
+  size: 170, 146
+  orig: 170, 146
+  offset: 0, 0
+  index: -1
+hair/Skin43_Hair
+  rotate: false
+  xy: 176, 866
+  size: 200, 158
+  orig: 200, 158
+  offset: 0, 0
+  index: -1
+hair/Skin44_Hair
+  rotate: true
+  xy: 0, 442
+  size: 200, 158
+  orig: 200, 158
+  offset: 0, 0
+  index: -1
+hair/Skin48_Hair
+  rotate: false
+  xy: 158, 80
+  size: 166, 138
+  orig: 166, 138
+  offset: 0, 0
+  index: -1
+hair/Skin49_Hair
+  rotate: false
+  xy: 719, 728
+  size: 166, 138
+  orig: 166, 138
+  offset: 0, 0
+  index: -1
+skins/Eyes Closed
+  rotate: false
+  xy: 877, 0
+  size: 94, 18
+  orig: 94, 18
+  offset: 0, 0
+  index: -1
+skins/Eyes In between
+  rotate: true
+  xy: 982, 692
+  size: 94, 35
+  orig: 94, 35
+  offset: 0, 0
+  index: -1
+skins/Eyes Open
+  rotate: true
+  xy: 470, 430
+  size: 95, 53
+  orig: 95, 53
+  offset: 0, 0
+  index: -1
+skins/Skin01_Body
+  rotate: true
+  xy: 636, 118
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin01_Head
+  rotate: true
+  xy: 0, 271
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin01_L_Arm
+  rotate: true
+  xy: 544, 515
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin01_L_Leg
+  rotate: true
+  xy: 176, 651
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin01_Neck
+  rotate: false
+  xy: 388, 89
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin01_R_Arm
+  rotate: true
+  xy: 140, 0
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin01_R_Leg
+  rotate: false
+  xy: 159, 431
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+skins/Skin02_Body
+  rotate: false
+  xy: 598, 6
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin02_Head
+  rotate: true
+  xy: 0, 100
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin02_L_Arm
+  rotate: true
+  xy: 754, 652
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin02_L_Leg
+  rotate: false
+  xy: 325, 85
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin02_Neck
+  rotate: false
+  xy: 214, 440
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin02_R_Arm
+  rotate: true
+  xy: 279, 0
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin02_R_Leg
+  rotate: false
+  xy: 158, 219
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+skins/Skin03_Body
+  rotate: false
+  xy: 691, 6
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin03_Head
+  rotate: false
+  xy: 558, 867
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin03_L_Arm
+  rotate: true
+  xy: 727, 576
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin03_L_Leg
+  rotate: true
+  xy: 359, 652
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin03_Neck
+  rotate: false
+  xy: 268, 228
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin03_R_Arm
+  rotate: false
+  xy: 388, 129
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin03_R_Leg
+  rotate: false
+  xy: 213, 219
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+skins/Skin04_Body
+  rotate: true
+  xy: 748, 118
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin04_Head
+  rotate: false
+  xy: 729, 867
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin04_L_Arm
+  rotate: true
+  xy: 684, 500
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin04_L_Leg
+  rotate: true
+  xy: 361, 589
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin04_Neck
+  rotate: false
+  xy: 993, 985
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin04_R_Arm
+  rotate: false
+  xy: 468, 129
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin04_R_Leg
+  rotate: false
+  xy: 268, 268
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+skins/Skin05_Body
+  rotate: false
+  xy: 784, 6
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin05_Head
+  rotate: false
+  xy: 377, 715
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin05_L_Arm
+  rotate: false
+  xy: 470, 290
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin05_L_Leg
+  rotate: true
+  xy: 361, 526
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin05_Neck
+  rotate: true
+  xy: 548, 138
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin05_R_Arm
+  rotate: true
+  xy: 886, 787
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin05_R_Leg
+  rotate: false
+  xy: 323, 268
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+skins/Skin06_Body
+  rotate: true
+  xy: 789, 392
+  size: 92, 111
+  orig: 92, 111
+  offset: 0, 0
+  index: -1
+skins/Skin06_Head
+  rotate: false
+  xy: 548, 709
+  size: 170, 157
+  orig: 170, 157
+  offset: 0, 0
+  index: -1
+skins/Skin06_L_Arm
+  rotate: false
+  xy: 546, 295
+  size: 75, 139
+  orig: 75, 139
+  offset: 0, 0
+  index: -1
+skins/Skin06_L_Leg
+  rotate: true
+  xy: 544, 591
+  size: 62, 182
+  orig: 62, 182
+  offset: 0, 0
+  index: -1
+skins/Skin06_Neck
+  rotate: false
+  xy: 748, 377
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+skins/Skin06_R_Arm
+  rotate: true
+  xy: 524, 435
+  size: 79, 138
+  orig: 79, 138
+  offset: 0, 0
+  index: -1
+skins/Skin06_R_Leg
+  rotate: true
+  xy: 542, 654
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1

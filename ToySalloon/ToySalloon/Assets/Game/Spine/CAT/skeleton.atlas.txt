@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bell
+  rotate: false
+  xy: 220, 364
+  size: 58, 57
+  orig: 58, 57
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 0, 175
+  size: 219, 246
+  orig: 219, 246
+  offset: 0, 0
+  index: -1
+Eyebrow
+  rotate: false
+  xy: 168, 10
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+Eyes_Closed
+  rotate: false
+  xy: 0, 42
+  size: 167, 17
+  orig: 167, 17
+  offset: 0, 0
+  index: -1
+Eyes_InBetween
+  rotate: false
+  xy: 0, 4
+  size: 166, 37
+  orig: 166, 37
+  offset: 0, 0
+  index: -1
+Eyes_Open
+  rotate: false
+  xy: 217, 60
+  size: 166, 60
+  orig: 166, 60
+  offset: 0, 0
+  index: -1
+Eyes_Sad
+  rotate: false
+  xy: 216, 10
+  size: 166, 49
+  orig: 166, 49
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 220, 121
+  size: 212, 184
+  orig: 212, 184
+  offset: 0, 0
+  index: -1
+L_Ear
+  rotate: false
+  xy: 379, 334
+  size: 116, 173
+  orig: 116, 173
+  offset: 0, 0
+  index: -1
+Mouth_EA
+  rotate: false
+  xy: 383, 6
+  size: 73, 53
+  orig: 73, 53
+  offset: 0, 0
+  index: -1
+Mouth_FV
+  rotate: false
+  xy: 384, 74
+  size: 76, 46
+  orig: 76, 46
+  offset: 0, 0
+  index: -1
+Mouth_MBP
+  rotate: true
+  xy: 457, 0
+  size: 73, 27
+  orig: 73, 27
+  offset: 0, 0
+  index: -1
+Mouth_SAD
+  rotate: true
+  xy: 405, 205
+  size: 67, 38
+  orig: 67, 38
+  offset: 0, 0
+  index: -1
+Mouth_SADInBetween
+  rotate: false
+  xy: 279, 336
+  size: 77, 33
+  orig: 77, 33
+  offset: 0, 0
+  index: -1
+Mouth_TS
+  rotate: true
+  xy: 175, 98
+  size: 76, 41
+  orig: 76, 41
+  offset: 0, 0
+  index: -1
+Mouth_UOQ
+  rotate: false
+  xy: 175, 43
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1
+Mouth_WR
+  rotate: true
+  xy: 405, 273
+  size: 60, 39
+  orig: 60, 39
+  offset: 0, 0
+  index: -1
+R_Ear
+  rotate: true
+  xy: 0, 60
+  size: 114, 174
+  orig: 114, 174
+  offset: 0, 0
+  index: -1
+Riem
+  rotate: false
+  xy: 279, 370
+  size: 93, 51
+  orig: 93, 51
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 0, 422
+  size: 378, 85
+  orig: 378, 85
+  offset: 0, 0
+  index: -1

@@ -9,7 +9,6 @@ public class ShopUI : MonoBehaviour
 
     [Header("Audio")]
     private bool soundOn = true;
-    private AudioListener audioListener;
     [SerializeField] private Sprite[] soundSpr;
     [SerializeField] private Image soundObj;
 
@@ -25,33 +24,33 @@ public class ShopUI : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
-        audioListener = Camera.main.GetComponent<AudioListener>();
+        CheckAudio();
     }
 
     private void DisableUI(bool isOpen)
     {
         anim.SetBool("shouldClose", isOpen);
     }
-
-    public void OnMoreButton()
-    {
-
-    }
-
     public void OnSoundButton()
     {
         soundOn = soundOn == true ? false : true;
         soundObj.sprite = soundOn == true ? soundSpr[0] : soundSpr[1];
-        audioListener.enabled = soundOn;
+
+        if (soundOn)
+            AudioListener.volume = 1;
+        else
+            AudioListener.volume = 0;
     }
 
-    public void OnStoreButton()
+    private void CheckAudio()
     {
-        
+        // Set the audio button sprite to inactive sprite.
+        if (AudioListener.volume == 0)
+            OnSoundButton();
     }
 
     public void OnCustomizationButton()
     {
-        WorldManager.SharedInstance.FadeToScene(0);
+        SceneManager.Instance.FadeToScene(0);
     }
 }

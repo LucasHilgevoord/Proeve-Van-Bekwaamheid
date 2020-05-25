@@ -2,31 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonBehaviour<GameManager>
 {
-    #region SingleTon
-    private static GameManager instance = null;
-    public static GameManager SharedInstance {
-        get {
-            if (instance == null)
-            {
-                instance = new GameManager();
-            }
-            return instance;
-        }
-    }
-    #endregion
+    private bool isCreated;
 
     [Header("Store data")]
     public int storeMoney = 0; // The ammount of money the player has.
     public int storeRating = 0; // Current rated stars of the store.
-    public int playerLevel = 0; // The level of the player.
+    public int storeLevel = 0; // The level of the player.
 
-    private void Awake()
+    [Header("Player data")]
+    public string playerName = "";
+    public string hairSkin = "skin01";
+    public string bodySkin = "f_skin03";
+    public Gender gender = Gender.FEMALE;
+
+    private void OnEnable()
     {
-        if (instance == null)
+        LoadData();
+    }
+
+    private void OnDisable()
+    {
+        SaveData();
+    }
+
+    internal override void Awake()
+    {
+        base.Awake();
+        if (!isCreated)
         {
-            instance = this;
+            DontDestroyOnLoad(gameObject);
+            isCreated = true;
         }
+    }
+
+    private void SaveData()
+    {
+        PlayerPrefs.SetString("PlayerName", playerName);
+        PlayerPrefs.SetString("HairSkin", hairSkin);
+        PlayerPrefs.SetString("BodySkin", bodySkin);
+        PlayerPrefs.SetInt("Gender", (int)gender);
+
+        PlayerPrefs.SetInt("StoreMoney", storeMoney);
+        PlayerPrefs.SetInt("StoreLevel", storeLevel);
+    }
+
+    private void LoadData()
+    {
+        playerName = PlayerPrefs.GetString("PlayerName");
+        hairSkin = PlayerPrefs.GetString("HairSkin");
+        bodySkin = PlayerPrefs.GetString("BodySkin");
+        gender = (Gender)PlayerPrefs.GetInt("Gender");
+
+        storeMoney = PlayerPrefs.GetInt("StoreMoney");
+        storeLevel = PlayerPrefs.GetInt("StoreLevel");
     }
 }

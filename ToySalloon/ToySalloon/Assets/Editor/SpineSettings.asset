@@ -21,7 +21,7 @@ MonoBehaviour:
   setTextureImporterSettings: 1
   textureSettingsReference: Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/PMATexturePreset.preset
   atlasTxtImportWarning: 1
-  textureImporterWarning: 1
+  textureImporterWarning: 0
   autoReloadSceneSkeletons: 1
   handleScale: 1
   mecanimEventIncludeFolderName: 1

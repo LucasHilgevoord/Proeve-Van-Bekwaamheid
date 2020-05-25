@@ -1,0 +1,181 @@
+
+34_front.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+34font/Body_Lower
+  rotate: true
+  xy: 0, 430
+  size: 239, 186
+  orig: 239, 186
+  offset: 0, 0
+  index: -1
+34font/Body_Neck
+  rotate: false
+  xy: 0, 670
+  size: 231, 273
+  orig: 231, 273
+  offset: 0, 0
+  index: -1
+34font/Body_Stoumach
+  rotate: false
+  xy: 521, 421
+  size: 174, 253
+  orig: 174, 253
+  offset: 0, 0
+  index: -1
+34font/Body_Top
+  rotate: true
+  xy: 232, 453
+  size: 221, 288
+  orig: 221, 288
+  offset: 0, 0
+  index: -1
+34font/Eye_Closed
+  rotate: true
+  xy: 784, 458
+  size: 77, 78
+  orig: 77, 78
+  offset: 0, 0
+  index: -1
+34font/Eye_InBetween
+  rotate: true
+  xy: 269, 53
+  size: 78, 76
+  orig: 78, 76
+  offset: 0, 0
+  index: -1
+34font/Eye_Open
+  rotate: true
+  xy: 269, 132
+  size: 79, 76
+  orig: 79, 76
+  offset: 0, 0
+  index: -1
+34font/Head
+  rotate: true
+  xy: 607, 675
+  size: 337, 309
+  orig: 337, 309
+  offset: 0, 0
+  index: -1
+34font/Head_Ear
+  rotate: false
+  xy: 159, 0
+  size: 109, 211
+  orig: 109, 211
+  offset: 0, 0
+  index: -1
+34font/Head_Jaw
+  rotate: true
+  xy: 346, 53
+  size: 198, 143
+  orig: 198, 143
+  offset: 0, 0
+  index: -1
+34font/L_Arm_Down
+  rotate: true
+  xy: 0, 45
+  size: 143, 103
+  orig: 143, 103
+  offset: 0, 0
+  index: -1
+34font/L_Arm_Hand
+  rotate: false
+  xy: 695, 242
+  size: 147, 178
+  orig: 147, 178
+  offset: 0, 0
+  index: -1
+34font/L_Arm_Up
+  rotate: true
+  xy: 232, 814
+  size: 129, 303
+  orig: 129, 303
+  offset: 0, 0
+  index: -1
+34font/L_Legg_Down
+  rotate: true
+  xy: 840, 536
+  size: 138, 87
+  orig: 138, 87
+  offset: 0, 0
+  index: -1
+34font/L_Legg_Paw
+  rotate: false
+  xy: 346, 252
+  size: 147, 200
+  orig: 147, 200
+  offset: 0, 0
+  index: -1
+34font/L_Legg_Toes
+  rotate: true
+  xy: 536, 816
+  size: 127, 50
+  orig: 127, 50
+  offset: 0, 0
+  index: -1
+34font/L_Legg_Up
+  rotate: false
+  xy: 187, 212
+  size: 158, 240
+  orig: 158, 240
+  offset: 0, 0
+  index: -1
+34font/R_Arm_Down
+  rotate: false
+  xy: 696, 571
+  size: 143, 103
+  orig: 143, 103
+  offset: 0, 0
+  index: -1
+34font/R_Arm_Hand
+  rotate: false
+  xy: 494, 94
+  size: 147, 178
+  orig: 147, 178
+  offset: 0, 0
+  index: -1
+34font/R_Arm_Up
+  rotate: true
+  xy: 232, 684
+  size: 129, 303
+  orig: 129, 303
+  offset: 0, 0
+  index: -1
+34font/R_Legg_Down
+  rotate: true
+  xy: 494, 273
+  size: 147, 200
+  orig: 147, 200
+  offset: 0, 0
+  index: -1
+34font/R_Legg_Paw
+  rotate: true
+  xy: 696, 432
+  size: 138, 87
+  orig: 138, 87
+  offset: 0, 0
+  index: -1
+34font/R_Legg_Toes
+  rotate: true
+  xy: 536, 688
+  size: 127, 50
+  orig: 127, 50
+  offset: 0, 0
+  index: -1
+34font/R_Legg_Up
+  rotate: false
+  xy: 0, 189
+  size: 158, 240
+  orig: 158, 240
+  offset: 0, 0
+  index: -1
+34font/Tail
+  rotate: false
+  xy: 0, 944
+  size: 606, 68
+  orig: 606, 68
+  offset: 0, 0
+  index: -1
