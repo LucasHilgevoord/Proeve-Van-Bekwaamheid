@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class PlayerAnimator : CharacterAnimator
 {
-    protected override void Start()
+    protected override void ReloadSkin()
     {
-        bodySkinName = GameManager.Instance.bodySkin;
-        base.Start();
+        // Assigning the skin of the gamemanager.
+        body.skeleton.SetSkin(GameManager.Instance.bodySkin);
+        if (hair != null) hair.skeleton.SetSkin(GameManager.Instance.hairSkin);
     }
 }

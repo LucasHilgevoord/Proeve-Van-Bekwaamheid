@@ -169,7 +169,7 @@ public class CharacterAnimator : MonoBehaviour
         body.gameObject.transform.localScale = new Vector2(xScale, bodyScale.y);
     }
 
-    public void ReloadSkin()
+    protected virtual void ReloadSkin()
     {
         body.skeleton.SetSkin(bodySkinName);
         if (hair != null) hair.skeleton.SetSkin(GameManager.Instance.hairSkin);
