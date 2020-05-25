@@ -24,7 +24,7 @@ public class PuzzleSlot : MonoBehaviour,
 
             eventData.pointerDrag.GetComponent<Animator>().SetTrigger("Drop");
 
-            if (preview.parent.childCount - 1 == puzzle.puzzle.lines.Length)
+            if (preview.parent.childCount - 1 == puzzle.currentPuzzle.lines.Length)
             {
                 preview.gameObject.SetActive(false);
             }
@@ -36,7 +36,7 @@ public class PuzzleSlot : MonoBehaviour,
             if(eventData.pointerDrag.GetComponent<ItemDragHandler>() != null)
             {
                 eventData.pointerDrag.GetComponent<ItemDragHandler>().SnapBack();
-                if (preview.parent.childCount - 1 < puzzle.puzzle.lines.Length)
+                if (preview.parent.childCount - 1 < puzzle.currentPuzzle.lines.Length)
                 {
                     preview.gameObject.SetActive(true);
                     eventData.pointerDrag.GetComponent<Animator>().SetTrigger("Snap");

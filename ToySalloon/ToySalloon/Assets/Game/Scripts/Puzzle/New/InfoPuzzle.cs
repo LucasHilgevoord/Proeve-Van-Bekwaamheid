@@ -10,7 +10,9 @@ public class InfoPuzzle : ScriptableObject
     public float coinReward;
     public float expReward;
 
-    public Transform model;
+    public GameObject model;
+    public Vector3 offset;
+    public Quaternion rot;
 
     [TextArea(1, 3)]
     public string tip;

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class HandlePuzzle : MonoBehaviour
 {
     [Header("Current Puzzle")]
-    public InfoPuzzle puzzle;
+    public InfoPuzzle currentPuzzle;
+    [SerializeField] InfoPuzzle[] puzzleList;
 
     [Header("Prefab")]
     [SerializeField]
@@ -18,7 +19,8 @@ public class HandlePuzzle : MonoBehaviour
     [SerializeField]
     private ContentSizeFitter fieldContent;
 
-    private Transform model;
+    [SerializeField] private Transform modelSpot;
+    private GameObject model;
 
     private EndCondition endCondition;
 
@@ -30,23 +32,28 @@ public class HandlePuzzle : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(puzzleList.Length);
+        currentPuzzle = puzzleList[Random.Range(0, puzzleList.Length)];
+
         StartCoroutine(InstantiatePieces(0.1f));
         endCondition = GetComponent<EndCondition>();
 
-        model = puzzle.model;
+        model = currentPuzzle.model;
 
         SpawnModel();
     }
 
     private void SpawnModel()
     {
-        Instantiate(model);
+        GameObject newModel = Instantiate(model, modelSpot);
+        newModel.transform.localPosition += currentPuzzle.offset;
+        newModel.transform.localRotation = currentPuzzle.rot;
     }
 
     //Instantiates all the pieces of the correct puzzle.
     private IEnumerator InstantiatePieces(float time)
     {
-        pieces = puzzle.lines.Length;
+        pieces = currentPuzzle.lines.Length;
 
         for (int i = 0; i < pieces; i++)
         {
@@ -55,7 +62,7 @@ public class HandlePuzzle : MonoBehaviour
             PuzzlePiece piece = Instantiate(spawnedPieces[i], content.transform) as PuzzlePiece;
             piece.gameObject.SetActive(false);
             piece.idOrder = i;
-            piece.ChangeLine(puzzle.lines[i] + " (" + (piece.idOrder + 1) + ")");
+            piece.ChangeLine(currentPuzzle.lines[i] + " (" + (piece.idOrder + 1) + ")");
 
             piece.transform.SetSiblingIndex(Random.Range(0, spawnedPieces.Count));
         }
@@ -84,9 +91,9 @@ public class HandlePuzzle : MonoBehaviour
             Destroy(fieldContent.transform.GetChild(i).gameObject);
         }
 
-        if(fieldContent.transform.childCount > puzzle.lines.Length)
+        if(fieldContent.transform.childCount > currentPuzzle.lines.Length)
         {
-            fieldContent.transform.GetChild(puzzle.lines.Length).gameObject.SetActive(true);
+            fieldContent.transform.GetChild(currentPuzzle.lines.Length).gameObject.SetActive(true);
         }
 
         StartCoroutine(InstantiatePieces(0));
@@ -94,7 +101,7 @@ public class HandlePuzzle : MonoBehaviour
 
     public void CheckOrder()
     {
-        if(fieldContent.transform.childCount > puzzle.lines.Length)
+        if(fieldContent.transform.childCount > currentPuzzle.lines.Length)
         {
             for (int i = 0; i < fieldContent.transform.childCount - 1; i++)
             {
@@ -113,7 +120,7 @@ public class HandlePuzzle : MonoBehaviour
             return;
         }
 
-        if(correctPieces == puzzle.lines.Length)
+        if(correctPieces == currentPuzzle.lines.Length)
         {
             endCondition.Win();
             correctPieces = 0;
@@ -135,14 +142,14 @@ public class HandlePuzzle : MonoBehaviour
     {
         if(c == 1)
         {
-            if(content.transform.childCount > 4 && content.transform.childCount != puzzle.lines.Length + 1)
+            if(content.transform.childCount > 4 && content.transform.childCount != currentPuzzle.lines.Length + 1)
             {
                 content.transform.parent.GetComponentInParent<ScrollRect>().velocity = new Vector2(0f, 1000f);
             }
         }
         else
         {
-            if (fieldContent.transform.childCount > 4 && fieldContent.transform.childCount != puzzle.lines.Length + 1)
+            if (fieldContent.transform.childCount > 4 && fieldContent.transform.childCount != currentPuzzle.lines.Length + 1)
             {
                 fieldContent.transform.parent.GetComponentInParent<ScrollRect>().velocity = new Vector2(0f, 1000f);
             }

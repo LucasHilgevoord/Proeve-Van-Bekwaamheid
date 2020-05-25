@@ -33,17 +33,17 @@ public class EndCondition : MonoBehaviour
 
     public void Win()
     {
-        winTitel.text = puzzle.puzzle.puzzleName;
-        coinRewardWin.text = puzzle.puzzle.coinReward.ToString();
+        winTitel.text = puzzle.currentPuzzle.puzzleName;
+        coinRewardWin.text = puzzle.currentPuzzle.coinReward.ToString();
 
         winScreen.SetActive(true);
     }
     
     public void Lose()
     {
-        loseTitel.text = puzzle.puzzle.puzzleName;
-        loseTip.text = puzzle.puzzle.tip;
-        coinRewardLose.text = puzzle.puzzle.coinReward.ToString();
+        loseTitel.text = puzzle.currentPuzzle.puzzleName;
+        loseTip.text = puzzle.currentPuzzle.tip;
+        coinRewardLose.text = puzzle.currentPuzzle.coinReward.ToString();
 
         loseScreen.SetActive(true);
     }
