@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TalkMenu : UIWindow
@@ -8,6 +9,16 @@ public class TalkMenu : UIWindow
     private NpcController npc;
     [SerializeField]
     private Animator animator;
+
+    [SerializeField] private TextMeshProUGUI dialogue;
+    [SerializeField] private WriteText animatedText;
+
+    private void OnEnable()
+    {
+        // Start Dialogue animation
+        TextMeshProUGUI textMesh = dialogue.GetComponent<TextMeshProUGUI>();
+        StartCoroutine(animatedText.ShowMessage(textMesh.text, textMesh));
+    }
 
     private void Update()
     {

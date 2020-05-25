@@ -43,7 +43,7 @@ public class ItemDragHandler : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.parent = canvas.transform;
+        transform.SetParent(canvas.transform);
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 

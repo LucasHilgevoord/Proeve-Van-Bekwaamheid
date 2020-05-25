@@ -8,8 +8,7 @@ public class WriteText : MonoBehaviour
     public delegate void Finish();
     public static event Finish OnFinished;
 
-    [SerializeField, Range(0.02f,0.1f)]
-    private float typeSpeed;
+    [SerializeField] private float typeSpeed;
 
     public IEnumerator ShowMessage(string mes, TextMeshProUGUI box)
     {
