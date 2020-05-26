@@ -10,14 +10,30 @@ public class WriteText : MonoBehaviour
 
     [SerializeField] private float typeSpeed;
 
+    public enum typingState { NORMAL, TYPING}
+    public typingState type;
+
     public IEnumerator ShowMessage(string mes, TextMeshProUGUI box)
     {
         box.text = "";
+
+        type = typingState.TYPING;
+
         foreach (char letter in mes.ToCharArray())
         {
             box.text += letter;
+
+            if (type == typingState.NORMAL)
+            {
+                box.text = mes;
+                OnFinished();
+                yield break;
+            }
+
             yield return new WaitForSeconds(typeSpeed);
         }
+
+        type = typingState.NORMAL;
 
         OnFinished();
     }
