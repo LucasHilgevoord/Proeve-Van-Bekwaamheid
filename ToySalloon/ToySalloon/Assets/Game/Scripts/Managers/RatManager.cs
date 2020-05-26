@@ -4,45 +4,46 @@ using UnityEngine;
 
 public class RatManager : MonoBehaviour
 {
-    // Where the rat spawns
-    [SerializeField]
-    private GameObject ratSpawnPoint;
+    public delegate void SpawnedRat();
+    public static event SpawnedRat OnSpawn;
 
-    // The rat prefab
-    public GameObject ratPrefab;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Transform[] spawnPoints;
 
-    private Vector3 startPos;
+    [SerializeField] private Transform entities;
+    [SerializeField] private GameObject ratPrefab;
 
-    public List<GameObject> ratAmount = new List<GameObject>();
     private float curRatTimer = 80;
-    private float ratMinTimer = 100;
-    private float ratMaxTimer = 150;
-    private int maxRats = 1;
+    private float minTimer = 100;
+    private float maxTimer = 150;
 
-    void Start()
-    {
-        // Where the first placeholder should be put
-        startPos = ratSpawnPoint.transform.position;
-    }
+    private List<GameObject> rats = new List<GameObject>();
+    private int maxRats = 1;
 
     void Update()
     {
         curRatTimer -= Time.deltaTime;
-        if (curRatTimer < 0 && ratAmount.Count < maxRats)
+        if (curRatTimer < 0 && rats.Count < maxRats)
         {
-            curRatTimer = Random.Range(ratMinTimer, ratMaxTimer);
-
-            CreateRat(new Vector3(startPos.x, startPos.y, startPos.z));
+            curRatTimer = Random.Range(minTimer, maxTimer);
+            CreateRat();
         }
 
-        Debug.Log(ratAmount.Count);
-        Debug.Log(curRatTimer);
-
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            CreateRat();
+        }
     }
 
-    // Create the rat
-    void CreateRat(Vector3 spawnPosition)
+    /// <summary>
+    /// Spawn a new rat.
+    /// </summary>
+    void CreateRat()
     {
-        ratAmount.Add(Instantiate(ratPrefab, spawnPosition, Quaternion.identity));
+        GameObject newRat = Instantiate(ratPrefab, entities);
+        newRat.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+        newRat.GetComponent<RatController>().player = player;
+        rats.Add(newRat);
+        OnSpawn();
     }
 }

@@ -20,6 +20,7 @@ public class NpcSpawner : MonoBehaviour
     private float npcMaxTimer = 10f;
     private float npcMinTimer = 20f;
     private float curNpcTimer = 0f;
+    private bool canSpawn = true;
 
     private GameObject newNpc;
     private AudioSource audioSrc;
@@ -28,10 +29,14 @@ public class NpcSpawner : MonoBehaviour
     private void OnEnable()
     {
         NpcGoLeave.OnNpcLeave += RemoveNPC;
+        RatManager.OnSpawn += ScareNPC;
+        RatController.OnCaught += AllowSpawning;
     }
     private void OnDisable()
     {
         NpcGoLeave.OnNpcLeave -= RemoveNPC;
+        RatManager.OnSpawn -= ScareNPC;
+        RatController.OnCaught -= AllowSpawning;
     }
 
     void Start()
@@ -53,7 +58,7 @@ public class NpcSpawner : MonoBehaviour
         if (curNpcTimer < 0)
         {
             curNpcTimer = Random.Range(npcMinTimer, npcMaxTimer);
-            if (manager.npcs.Count < manager.maxCustomers)
+            if (canSpawn && manager.npcs.Count < manager.maxCustomers)
             {
                 SpawnNPC();
             }
@@ -104,5 +109,23 @@ public class NpcSpawner : MonoBehaviour
             manager.npcs.Remove(npc);
             Destroy(npc.gameObject);
         });
+    }
+
+    /// <summary>
+    /// Move every npc to the exit.
+    /// </summary>
+    private void ScareNPC()
+    {
+        canSpawn = false;
+        foreach (NpcController npc in manager.npcs)
+        {
+            Debug.Log("RUN");
+            npc.ChangeState(NpcStates.LEAVE);
+        }
+    }
+
+    private void AllowSpawning()
+    {
+        canSpawn = true;
     }
 }
