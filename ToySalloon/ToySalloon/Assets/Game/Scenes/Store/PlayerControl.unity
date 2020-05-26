@@ -972,7 +972,7 @@ RectTransform:
   m_GameObject: {fileID: 110336419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1605015546}
   m_RootOrder: 0
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -10670,7 +10670,7 @@ RectTransform:
   m_GameObject: {fileID: 848795741}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 235973561}
   m_RootOrder: 0
@@ -10699,7 +10699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -14855,7 +14855,7 @@ RectTransform:
   m_GameObject: {fileID: 1321116160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 434250937}
   m_RootOrder: 0
@@ -14884,7 +14884,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -14954,14 +14954,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 7667439959405672960, guid: ccc7aba547e15354cb5f299d79a3bc0a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 04285a3475298724a8d04aed5aef0c63, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 7667439959405672960, guid: 3aae40059be5e174cae820555ee98521,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 721495e0e85171743bc3bce88275f445, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -26189,7 +26189,7 @@ RectTransform:
   m_GameObject: {fileID: 2139628380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 288235137}
   m_RootOrder: 0
@@ -26218,7 +26218,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0

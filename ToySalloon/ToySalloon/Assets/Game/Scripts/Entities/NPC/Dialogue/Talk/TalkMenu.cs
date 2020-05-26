@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Spine.Unity;
 
 public class TalkMenu : UIWindow
 {
-    [SerializeField]
-    private NpcController npc;
-    [SerializeField]
-    private Animator animator;
+    [SerializeField] private NpcController npc;
+    [SerializeField] private Animator animator;
 
     [SerializeField] private TextMeshProUGUI dialogue;
     [SerializeField] private WriteText animatedText;
