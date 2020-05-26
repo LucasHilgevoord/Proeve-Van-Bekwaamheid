@@ -49,18 +49,7 @@ public class HandlePuzzle : MonoBehaviour
         model = currentPuzzle.model;
 
         SpawnModel();
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            PlayerPrefs.SetInt("FirstPlay", 1);
-            PlayerPrefs.Save();
-            Debug.Log(PlayerPrefs.GetInt("FirstPlay", 2));
-        }
-
-    }
+    } 
 
     private void SpawnModel()
     {
