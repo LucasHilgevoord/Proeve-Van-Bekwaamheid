@@ -68,7 +68,7 @@ public class PuzzleCheckSystem : MonoBehaviour
         // Check how many pieces are correct
         if (correctPieces >= 4)
         {
-            Application.LoadLevel(1);
+            SceneManager.Instance.FadeToScene(2);
         }
         else
         {

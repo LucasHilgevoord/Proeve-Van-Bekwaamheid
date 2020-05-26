@@ -38,6 +38,6 @@ public class CustomizationManager : MonoBehaviour
     private void OnFinish()
     {
         closetAnim.SetBool("ClosetClose", true);
-        SceneManager.Instance.FadeToScene(1, 1.5f);
+        SceneManager.Instance.FadeToScene(2, 1.5f);
     }
 }

@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 83735c988c8033a448e40d2fe38f769d,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2149,7 +2149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &147305271
 Transform:
   m_ObjectHideFlags: 0
@@ -3382,7 +3382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &285029633
 Transform:
   m_ObjectHideFlags: 0
@@ -3642,7 +3642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &316377562
 Transform:
   m_ObjectHideFlags: 0
@@ -5377,7 +5377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &522382988
 Transform:
   m_ObjectHideFlags: 0
@@ -16474,7 +16474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1618935569
 Transform:
   m_ObjectHideFlags: 0
@@ -16833,6 +16833,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 80831390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1644695045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.26999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557896846215489913, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879344104163957610, guid: c2068585a48b0ed4aac6952b39e9dae0,
+        type: 3}
+      propertyPath: m_Name
+      value: PVB export winkel vloer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2068585a48b0ed4aac6952b39e9dae0, type: 3}
 --- !u!1001 &1646360334
 PrefabInstance:
   m_ObjectHideFlags: 0

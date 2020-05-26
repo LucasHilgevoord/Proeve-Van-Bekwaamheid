@@ -32,8 +32,9 @@ public class GameManager : SingletonBehaviour<GameManager>
         }
     }
 
-    private void SaveData()
+    public void SaveData()
     {
+        Debug.Log("SAVEEEE");
         PlayerPrefs.SetString("PlayerName", playerName);
         PlayerPrefs.SetString("HairSkin", hairSkin);
         PlayerPrefs.SetString("BodySkin", bodySkin);
@@ -45,6 +46,7 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     public void LoadData()
     {
+        Debug.Log("LOAAAAD");
         playerName = PlayerPrefs.GetString("PlayerName");
         hairSkin = PlayerPrefs.GetString("HairSkin");
         bodySkin = PlayerPrefs.GetString("BodySkin");

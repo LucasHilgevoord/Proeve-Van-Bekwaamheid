@@ -11,6 +11,6 @@ public class LeavePuzzleScene : MonoBehaviour
 
     public void Switch()
     {
-        Application.LoadLevel(1);
+        SceneManager.Instance.FadeToScene(2);
     }
 }

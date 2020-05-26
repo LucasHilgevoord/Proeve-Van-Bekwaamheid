@@ -51,6 +51,12 @@ public class ShopUI : MonoBehaviour
 
     public void OnCustomizationButton()
     {
+        SceneManager.Instance.FadeToScene(1);
+    }
+
+    public void OnMainMenu()
+    {
+        GameManager.Instance.SaveData();
         SceneManager.Instance.FadeToScene(0);
     }
 }

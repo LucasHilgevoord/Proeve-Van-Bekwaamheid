@@ -29,10 +29,10 @@ public class MainscreenManager : MonoBehaviour
 
     public void LoadGame()
     {
-        if(PlayerPrefs.GetString("PlayerName") != "")
+        GameManager.Instance.LoadData();
+        if (PlayerPrefs.GetString("PlayerName") != "")
         {
             SceneManager.Instance.FadeToScene(2);
-            GameManager.Instance.LoadData();
         }
         else
         {
