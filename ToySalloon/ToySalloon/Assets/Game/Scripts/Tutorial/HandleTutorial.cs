@@ -7,6 +7,11 @@ public class HandleTutorial : MonoBehaviour
     [SerializeField]
     private Tutorial sceneTutorial;
 
+    [SerializeField]
+    private Canvas normalCanvas;
+    [SerializeField]
+    private Canvas tutorialCanvas;
+
     private GUITutorial tutorialInterface;
 
     private int textIndex = 0;
@@ -16,8 +21,19 @@ public class HandleTutorial : MonoBehaviour
 
     private void Awake()
     {
-        tutorialInterface = GetComponent<GUITutorial>();
-        currentState = tutState.BIG;
+        if (PlayerPrefs.GetInt("FirstPlay", 1) == 1)
+        {
+            PlayerPrefs.SetInt("FirstPlay", 0);
+            PlayerPrefs.Save();
+
+            tutorialInterface = GetComponent<GUITutorial>();
+            currentState = tutState.BIG;
+        }
+        else
+        {
+            normalCanvas.gameObject.SetActive(true);
+            tutorialCanvas.gameObject.SetActive(false);
+        }
     }
 
     private void Start()

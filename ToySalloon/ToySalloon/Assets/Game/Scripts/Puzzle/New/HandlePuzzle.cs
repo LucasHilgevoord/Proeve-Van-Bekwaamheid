@@ -32,8 +32,16 @@ public class HandlePuzzle : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(puzzleList.Length);
-        currentPuzzle = puzzleList[Random.Range(0, puzzleList.Length)];
+        if (PlayerPrefs.GetInt("FirstPlay", 2) == 1)
+        {
+            PlayerPrefs.SetInt("FirstPlay", 0);
+            PlayerPrefs.Save();
+            currentPuzzle = puzzleList[3];
+        }
+        else
+        {
+            currentPuzzle = puzzleList[Random.Range(0, puzzleList.Length)];
+        }
 
         StartCoroutine(InstantiatePieces(0.1f));
         endCondition = GetComponent<EndCondition>();
@@ -41,6 +49,17 @@ public class HandlePuzzle : MonoBehaviour
         model = currentPuzzle.model;
 
         SpawnModel();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.SetInt("FirstPlay", 1);
+            PlayerPrefs.Save();
+            Debug.Log(PlayerPrefs.GetInt("FirstPlay", 2));
+        }
+
     }
 
     private void SpawnModel()

@@ -5996,9 +5996,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 72c476bcf97e28c47b6d065b4bcefae3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.729
+  m_Volume: 0.261
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7393,6 +7393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTutorial: {fileID: 11400000, guid: 6d0f9dc68c1531844a10d04ceb29a9ab, type: 2}
+  normalCanvas: {fileID: 1949345595}
+  tutorialCanvas: {fileID: 1455223853}
 --- !u!4 &1752946401
 Transform:
   m_ObjectHideFlags: 0
@@ -9415,7 +9417,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 72c476bcf97e28c47b6d065b4bcefae3, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.37
   m_Pitch: 1

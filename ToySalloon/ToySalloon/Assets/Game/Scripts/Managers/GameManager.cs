@@ -17,6 +17,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     public string bodySkin = "f_skin03";
     public Gender gender = Gender.FEMALE;
 
+
     private void OnDisable()
     {
         SaveData();
@@ -34,7 +35,6 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     public void SaveData()
     {
-        Debug.Log("SAVEEEE");
         PlayerPrefs.SetString("PlayerName", playerName);
         PlayerPrefs.SetString("HairSkin", hairSkin);
         PlayerPrefs.SetString("BodySkin", bodySkin);
@@ -46,7 +46,6 @@ public class GameManager : SingletonBehaviour<GameManager>
 
     public void LoadData()
     {
-        Debug.Log("LOAAAAD");
         playerName = PlayerPrefs.GetString("PlayerName");
         hairSkin = PlayerPrefs.GetString("HairSkin");
         bodySkin = PlayerPrefs.GetString("BodySkin");
