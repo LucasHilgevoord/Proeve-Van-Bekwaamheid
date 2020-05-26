@@ -26,4 +26,22 @@ public class MainscreenManager : MonoBehaviour
         logo.SetTrigger("LogoOutro");
         logoCanvas.SetTrigger("KlikOpOutro");
     }
+
+    public void LoadGame()
+    {
+        if(PlayerPrefs.GetString("PlayerName") != "")
+        {
+            SceneManager.Instance.FadeToScene(2);
+            GameManager.Instance.LoadData();
+        }
+        else
+        {
+            NewGame();
+        }
+    }
+
+    public void NewGame()
+    {
+        SceneManager.Instance.FadeToScene(1);
+    }
 }

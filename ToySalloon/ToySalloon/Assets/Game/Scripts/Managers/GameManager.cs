@@ -17,16 +17,11 @@ public class GameManager : SingletonBehaviour<GameManager>
     public string bodySkin = "f_skin03";
     public Gender gender = Gender.FEMALE;
 
-    private void OnEnable()
-    {
-        LoadData();
-    }
-
     private void OnDisable()
     {
         SaveData();
     }
-
+        
     internal override void Awake()
     {
         base.Awake();
@@ -48,7 +43,7 @@ public class GameManager : SingletonBehaviour<GameManager>
         PlayerPrefs.SetInt("StoreLevel", storeLevel);
     }
 
-    private void LoadData()
+    public void LoadData()
     {
         playerName = PlayerPrefs.GetString("PlayerName");
         hairSkin = PlayerPrefs.GetString("HairSkin");
