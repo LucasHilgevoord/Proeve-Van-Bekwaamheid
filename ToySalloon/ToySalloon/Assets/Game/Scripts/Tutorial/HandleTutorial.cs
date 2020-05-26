@@ -8,7 +8,7 @@ public class HandleTutorial : MonoBehaviour
     private Tutorial sceneTutorial;
 
     [SerializeField]
-    private Canvas normalCanvas;
+    private List<GameObject> normalObjects = new List<GameObject>();
     [SerializeField]
     private Canvas tutorialCanvas;
 
@@ -28,10 +28,18 @@ public class HandleTutorial : MonoBehaviour
 
             tutorialInterface = GetComponent<GUITutorial>();
             currentState = tutState.BIG;
+
+            foreach (GameObject obj in normalObjects)
+            {
+                obj.SetActive(false);
+            }
         }
         else
         {
-            normalCanvas.gameObject.SetActive(true);
+            foreach (GameObject obj in normalObjects)
+            {
+                obj.SetActive(true);
+            }
             tutorialCanvas.gameObject.SetActive(false);
         }
     }
@@ -43,9 +51,9 @@ public class HandleTutorial : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GetComponent<WriteText>().type == WriteText.typingState.NORMAL)
         {
-            switch(currentState)
+            switch (currentState)
             {
                 case tutState.BIG:
                     ManageBigTutorial();
@@ -56,8 +64,12 @@ public class HandleTutorial : MonoBehaviour
             }
 
         }
-    }
+        else if (Input.GetMouseButtonDown(0) && GetComponent<WriteText>().type == WriteText.typingState.TYPING)
+        {
+            GetComponent<WriteText>().type = WriteText.typingState.NORMAL;
+        }
 
+    }
     private void ManageBigTutorial()
     {
         if (textIndex < sceneTutorial.bigMessage.Length)
@@ -66,10 +78,17 @@ public class HandleTutorial : MonoBehaviour
         }
         else
         {
-            tutorialInterface.CloseBigTutorial();
-            currentState = tutState.SMALL;
-            textIndex = 0;
-            LinkInterface(textIndex);
+            if(sceneTutorial.smallMessage.Length != 0)
+            {
+                tutorialInterface.CloseBigTutorial();
+                currentState = tutState.SMALL;
+                textIndex = 0;
+                LinkInterface(textIndex);
+            }
+            else
+            {
+                tutorialInterface.CloseTutorialGeneral();
+            }
         }
     }
 

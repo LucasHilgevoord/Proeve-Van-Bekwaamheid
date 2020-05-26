@@ -14,7 +14,7 @@ public class GUITutorial : MonoBehaviour
     private Animator sceneTutorial;
 
     [SerializeField]
-    private Canvas normalCanvas;
+    private List<GameObject> normalObjects = new List<GameObject>();
 
     [Header("Text fields")]
     [SerializeField]
@@ -83,15 +83,6 @@ public class GUITutorial : MonoBehaviour
     {
         nextActive = !nextActive;
         next.gameObject.SetActive(nextActive);
-
-        if (nextActive)
-        {
-            //Stop Kat praten
-        }
-        else
-        {
-            //Start kat praten.
-        }
     }
 
     public void HandleSceneTutorial()
@@ -109,6 +100,26 @@ public class GUITutorial : MonoBehaviour
     public void CloseSmallTutorial()
     {
         smallTutorialCanvas.SetTrigger("CloseSmallTut");
-        normalCanvas.gameObject.SetActive(true);
+        foreach (GameObject obj in normalObjects)
+        {
+            obj.SetActive(true);
+        }
+    }
+
+    public void CloseTutorialGeneral()
+    {
+        if (bigTutorialCanvas.gameObject.activeSelf)
+        {
+            bigTutorialCanvas.GetComponentInParent<Animator>().SetTrigger("CloseBigTutorial");
+        }
+        else if (smallTextbox.gameObject.activeSelf)
+        {
+            smallTutorialCanvas.SetTrigger("CloseSmallTut");
+        }
+
+        foreach (GameObject obj in normalObjects)
+        {
+            obj.SetActive(true);
+        }
     }
 }
