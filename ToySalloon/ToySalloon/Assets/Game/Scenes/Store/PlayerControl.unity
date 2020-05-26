@@ -338,6 +338,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &37976188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -366,41 +376,41 @@ MonoBehaviour:
   skins:
     mySkins:
     - skin: {fileID: 763438724202923144, guid: ccc281df548cd1b4ba3ff0f3304c31ee, type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6286ffa51bcee8f4da244d4d424d5eca, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 2758666354644618387, guid: 3edeaccd5fb57c1448b68c7662bed800,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 516bfea8a4a522f4bb57f051a5d295d2, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 6907212675951337388, guid: 4f73b4f832d539442a203f12fe684e57,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: f0e388d057e301d42b02c14d3f17f24e, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 1296924209385801585, guid: 0e8e5a734de317c48a881e6d44548380,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 0efd766c9ae0115428163a11dc895d58, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 763438724202923144, guid: ccc281df548cd1b4ba3ff0f3304c31ee, type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6286ffa51bcee8f4da244d4d424d5eca, type: 3}
       locked:
         levelRequirement: 0
         price: 140
       isSelected: 0
     - skin: {fileID: 2758666354644618387, guid: 3edeaccd5fb57c1448b68c7662bed800,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 516bfea8a4a522f4bb57f051a5d295d2, type: 3}
       locked:
         levelRequirement: 5
         price: 0
@@ -4108,7 +4118,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1350561254}
   m_HandleRect: {fileID: 1350561253}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4876,14 +4886,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 8676789774794106103, guid: 8d6f2a74192cb734d93c2bf40eb3a6f1,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 97df5b464010e49439d9ea3ff252918e, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -4910,6 +4920,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &443669659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5016,15 +5036,15 @@ RectTransform:
   m_GameObject: {fileID: 449683551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1397242, y: 0.1397242, z: 0.698621}
+  m_LocalScale: {x: 0.098280296, y: 0.098280296, z: 0.49140146}
   m_Children: []
   m_Father: {fileID: 1618904362}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.8, y: -1.6}
-  m_SizeDelta: {x: 510.9, y: 94.6}
+  m_AnchoredPosition: {x: 58.74, y: -0}
+  m_SizeDelta: {x: 721.38, y: 94.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449683553
 MonoBehaviour:
@@ -5045,7 +5065,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 844447aefda0abb4681202e01cdcef45, type: 3}
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 1
@@ -8384,14 +8404,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 7667439959405672960, guid: ccc7aba547e15354cb5f299d79a3bc0a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 04285a3475298724a8d04aed5aef0c63, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 7667439959405672960, guid: 3aae40059be5e174cae820555ee98521,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 721495e0e85171743bc3bce88275f445, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -8874,6 +8894,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &698380269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8903,42 +8933,42 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 6751789991027597103, guid: 1fc82b59eca888e4bb7ca6945d65b865,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 564c266a936609442a171df1e67440ab, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 1479490845193382706, guid: 2ce746d984aa6184492b41dbe9f55813,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a654f25bf75b6c04eb3919e6be3a8e2b, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 2758666354644618387, guid: bbbcdfe8492400041a575505aebb8ef9,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 26ddc64d103f99f4694684c1a1c8db86, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 2758666354644618387, guid: a96175414f70b7f479302bfea66477bc,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6570d44610338ea49b406d90826848d8, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 6751789991027597103, guid: 1fc82b59eca888e4bb7ca6945d65b865,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 564c266a936609442a171df1e67440ab, type: 3}
       locked:
         levelRequirement: 0
         price: 300
       isSelected: 0
     - skin: {fileID: 1479490845193382706, guid: 2ce746d984aa6184492b41dbe9f55813,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a654f25bf75b6c04eb3919e6be3a8e2b, type: 3}
       locked:
         levelRequirement: 15
         price: 0
@@ -11512,6 +11542,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &904250165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11541,14 +11581,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 8676789774794106103, guid: 8d6f2a74192cb734d93c2bf40eb3a6f1,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 97df5b464010e49439d9ea3ff252918e, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -12678,14 +12718,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 5733268722521268897, guid: 79c5f49077dddf64cb13ed463fb82df4,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 4d26e453e2ca33941af2185047fdb640, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 5733268722521268897, guid: 1028dedb787860b4489241f367c2159d,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a52f3c20a9ba0844cb821e3b289d32b5, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -12712,6 +12752,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &1046743844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12780,6 +12830,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!114 &1049985303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12796,14 +12856,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 5733268722521268897, guid: 79c5f49077dddf64cb13ed463fb82df4,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 4d26e453e2ca33941af2185047fdb640, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 5733268722521268897, guid: 1028dedb787860b4489241f367c2159d,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a52f3c20a9ba0844cb821e3b289d32b5, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -13146,14 +13206,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 5733268722521268897, guid: 79c5f49077dddf64cb13ed463fb82df4,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 4d26e453e2ca33941af2185047fdb640, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 5733268722521268897, guid: 1028dedb787860b4489241f367c2159d,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a52f3c20a9ba0844cb821e3b289d32b5, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -13178,6 +13238,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &1055637115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20749,14 +20819,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 5733268722521268897, guid: 79c5f49077dddf64cb13ed463fb82df4,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 4d26e453e2ca33941af2185047fdb640, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 5733268722521268897, guid: 1028dedb787860b4489241f367c2159d,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a52f3c20a9ba0844cb821e3b289d32b5, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -20781,6 +20851,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &1733492606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21078,6 +21158,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &1749575970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21107,14 +21197,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 8676789774794106103, guid: 8d6f2a74192cb734d93c2bf40eb3a6f1,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 97df5b464010e49439d9ea3ff252918e, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}
       locked:
         levelRequirement: 0
         price: 0
@@ -23811,42 +23901,42 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 2758666354644618387, guid: a96175414f70b7f479302bfea66477bc,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 6570d44610338ea49b406d90826848d8, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 1479490845193382706, guid: 2ce746d984aa6184492b41dbe9f55813,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a654f25bf75b6c04eb3919e6be3a8e2b, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 2758666354644618387, guid: bbbcdfe8492400041a575505aebb8ef9,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 26ddc64d103f99f4694684c1a1c8db86, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 6751789991027597103, guid: 1fc82b59eca888e4bb7ca6945d65b865,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 564c266a936609442a171df1e67440ab, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 0
     - skin: {fileID: 6751789991027597103, guid: 1fc82b59eca888e4bb7ca6945d65b865,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 564c266a936609442a171df1e67440ab, type: 3}
       locked:
         levelRequirement: 0
         price: 300
       isSelected: 0
     - skin: {fileID: 1479490845193382706, guid: 2ce746d984aa6184492b41dbe9f55813,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: a654f25bf75b6c04eb3919e6be3a8e2b, type: 3}
       locked:
         levelRequirement: 15
         price: 0
@@ -23875,6 +23965,16 @@ MonoBehaviour:
   sellableObjects:
   - {fileID: 11400000, guid: c79b460b6a5486a4c8b0956dd2869d8a, type: 2}
   - {fileID: 11400000, guid: eb68071f3a6da9d4f947d6263415498a, type: 2}
+  - {fileID: 11400000, guid: 7b7310b78bf3cfc4db1dd613cc5360f0, type: 2}
+  - {fileID: 11400000, guid: c5afd51f5367a8e4798846b42719a6ed, type: 2}
+  - {fileID: 11400000, guid: c94126c7fc6c79441b0f799b477bbcc7, type: 2}
+  - {fileID: 11400000, guid: 9f5bb7588a7da8e479a4bab35bdce0bb, type: 2}
+  - {fileID: 11400000, guid: 50d02a227cb0ddb4e9a478cad69ac45c, type: 2}
+  - {fileID: 11400000, guid: 6fcfda6488b32784596b4fc203e3f416, type: 2}
+  - {fileID: 11400000, guid: d0e564ed1f4f14540885f1b13ba1bad1, type: 2}
+  - {fileID: 11400000, guid: d33472be5ecc3b54d89b1aa419a2c372, type: 2}
+  - {fileID: 11400000, guid: d680f60c7a46efa48a499c68c72497f8, type: 2}
+  - {fileID: 11400000, guid: 9c890c6e767e8b24abb778ffe0eeb3fc, type: 2}
 --- !u!65 &1949170294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25579,14 +25679,14 @@ MonoBehaviour:
     mySkins:
     - skin: {fileID: 7667439959405672960, guid: ccc7aba547e15354cb5f299d79a3bc0a,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 04285a3475298724a8d04aed5aef0c63, type: 3}
       locked:
         levelRequirement: 0
         price: 0
       isSelected: 1
     - skin: {fileID: 7667439959405672960, guid: 3aae40059be5e174cae820555ee98521,
         type: 3}
-      icon: {fileID: 0}
+      icon: {fileID: 21300000, guid: 721495e0e85171743bc3bce88275f445, type: 3}
       locked:
         levelRequirement: 0
         price: 0
