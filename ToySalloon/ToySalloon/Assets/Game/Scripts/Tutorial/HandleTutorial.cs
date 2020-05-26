@@ -23,9 +23,9 @@ public class HandleTutorial : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("FirstPlay", tutorialID) == 1)
+        if (PlayerPrefs.GetInt("FirstPlay" + tutorialID) == 1)
         {
-            PlayerPrefs.SetInt("FirstPlay", 0);
+            PlayerPrefs.SetInt("FirstPlay" + tutorialID, 0);
             PlayerPrefs.Save();
 
             tutorialInterface = GetComponent<GUITutorial>();
@@ -44,6 +44,10 @@ public class HandleTutorial : MonoBehaviour
             }
             tutorialCanvas.gameObject.SetActive(false);
         }
+
+        Debug.Log(tutorialID);
+        Debug.Log(PlayerPrefs.GetInt("FirstPlay" + tutorialID));
+        Debug.Log(PlayerPrefs.GetInt("FirstPlay"));
     }
 
     private void Start()
