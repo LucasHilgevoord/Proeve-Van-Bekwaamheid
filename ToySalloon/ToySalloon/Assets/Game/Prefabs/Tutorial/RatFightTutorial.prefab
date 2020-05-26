@@ -494,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24e1624d76993848bfdf6ae1d47f6f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialID: 2
   sceneTutorial: {fileID: 11400000, guid: 6d0f9dc68c1531844a10d04ceb29a9ab, type: 2}
   normalObjects:
   - {fileID: 0}
@@ -533,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeSpeed: 0.02
+  type: 0
 --- !u!1 &3077429366408560843
 GameObject:
   m_ObjectHideFlags: 0

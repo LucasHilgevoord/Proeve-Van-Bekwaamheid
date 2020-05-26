@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HandleTutorial : MonoBehaviour
 {
+    public int tutorialID;
+
     [SerializeField]
     private Tutorial sceneTutorial;
 
@@ -21,7 +23,7 @@ public class HandleTutorial : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("FirstPlay", 1) == 1)
+        if (PlayerPrefs.GetInt("FirstPlay", tutorialID) == 1)
         {
             PlayerPrefs.SetInt("FirstPlay", 0);
             PlayerPrefs.Save();
