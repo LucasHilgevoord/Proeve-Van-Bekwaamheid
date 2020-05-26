@@ -16,8 +16,8 @@ MonoBehaviour:
   coinReward: 340.1
   expReward: 1500
   model: {fileID: 101875135695006199, guid: 98ce46bd5fa3e6947a10bb945139d12a, type: 3}
-  offset: {x: 0, y: 0, z: 0}
-  rot: {x: 0, y: 0, z: 0, w: 0}
+  offset: {x: 0.277, y: -0.309, z: 0.661}
+  rot: {x: 0, y: 0.6812641, z: 0, w: 0.7320377}
   tip: 'BEEP BOOP!
 
     Error ontstaan, activeer zelf vernietegings protocol!'

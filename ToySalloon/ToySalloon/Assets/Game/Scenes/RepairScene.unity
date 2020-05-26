@@ -3145,7 +3145,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 185979333}
   m_HandleRect: {fileID: 185979332}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9383,6 +9383,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3fb5f6a842087704d8931f3e6e810064, type: 2}
   - {fileID: 11400000, guid: 501013fbb8f4e46489d52db07dd193b9, type: 2}
   - {fileID: 11400000, guid: 357c167166e8f18428ad2b51e73339a0, type: 2}
+  - {fileID: 11400000, guid: 9c304dc2259e34b48b632262e3b1f5b8, type: 2}
+  - {fileID: 11400000, guid: ffe343f4a2a4c30409901e114cc83516, type: 2}
+  - {fileID: 11400000, guid: 44e75fbc9168eeb4eb05ba0bd404fcff, type: 2}
   puzzlePiece: {fileID: 8076597730481950618, guid: a648a88e7752b6042bed6df9d862846b,
     type: 3}
   content: {fileID: 1513673320}
