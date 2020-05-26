@@ -262,18 +262,6 @@ Transform:
   m_Father: {fileID: 2023060769}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14178507 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8592058688313900378, guid: 549a137fe9b1ce04293cd345255b73df,
-    type: 3}
-  m_PrefabInstance: {fileID: 789451489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d394f7a609f5227409d71dd0d53349b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &17972487
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &17972488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2725,7 +2713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &220375601
 Animator:
   serializedVersion: 3
@@ -5277,7 +5265,6 @@ MonoBehaviour:
   selectCanvas: {fileID: 17972490}
   logoCanvas: {fileID: 220375601}
   logo: {fileID: 1638437012}
-  scene: {fileID: 14178507}
 --- !u!1 &522382987
 GameObject:
   m_ObjectHideFlags: 0
