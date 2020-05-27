@@ -78,7 +78,7 @@ public class RatAnimator : MonoBehaviour
         }
     }
 
-    private void SetAspect(int x)
+    public void SetAspect(int x)
     {
         body.gameObject.transform.localScale = new Vector2(x, bodyScale.y);
     }
