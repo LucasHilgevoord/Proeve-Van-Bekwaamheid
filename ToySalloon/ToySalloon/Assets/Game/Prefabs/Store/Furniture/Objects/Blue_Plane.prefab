@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8804324802208424665}
   m_Layer: 0
-  m_Name: PVB export toy plane 1
+  m_Name: Blue_Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5509141606845747402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1453369, y: 0.050014276, z: -1.6480637}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1696303100232841984}

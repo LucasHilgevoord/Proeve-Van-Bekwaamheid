@@ -2749,7 +2749,7 @@ MonoBehaviour:
       locked:
         levelRequirement: 0
         price: 0
-      isSelected: 0
+      isSelected: 1
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
       icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}
@@ -7268,7 +7268,7 @@ MonoBehaviour:
       locked:
         levelRequirement: 0
         price: 0
-      isSelected: 0
+      isSelected: 1
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
       icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}
@@ -13852,7 +13852,7 @@ MonoBehaviour:
       locked:
         levelRequirement: 0
         price: 0
-      isSelected: 0
+      isSelected: 1
     - skin: {fileID: 8676789774794106103, guid: f472a5c249ff27f4eb9433a931d7632a,
         type: 3}
       icon: {fileID: 21300000, guid: 6b71f773852b7e04baa75e79eb9ef061, type: 3}

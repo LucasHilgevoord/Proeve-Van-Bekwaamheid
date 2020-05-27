@@ -16,8 +16,8 @@ MonoBehaviour:
   coinReward: 230
   expReward: 999
   model: {fileID: 5509141606845747402, guid: bd0ad3b775d32ca44a31007564c48e87, type: 3}
-  offset: {x: 0.2072635, y: -0.2139865, z: -0.1059682}
-  rot: {x: 0, y: -0.3476476, z: 0, w: 0.9376253}
+  offset: {x: 0.143, y: -0.2640004, z: -0.066}
+  rot: {x: 0, y: 0.26392344, z: 0, w: -0.96454364}
   tip: Mayday! Mayday! Puzzel is niet voltooid!
   lines:
   - Druk knop
