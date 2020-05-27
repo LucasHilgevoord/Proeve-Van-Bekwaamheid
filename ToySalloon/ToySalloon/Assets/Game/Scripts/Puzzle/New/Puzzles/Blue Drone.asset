@@ -16,8 +16,8 @@ MonoBehaviour:
   coinReward: 210.5
   expReward: 1000
   model: {fileID: 6248702264406536432, guid: b65d12152cbee664fba09967e3207010, type: 3}
-  offset: {x: 0, y: -0.287, z: 0}
-  rot: {x: 0, y: 0.84979147, z: 0, w: 0.527119}
+  offset: {x: -0.059, y: -0.285, z: -0.141}
+  rot: {x: 0, y: 0.7183995, z: 0, w: 0.6956307}
   tip: Oeps! Deze puzzel vliegt ons zo langs de oren.
   lines:
   - Klik omhoog

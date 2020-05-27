@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class HandleTutorial : MonoBehaviour
 {
+    public int tutorialID;
+
     [SerializeField]
     private Tutorial sceneTutorial;
+
+    [SerializeField]
+    private List<GameObject> normalObjects = new List<GameObject>();
+    [SerializeField]
+    private Canvas tutorialCanvas;
 
     private GUITutorial tutorialInterface;
 
@@ -16,8 +23,31 @@ public class HandleTutorial : MonoBehaviour
 
     private void Awake()
     {
-        tutorialInterface = GetComponent<GUITutorial>();
-        currentState = tutState.BIG;
+        if (PlayerPrefs.GetInt("FirstPlay" + tutorialID) == 1)
+        {
+            PlayerPrefs.SetInt("FirstPlay" + tutorialID, 0);
+            PlayerPrefs.Save();
+
+            tutorialInterface = GetComponent<GUITutorial>();
+            currentState = tutState.BIG;
+
+            foreach (GameObject obj in normalObjects)
+            {
+                obj.SetActive(false);
+            }
+        }
+        else
+        {
+            foreach (GameObject obj in normalObjects)
+            {
+                obj.SetActive(true);
+            }
+            tutorialCanvas.gameObject.SetActive(false);
+        }
+
+        Debug.Log(tutorialID);
+        Debug.Log(PlayerPrefs.GetInt("FirstPlay" + tutorialID));
+        Debug.Log(PlayerPrefs.GetInt("FirstPlay"));
     }
 
     private void Start()
@@ -27,9 +57,9 @@ public class HandleTutorial : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GetComponent<WriteText>().type == WriteText.typingState.NORMAL)
         {
-            switch(currentState)
+            switch (currentState)
             {
                 case tutState.BIG:
                     ManageBigTutorial();
@@ -40,8 +70,12 @@ public class HandleTutorial : MonoBehaviour
             }
 
         }
-    }
+        else if (Input.GetMouseButtonDown(0) && GetComponent<WriteText>().type == WriteText.typingState.TYPING)
+        {
+            GetComponent<WriteText>().type = WriteText.typingState.NORMAL;
+        }
 
+    }
     private void ManageBigTutorial()
     {
         if (textIndex < sceneTutorial.bigMessage.Length)
@@ -50,10 +84,17 @@ public class HandleTutorial : MonoBehaviour
         }
         else
         {
-            tutorialInterface.CloseBigTutorial();
-            currentState = tutState.SMALL;
-            textIndex = 0;
-            LinkInterface(textIndex);
+            if(sceneTutorial.smallMessage.Length != 0)
+            {
+                tutorialInterface.CloseBigTutorial();
+                currentState = tutState.SMALL;
+                textIndex = 0;
+                LinkInterface(textIndex);
+            }
+            else
+            {
+                tutorialInterface.CloseTutorialGeneral();
+            }
         }
     }
 
