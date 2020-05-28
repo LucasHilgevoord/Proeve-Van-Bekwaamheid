@@ -20,9 +20,9 @@ public class SkinItem : MonoBehaviour
     [SerializeField] private GameObject selectedIcon;
     [SerializeField] private Image image;
 
-    public void SetImage(Image icon)
+    public void SetImage(Sprite icon)
     {
-        image = icon;
+        image.sprite = icon;
     }
 
     public void OnButtonClick()

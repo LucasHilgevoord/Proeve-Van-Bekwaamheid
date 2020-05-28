@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,8 +28,8 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private Image actionImage; // Image for the purpose button
 
-    [SerializeField]
-    private RectTransform dialogue;
+    [SerializeField] private GameObject dialogue;
+    [SerializeField] private WriteText animatedText;
     private Vector2 repairTextPos = new Vector2(14, -15);
     private float repairTextWidth = 1250;
 
@@ -40,6 +41,13 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private Image itemImage;
 
+    private void OnEnable()
+    {
+        // Start Dialogue animation
+        TextMeshProUGUI textMesh = dialogue.GetComponent<TextMeshProUGUI>();
+        StartCoroutine(animatedText.ShowMessage(textMesh.text, textMesh));
+    }
+
     private void Start()
     {
         actionText.text = action[(int)npc.purpose].text;
@@ -50,8 +58,9 @@ public class CheckoutMenu : UIWindow
             itemWindow.SetActive(false);
 
             //Moving text to the right position.
-            dialogue.localPosition = repairTextPos;
-            dialogue.sizeDelta = new Vector2(repairTextWidth, dialogue.sizeDelta.y);
+            RectTransform diaRect = dialogue.GetComponent<RectTransform>();
+            diaRect.localPosition = repairTextPos;
+            diaRect.sizeDelta = new Vector2(repairTextWidth, diaRect.sizeDelta.y);
         } else if (npc.purpose == NpcGoals.BUY)
         {
             itemPrice.text = "$" + npc.desiredItem.price.ToString();
@@ -74,7 +83,7 @@ public class CheckoutMenu : UIWindow
             case NpcGoals.SELL:
                 break;
             case NpcGoals.REPAIR:
-                npc.manager.FadeToScene(3);
+                SceneManager.Instance.FadeToScene(4);
                 break;
             default:
                 break;

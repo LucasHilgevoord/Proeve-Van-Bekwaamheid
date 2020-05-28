@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class NpcController : StateMachine
 {
@@ -52,7 +53,7 @@ public class NpcController : StateMachine
     void Start()
     {
         //Setting values
-        manager = WorldManager.SharedInstance;
+        manager = WorldManager.Instance;
         agent = GetComponent<NavMeshAgent>();
         curLookTime = Random.Range(minLookTime, maxLookTime);
         destination = transform;
@@ -136,7 +137,7 @@ public class NpcController : StateMachine
 
     private void OnMouseDown()
     {
-        if (hasInteracted) return;
+        if (hasInteracted || EventSystem.current.IsPointerOverGameObject()) return;
 
         if (currentState == NpcStates.CHECKOUT)
         {
