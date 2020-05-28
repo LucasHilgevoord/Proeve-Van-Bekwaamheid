@@ -51,9 +51,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://lucashilgevoord.com/demo/ToySaloon/index.html)
 
-This game has been created for this teams final assignment in their study. The game is based on a wish from the customer Spark to learn who aims to teach children how to be creative with technologies such as coding. They have noticed that there are't a lot of female programmers who follow the study Game Development which led to this project. Their goal is to give a postive exerience towards programming through a game which teaches them the fundamentals.
+This game has been created for this teams final assignment in their study. The game is based on a wish from the customer Spark to learn who aims to teach children how to be creative with technologies such as coding. They have noticed that there are't a lot of female programmers which follow the study Game Development which led to this project. Their goal is to give a postive exerience towards programming through a game which teaches them the fundamentals.
 
 Our game takes place in a magical world where the main characters grandma is the great witch. One day she sends to a letter which tells you that she has a store which she wants you to have and manage. She also has a cat which will mentor the character thoughout the game and help you in tight situations with the enemies of your store 'The rats!'. \
 Create sellable objects and sell them to your new customers who will visit your store. Customize your own store to your liking with the fast amount of original furniture and build your own store. \
