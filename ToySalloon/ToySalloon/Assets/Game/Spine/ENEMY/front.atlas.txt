@@ -1,0 +1,153 @@
+
+front.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FRONT/Body_Lower
+  rotate: true
+  xy: 245, 551
+  size: 195, 179
+  orig: 195, 179
+  offset: 0, 0
+  index: -1
+FRONT/Body_Neck
+  rotate: false
+  xy: 0, 700
+  size: 228, 314
+  orig: 228, 314
+  offset: 0, 0
+  index: -1
+FRONT/Body_Stoumach
+  rotate: true
+  xy: 0, 440
+  size: 259, 244
+  orig: 259, 244
+  offset: 0, 0
+  index: -1
+FRONT/Head
+  rotate: false
+  xy: 229, 747
+  size: 175, 267
+  orig: 175, 267
+  offset: 0, 0
+  index: -1
+FRONT/L_Arm_Down
+  rotate: false
+  xy: 887, 723
+  size: 117, 118
+  orig: 117, 118
+  offset: 0, 0
+  index: -1
+FRONT/L_Arm_Hand
+  rotate: false
+  xy: 788, 842
+  size: 107, 172
+  orig: 107, 172
+  offset: 0, 0
+  index: -1
+FRONT/L_Arm_Up
+  rotate: false
+  xy: 405, 765
+  size: 125, 249
+  orig: 125, 249
+  offset: 0, 0
+  index: -1
+FRONT/L_Ear
+  rotate: false
+  xy: 531, 801
+  size: 128, 213
+  orig: 128, 213
+  offset: 0, 0
+  index: -1
+FRONT/L_Legg_Down
+  rotate: true
+  xy: 640, 569
+  size: 69, 85
+  orig: 69, 85
+  offset: 0, 0
+  index: -1
+FRONT/L_Legg_Paws
+  rotate: true
+  xy: 425, 557
+  size: 81, 214
+  orig: 81, 214
+  offset: 0, 0
+  index: -1
+FRONT/L_Legg_Toes
+  rotate: false
+  xy: 675, 652
+  size: 97, 59
+  orig: 97, 60
+  offset: 0, 1
+  index: -1
+FRONT/L_Legg_Up
+  rotate: true
+  xy: 245, 441
+  size: 109, 246
+  orig: 109, 246
+  offset: 0, 0
+  index: -1
+FRONT/R_Arm_Down
+  rotate: true
+  xy: 896, 897
+  size: 117, 118
+  orig: 117, 118
+  offset: 0, 0
+  index: -1
+FRONT/R_Arm_Hand
+  rotate: false
+  xy: 864, 539
+  size: 107, 172
+  orig: 107, 172
+  offset: 0, 0
+  index: -1
+FRONT/R_Arm_Up
+  rotate: true
+  xy: 425, 639
+  size: 125, 249
+  orig: 125, 249
+  offset: 0, 0
+  index: -1
+FRONT/R_Ear
+  rotate: false
+  xy: 660, 801
+  size: 127, 213
+  orig: 127, 213
+  offset: 0, 0
+  index: -1
+FRONT/R_Legg_Down
+  rotate: false
+  xy: 726, 566
+  size: 66, 85
+  orig: 66, 85
+  offset: 0, 0
+  index: -1
+FRONT/R_Legg_Paws
+  rotate: true
+  xy: 675, 712
+  size: 88, 211
+  orig: 88, 211
+  offset: 0, 0
+  index: -1
+FRONT/R_Legg_Toes
+  rotate: false
+  xy: 773, 653
+  size: 90, 58
+  orig: 90, 58
+  offset: 0, 0
+  index: -1
+FRONT/R_Legg_Up
+  rotate: true
+  xy: 492, 447
+  size: 109, 246
+  orig: 109, 246
+  offset: 0, 0
+  index: -1
+FRONT/Tail
+  rotate: false
+  xy: 0, 371
+  size: 606, 68
+  orig: 606, 68
+  offset: 0, 0
+  index: -1

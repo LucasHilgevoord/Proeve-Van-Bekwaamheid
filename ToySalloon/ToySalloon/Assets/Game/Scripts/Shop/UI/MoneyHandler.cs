@@ -27,7 +27,7 @@ public class MoneyHandler : MonoBehaviour
     private void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        UIMoneyText.text = GameManager.SharedInstance.storeMoney.ToString();
+        UIMoneyText.text = GameManager.Instance.storeMoney.ToString();
     }
 
     private void Update()
@@ -45,8 +45,8 @@ public class MoneyHandler : MonoBehaviour
     {
         audioSrc.PlayOneShot(cash);
 
-        float money = GameManager.SharedInstance.storeMoney;
-        GameManager.SharedInstance.storeMoney += price;
+        float money = GameManager.Instance.storeMoney;
+        GameManager.Instance.storeMoney += price;
 
         DOTween.To(() => money, f => money = f, money + price, changeSpeed).OnUpdate(() =>
         {

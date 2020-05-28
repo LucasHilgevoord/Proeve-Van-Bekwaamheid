@@ -51,17 +51,20 @@ public class RatAttack : MonoBehaviour
             yield return new WaitForSeconds(spawnCooldown);
             SpawnClaws();
             num -= 1;
-            if(player.playerHealth <= 0)
+            if (player.playerHealth <= 0)
             {
                 states.ChangeBehaviour(StateManager.RatState.IDLE);
+                clawParent.gameObject.SetActive(false);
                 yield break;
             }
         }
         if (player.playerHealth <= 0)
         {
             states.ChangeBehaviour(StateManager.RatState.IDLE);
+            clawParent.gameObject.SetActive(false);
             yield break;
         }
+
         yield return new WaitForSeconds(2.5f);
         if(!player.damageReady)
         {

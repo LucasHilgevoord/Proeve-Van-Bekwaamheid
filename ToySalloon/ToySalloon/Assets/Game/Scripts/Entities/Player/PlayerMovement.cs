@@ -43,6 +43,6 @@ public class PlayerMovement : MonoBehaviour
     {
         agent.SetDestination(newPos);
         walkIcon.SetActive(true);
-        walkIcon.transform.position = new Vector3(newPos.x, newPos.y + 0.1f, newPos.z);
+        walkIcon.transform.position = new Vector3(newPos.x, newPos.y + 0.2f, newPos.z);
     }
 }

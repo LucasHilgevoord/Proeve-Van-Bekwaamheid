@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec04b4a09759f34fab9719f24cdf9ea, type: 3}
+  m_Name: Rocket
+  m_EditorClassIdentifier: 
+  puzzleName: Rakket
+  coinReward: 350
+  expReward: 999
+  model: {fileID: 1374522722731255114, guid: c080ea02ac6f9fe4e849a087582809d0, type: 3}
+  offset: {x: 0.08962576, y: -0.371, z: -0.06907684}
+  rot: {x: 0, y: 0.7226717, z: 0, w: 0.6911915}
+  tip: Dit is een kleine stap voor de mensheid, maar wel een moeilijke!
+  lines:
+  - Zet aan
+  - Activeer systeem
+  - Zoek audio
+  - Activeer geluid
+  - Speel audio af

@@ -6,6 +6,6 @@ public class NextScene : MonoBehaviour
 {
     public void SceneSwitch()
     {
-        Application.LoadLevel(1);
+        SceneManager.Instance.FadeToScene(2);
     }
 }

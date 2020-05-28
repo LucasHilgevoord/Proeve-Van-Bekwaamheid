@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec04b4a09759f34fab9719f24cdf9ea, type: 3}
+  m_Name: Blue Robot
+  m_EditorClassIdentifier: 
+  puzzleName: Blauwe Robot
+  coinReward: 340.1
+  expReward: 1500
+  model: {fileID: 101875135695006199, guid: 98ce46bd5fa3e6947a10bb945139d12a, type: 3}
+  offset: {x: 0.277, y: -0.309, z: 0.661}
+  rot: {x: 0, y: 0.6812641, z: 0, w: 0.7320377}
+  tip: 'BEEP BOOP!
+
+    Error ontstaan, activeer zelf vernietegings protocol!'
+  lines:
+  - Aanknop
+  - Activeer stroom
+  - Bereken bestemming
+  - Draaien
+  - Zet stappen
+  - Bestemming bereikt

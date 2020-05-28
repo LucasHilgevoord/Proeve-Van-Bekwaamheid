@@ -10,7 +10,7 @@ public class PlayAudio : MonoBehaviour
     {
         if(source == null)
         {
-            source = GetComponent<AudioSource>();
+            source = Camera.main.GetComponent<AudioSource>();
         }
     }
 

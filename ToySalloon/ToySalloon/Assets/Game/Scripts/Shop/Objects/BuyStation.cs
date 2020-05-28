@@ -16,7 +16,7 @@ public class BuyStation : MonoBehaviour
         if (isPreplaced)
         {
             //Adding the already placed station to a list so NPC's can grab them.
-            WorldManager.SharedInstance.buyStations.Add(this);
+            WorldManager.Instance.buyStations.Add(this);
         }
     }
 }

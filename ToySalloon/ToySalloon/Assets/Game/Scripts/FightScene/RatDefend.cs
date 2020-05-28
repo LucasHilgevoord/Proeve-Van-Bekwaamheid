@@ -9,6 +9,7 @@ public class RatDefend : MonoBehaviour
     public float totalDamage;
     [SerializeField]
     private Text damageText;
+    private bool hasAttacked;
 
     [Header("Slider Info")]
     [SerializeField, Range(10f, 20f)]
@@ -37,9 +38,6 @@ public class RatDefend : MonoBehaviour
 
     private DamageHandeler damage;
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void Start()
     {
         sliderSpeed = 1;
@@ -47,27 +45,23 @@ public class RatDefend : MonoBehaviour
         states = GetComponent<StateManager>();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void OnEnable()
     {
         bar.SetActive(true);
         sliderSpeed = 1;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
+    private void OnDisable()
+    {
+        hasAttacked = false;
+    }
+
     private void Update()
     {
         HandleDamage();
         SliderLink();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void HandleDamage()
     {
         damageAmount += sliderSpeed * Time.deltaTime * (speed * 10);
@@ -81,27 +75,22 @@ public class RatDefend : MonoBehaviour
             sliderSpeed = 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !hasAttacked)
         {
             sliderSpeed = 0;
 
             CalculateDamage();
             ShowcaseDamage();
             StartCoroutine(ManageState());
+            hasAttacked = true;
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void SliderLink()
     {
         slider.value = damageAmount;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void CalculateDamage()
     {
         if(damageAmount <= 50)
@@ -119,17 +108,11 @@ public class RatDefend : MonoBehaviour
         damage.DealDamage((int)totalDamage, slider.value);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private void ShowcaseDamage()
     {
         damageText.text = "Damage: " + totalDamage;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private IEnumerator ManageState()
     {
         audio.Play(hit);
@@ -144,7 +127,7 @@ public class RatDefend : MonoBehaviour
         }
         camAni.SetTrigger("Rage");
         ratAni.SetTrigger("Rage");
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1.8f);
         states.ChangeBehaviour(StateManager.RatState.ATTACK);
     }
 }

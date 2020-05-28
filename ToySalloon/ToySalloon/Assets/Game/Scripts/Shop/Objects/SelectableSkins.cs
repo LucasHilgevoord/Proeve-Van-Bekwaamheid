@@ -15,7 +15,7 @@ public class ObjectSkinLock
 public class ObjectSkin
 {
     public GameObject skin;
-    public Image icon;
+    public Sprite icon;
     public ObjectSkinLock locked;
     public bool isSelected;
 }

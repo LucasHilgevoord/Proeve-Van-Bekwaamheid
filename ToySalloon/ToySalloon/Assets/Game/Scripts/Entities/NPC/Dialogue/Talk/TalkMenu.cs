@@ -1,13 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using Spine.Unity;
 
 public class TalkMenu : UIWindow
 {
-    [SerializeField]
-    private NpcController npc;
-    [SerializeField]
-    private Animator animator;
+    [SerializeField] private NpcController npc;
+    [SerializeField] private Animator animator;
+
+    [SerializeField] private TextMeshProUGUI dialogue;
+    [SerializeField] private WriteText animatedText;
+
+    private void OnEnable()
+    {
+        // Start Dialogue animation
+        TextMeshProUGUI textMesh = dialogue.GetComponent<TextMeshProUGUI>();
+        StartCoroutine(animatedText.ShowMessage(textMesh.text, textMesh));
+    }
 
     private void Update()
     {
