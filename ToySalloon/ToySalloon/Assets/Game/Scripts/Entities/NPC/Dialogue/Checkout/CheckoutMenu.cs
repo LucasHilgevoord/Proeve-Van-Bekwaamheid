@@ -41,7 +41,8 @@ public class CheckoutMenu : UIWindow
     [SerializeField]
     private Image itemImage;
 
-    private void OnEnable()
+
+    protected override void OnEnable()
     {
         // Start Dialogue animation
         TextMeshProUGUI textMesh = dialogue.GetComponent<TextMeshProUGUI>();

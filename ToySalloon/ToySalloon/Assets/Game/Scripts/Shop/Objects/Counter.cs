@@ -13,6 +13,6 @@ public class Counter : MonoBehaviour
 
     private void OnMouseDown()
     {
-        player.MovePlayerToPos(employeePoint.position);
+        player.MovePlayerToPos(new Vector3(employeePoint.position.x, 0.1f, employeePoint.position.z));
     }
 }
