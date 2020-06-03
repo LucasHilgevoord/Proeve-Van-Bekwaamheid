@@ -82,12 +82,15 @@ git clone https://github.com/LucasHilgevoord/Proeve-Van-Bekwaamheid.git
 
 ### Installation
 
-1. Go to the following download link [drive](https://drive.google.com/file/d/11EYYVf063lPdsmH1EgG5RSy5evHoDS_s/view?usp=sharing)
+Latest EXE build:
+1. Go to the following download link [drive](https://drive.google.com/file/d/1yYnxo7ctT6m3_e5KHQ23DbOqxZ_omSHJ/view?usp=sharing)
 2. Download the .zip file
 3. Unzip the folder
 4. Locate the 'Salloon.exe'
 5. Open the file
 
+Latest WEB build:
+https://lucashilgevoord.com/demo/ToySaloon/index.html
 
 <!-- USAGE EXAMPLES -->
 ## Usage
