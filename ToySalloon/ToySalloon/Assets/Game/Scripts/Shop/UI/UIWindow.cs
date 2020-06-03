@@ -8,7 +8,7 @@ public class UIWindow : MonoBehaviour
     public delegate void WindowOverlay(bool isOpen);
     public static event WindowOverlay OnWindowOverlay;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         EventDelay();
     }

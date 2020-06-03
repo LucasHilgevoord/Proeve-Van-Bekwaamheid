@@ -415,6 +415,7 @@ MonoBehaviour:
   itemWindow: {fileID: 1143816169}
   itemPrice: {fileID: 409626562}
   itemImage: {fileID: 1605758622}
+  animator: {fileID: 4306623603786232526}
 --- !u!82 &5248199425571989484
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2999,6 +3000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeSpeed: 0.02
+  type: 0
 --- !u!1 &6770358691973246336
 GameObject:
   m_ObjectHideFlags: 0
