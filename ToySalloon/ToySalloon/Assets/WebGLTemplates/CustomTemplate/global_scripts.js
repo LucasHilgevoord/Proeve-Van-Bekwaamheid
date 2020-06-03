@@ -15,21 +15,21 @@ $(window).load(
 		var w = width;
 		var h = w * height / width;
 
-		/* Landscape mode
+		//Landscape mode
 		var scaleFactor = 16 / 9;
 		if (w / h > scaleFactor) {
 			w = h / 9 * 16;
 		} else {
 			h = w / 16 * 9;
-		}*/
+		}
 		
 		// Portrait mode
-		var scaleFactor = 9 / 16;
-		if (w / h > scaleFactor) {
-			w = h / 16 * 9;
-		} else {
-			h = w / 9 * 16;
-		}
+		// var scaleFactor = 9 / 16;
+		// if (w / h > scaleFactor) {
+			// w = h / 16 * 9;
+		// } else {
+			// h = w / 9 * 16;
+		// }
 		
 		
 		// Resize game
