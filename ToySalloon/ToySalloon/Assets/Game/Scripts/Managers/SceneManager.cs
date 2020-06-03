@@ -12,6 +12,8 @@ public class SceneManager : SingletonBehaviour<SceneManager>
     [SerializeField]
     private bool fadeWhenStart = true;
 
+    private bool isFading;
+
     private void OnEnable()
     {
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnLevelLoaded;
@@ -23,6 +25,8 @@ public class SceneManager : SingletonBehaviour<SceneManager>
     /// <param name="sceneID"></param>
     public void FadeToScene(int sceneID, float fadeSpeed = 1)
     {
+        if (isFading) return;
+        isFading = true;
         float alpha = 0f;
         DOTween.To(() => alpha, f => alpha = f, 1f, fadeSpeed).OnUpdate(() =>
         {
@@ -30,6 +34,7 @@ public class SceneManager : SingletonBehaviour<SceneManager>
         }).SetEase(Ease.Linear).OnComplete(() =>
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneID);
+            isFading = false;
         });
     }
 
