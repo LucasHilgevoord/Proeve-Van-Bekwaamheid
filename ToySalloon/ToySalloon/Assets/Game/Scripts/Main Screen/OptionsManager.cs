@@ -3,22 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MenuManager  : MonoBehaviour
+public class OptionsManager : MonoBehaviour
 {
-    public Animator cameraObject;
+    [SerializeField]
+    private Animator cameraObject;
 
     // Panels
-    public GameObject gamePanel;
-    public GameObject videoPanel;
+    [SerializeField]
+    private GameObject gamePanel;
+    [SerializeField]
+    private GameObject videoPanel;
 
     // Sounds
-    public GameObject hoverSound;
-    public GameObject sfxHoverSound;
-    public GameObject clickSound;
+    [SerializeField]
+    private GameObject hoverSound;
+    [SerializeField]
+    private GameObject sfxHoverSound;
+    [SerializeField]
+    private GameObject clickSound;
 
     // Highlights
-    public GameObject lineGame;
-    public GameObject lineVideo;
+    [SerializeField]
+    private GameObject lineGame;
+    [SerializeField]
+    private GameObject lineVideo;
 
     void Start()
     {

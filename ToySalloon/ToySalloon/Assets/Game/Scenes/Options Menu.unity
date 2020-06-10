@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 83735c988c8033a448e40d2fe38f769d,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2967,7 +2967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &220375601
 Animator:
   serializedVersion: 3
@@ -4032,10 +4032,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 521250158}
+        m_MethodName: UpdateVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &292762063
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,6 +6001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521250155}
+  - component: {fileID: 521250158}
   - component: {fileID: 521250156}
   - component: {fileID: 521250157}
   m_Layer: 0
@@ -6125,6 +6137,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &521250158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521250154}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fea596222ad6d84283621cf8b036aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522382987
 GameObject:
   m_ObjectHideFlags: 0
@@ -7629,13 +7653,14 @@ GameObject:
   - component: {fileID: 618007999}
   - component: {fileID: 618007998}
   - component: {fileID: 618007997}
+  - component: {fileID: 618008001}
   m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &618007997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7717,6 +7742,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0.94, y: 1.2671}
   m_SizeDelta: {x: 5.855, y: 5.392}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &618008001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618007996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b98bbd76cdebf54ea6bedd5d07f3cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullScreenText: {fileID: 0}
+  shadowOffText: {fileID: 0}
+  shadowOffTextLine: {fileID: 0}
+  shadowLowText: {fileID: 0}
+  shadowLowTextLine: {fileID: 0}
+  shadowHighText: {fileID: 0}
+  shadowHighTextLine: {fileID: 0}
+  shadowHudText: {fileID: 0}
+  cameraEffectsText: {fileID: 0}
+  invertMouseText: {fileID: 0}
+  vsyncText: {fileID: 0}
+  motionBlurText: {fileID: 0}
+  amvientOcclusionText: {fileID: 0}
+  textureLowText: {fileID: 0}
+  textureLowTextLine: {fileID: 0}
+  textureMedText: {fileID: 0}
+  textureMedTextLine: {fileID: 0}
+  textureHighText: {fileID: 0}
+  textureHighTextLine: {fileID: 0}
+  aaoffText: {fileID: 0}
+  aaoffTextLine: {fileID: 0}
+  aa2xText: {fileID: 0}
+  aa2xTextLine: {fileID: 0}
+  aa4xText: {fileID: 0}
+  aa4xTextLine: {fileID: 0}
+  aa8xText: {fileID: 0}
+  aa8xTextLine: {fileID: 0}
+  musicSlider: {fileID: 287456465}
+  sfxSlider: {fileID: 0}
+  sensitivityXSlider: {fileID: 0}
+  sensitivityYSlider: {fileID: 0}
+  mouseSmoothSlider: {fileID: 0}
 --- !u!1001 &628679651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11333,7 +11402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &949873263
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13138,8 +13207,8 @@ RectTransform:
   m_Father: {fileID: 403799327}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14736,7 +14805,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15301,7 +15370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1244746224
 RectTransform:
   m_ObjectHideFlags: 0
