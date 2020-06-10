@@ -20,12 +20,6 @@ public class MainscreenManager : MonoBehaviour
             ChangeState();
         }
 
-        /*
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            OptionsMenu();
-        }*/
-
         if (Input.GetKeyDown(KeyCode.B))
         {
             BacktoSelect();
