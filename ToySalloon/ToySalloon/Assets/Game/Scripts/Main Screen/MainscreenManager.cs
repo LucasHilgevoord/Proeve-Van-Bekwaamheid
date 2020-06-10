@@ -20,10 +20,11 @@ public class MainscreenManager : MonoBehaviour
             ChangeState();
         }
 
+        /*
         if (Input.GetKeyDown(KeyCode.O))
         {
             OptionsMenu();
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.B))
         {
@@ -39,7 +40,7 @@ public class MainscreenManager : MonoBehaviour
         logoCanvas.SetTrigger("KlikOpOutro");
     }
 
-    private void OptionsMenu()
+    public void OptionsMenu()
     {
         optionCanvas.gameObject.SetActive(true);
         Camera.main.GetComponent<Animator>().SetTrigger("GotoOptions");

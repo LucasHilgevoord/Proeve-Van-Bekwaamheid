@@ -21,7 +21,7 @@ public class MenuManager  : MonoBehaviour
     public GameObject lineVideo;
 
     // Game settings panel
-    void GamePanel()
+    public void GamePanel()
     {
         videoPanel.gameObject.SetActive(false);
         gamePanel.gameObject.SetActive(true);
@@ -31,7 +31,7 @@ public class MenuManager  : MonoBehaviour
     }
 
     // Video settings panel
-    void VideoPanel()
+    public void VideoPanel()
     {
         videoPanel.gameObject.SetActive(true);
         gamePanel.gameObject.SetActive(false);
@@ -44,13 +44,13 @@ public class MenuManager  : MonoBehaviour
     // Hover sounds
 
     // Play hover sound 
-    void PlayHover()
+    public void PlayHover()
     {
         hoverSound.GetComponent<AudioSource>().Play();
     }
 
     // Play sfx hover sound 
-    void PlaySFXHover()
+    public void PlaySFXHover()
     {
         sfxHoverSound.GetComponent<AudioSource>().Play();
     }
