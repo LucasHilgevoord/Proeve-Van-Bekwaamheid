@@ -7,6 +7,8 @@ public class MainscreenManager : MonoBehaviour
     [SerializeField]
     private Canvas selectCanvas;
     [SerializeField]
+    private Canvas optionCanvas;
+    [SerializeField]
     private Animator logoCanvas;
     [SerializeField]
     private Animator logo;
@@ -17,6 +19,16 @@ public class MainscreenManager : MonoBehaviour
         {
             ChangeState();
         }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            OptionsMenu();
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            BacktoSelect();
+        }
     }
 
     private void ChangeState()
@@ -25,6 +37,20 @@ public class MainscreenManager : MonoBehaviour
         Camera.main.GetComponent<Animator>().SetTrigger("GotoSelect");
         logo.SetTrigger("LogoOutro");
         logoCanvas.SetTrigger("KlikOpOutro");
+    }
+
+    private void OptionsMenu()
+    {
+        optionCanvas.gameObject.SetActive(true);
+        Camera.main.GetComponent<Animator>().SetTrigger("GotoOptions");
+        logo.SetTrigger("LogoOutro");
+        logoCanvas.SetTrigger("KlikOpOutro");
+    }
+
+    private void BacktoSelect()
+    {
+        optionCanvas.gameObject.SetActive(false);
+        Camera.main.GetComponent<Animator>().SetTrigger("BacktoSelect");
     }
 
     public void LoadGame()
