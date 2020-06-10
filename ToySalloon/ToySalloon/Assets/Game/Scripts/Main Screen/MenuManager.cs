@@ -20,6 +20,11 @@ public class MenuManager  : MonoBehaviour
     public GameObject lineGame;
     public GameObject lineVideo;
 
+    void Start()
+    {
+        GamePanel();
+    }
+
     // Game settings panel
     public void GamePanel()
     {
