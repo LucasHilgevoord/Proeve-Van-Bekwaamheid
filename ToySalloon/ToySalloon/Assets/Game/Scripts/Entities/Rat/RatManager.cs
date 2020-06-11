@@ -13,7 +13,7 @@ public class RatManager : MonoBehaviour
     [SerializeField] private Transform entities;
     [SerializeField] private GameObject ratPrefab;
 
-    private float curRatTimer = 80;
+    private float curRatTimer = 100;
     private float minTimer = 100;
     private float maxTimer = 150;
 

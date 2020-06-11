@@ -62,7 +62,7 @@ public class MainscreenManager : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.Instance.FadeToScene(1);
+        SceneManager.Instance.FadeToScene(5);
         for (int i = 1; i <= 2; i++)
         {
             PlayerPrefs.SetInt("FirstPlay" + i, 1);
