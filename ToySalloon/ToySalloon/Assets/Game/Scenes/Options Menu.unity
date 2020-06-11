@@ -4599,6 +4599,17 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 618008001}
+        m_MethodName: MusicSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 521250158}
         m_MethodName: UpdateVolume
         m_Mode: 1
@@ -6900,7 +6911,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 93f284e504dc1d44ea43deb2bcf6a021, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.609
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6991,7 +7002,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521250154}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fea596222ad6d84283621cf8b036aae, type: 3}
   m_Name: 
@@ -7605,7 +7616,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8857,9 +8868,6 @@ MonoBehaviour:
   aa8xTextHover: {fileID: 2143719719}
   musicSlider: {fileID: 287456465}
   sfxSlider: {fileID: 561325439}
-  sensitivityXSlider: {fileID: 0}
-  sensitivityYSlider: {fileID: 0}
-  mouseSmoothSlider: {fileID: 0}
 --- !u!1001 &628679651
 PrefabInstance:
   m_ObjectHideFlags: 0

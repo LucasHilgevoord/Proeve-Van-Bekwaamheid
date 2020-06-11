@@ -10,7 +10,7 @@ public class MusicVolumeCheck : MonoBehaviour
         this.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
     }
 
-    void UpdateVolume()
+    public void  UpdateVolume()
     {
         this.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
     }

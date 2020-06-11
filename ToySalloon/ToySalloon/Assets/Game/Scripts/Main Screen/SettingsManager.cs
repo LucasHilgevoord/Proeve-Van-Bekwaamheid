@@ -67,8 +67,8 @@ public class SettingsManager : MonoBehaviour
     [SerializeField]
     private GameObject sfxSlider;
 
-    private float sliderValue = 0.0f;
-    private float sliderValueSFX = 0.0f;
+    private float sliderValue = 1.0f;
+    private float sliderValueSFX = 1.0f;
 
     // Start is called before the first frame update
     void Start()
