@@ -11,15 +11,15 @@ public class SettingsManager : MonoBehaviour
     [SerializeField]
     private GameObject shadowOffText;
     [SerializeField]
-    private GameObject shadowOffTextLine;
+    private GameObject shadowOffTextHover;
     [SerializeField]
     private GameObject shadowLowText;
     [SerializeField]
-    private GameObject shadowLowTextLine;
+    private GameObject shadowLowTextHover;
     [SerializeField]
     private GameObject shadowHighText;
     [SerializeField]
-    private GameObject shadowHighTextLine;
+    private GameObject shadowHighTextHover;
     [SerializeField]
     private GameObject showHudText;
     [SerializeField]
@@ -35,58 +35,46 @@ public class SettingsManager : MonoBehaviour
     [SerializeField]
     private GameObject textureLowText;
     [SerializeField]
-    private GameObject textureLowTextLine;
+    private GameObject textureLowTextHover;
     [SerializeField]
     private GameObject textureMedText;
     [SerializeField]
-    private GameObject textureMedTextLine;
+    private GameObject textureMedTextHover;
     [SerializeField]
     private GameObject textureHighText;
     [SerializeField]
-    private GameObject textureHighTextLine;
+    private GameObject textureHighTextHover;
     [SerializeField]
     private GameObject aaoffText;
     [SerializeField]
-    private GameObject aaoffTextLine;
+    private GameObject aaoffTextHover;
     [SerializeField]
     private GameObject aa2xText;
     [SerializeField]
-    private GameObject aa2xTextLine;
+    private GameObject aa2xTextHover;
     [SerializeField]
     private GameObject aa4xText;
     [SerializeField]
-    private GameObject aa4xTextLine;
+    private GameObject aa4xTextHover;
     [SerializeField]
     private GameObject aa8xText;
     [SerializeField]
-    private GameObject aa8xTextLine;
+    private GameObject aa8xTextHover;
 
     // Sliders
     [SerializeField]
     private GameObject musicSlider;
     [SerializeField]
     private GameObject sfxSlider;
-    [SerializeField]
-    private GameObject sensitivityXSlider;
-    [SerializeField]
-    private GameObject sensitivityYSlider;
-    [SerializeField]
-    private GameObject mouseSmoothSlider;
 
     private float sliderValue = 0.0f;
     private float sliderValueSFX = 0.0f;
-    private float sliderValueXSensitivity = 0.0f;
-    private float sliderValueYSensitivity = 0.0f;
-    private float sliderValueSmoothing = 0.0f;
 
     // Start is called before the first frame update
     void Start()
     {
         musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
         sfxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SFXVolume");
-        sensitivityXSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("XSensitivity");
-        sensitivityYSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("YSensitivity");
-        mouseSmoothSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MouseSmoothing");
 
         // Fullscreen check
         if (Screen.fullScreen)
@@ -116,9 +104,10 @@ public class SettingsManager : MonoBehaviour
             shadowOffText.GetComponent<Text>().text = "OFF";
             shadowLowText.GetComponent<Text>().text = "low";
             shadowHighText.GetComponent<Text>().text = "high";
-            shadowOffTextLine.gameObject.SetActive(true);
-            shadowLowText.gameObject.SetActive(false);
-            shadowLowText.gameObject.SetActive(false);
+
+            shadowOffTextHover.gameObject.SetActive(true);
+            shadowLowTextHover.gameObject.SetActive(false);
+            shadowHighTextHover.gameObject.SetActive(false);
         } 
         else if (PlayerPrefs.GetInt("Shadows") == 1)
         {
@@ -127,9 +116,10 @@ public class SettingsManager : MonoBehaviour
             shadowOffText.GetComponent<Text>().text = "OFF";
             shadowLowText.GetComponent<Text>().text = "low";
             shadowHighText.GetComponent<Text>().text = "high";
-            shadowOffTextLine.gameObject.SetActive(false);
-            shadowLowText.gameObject.SetActive(true);
-            shadowLowText.gameObject.SetActive(false);
+
+            shadowOffTextHover.gameObject.SetActive(false);
+            shadowLowTextHover.gameObject.SetActive(true);
+            shadowHighTextHover.gameObject.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("Shadows") == 2)
         {
@@ -138,9 +128,10 @@ public class SettingsManager : MonoBehaviour
             shadowOffText.GetComponent<Text>().text = "off";
             shadowLowText.GetComponent<Text>().text = "low";
             shadowHighText.GetComponent<Text>().text = "HIGH";
-            shadowOffTextLine.gameObject.SetActive(false);
-            shadowLowText.gameObject.SetActive(false);
-            shadowLowText.gameObject.SetActive(true);
+
+            shadowOffTextHover.gameObject.SetActive(false);
+            shadowLowTextHover.gameObject.SetActive(false);
+            shadowHighTextHover.gameObject.SetActive(true);
         }
 
         // Check vertical sync
@@ -191,9 +182,9 @@ public class SettingsManager : MonoBehaviour
             textureMedText.GetComponent<Text>().text = "med";
             textureHighText.GetComponent<Text>().text = "high";
 
-            textureLowText.gameObject.SetActive(true);
-            textureMedText.gameObject.SetActive(false);
-            textureHighText.gameObject.SetActive(false);
+            textureLowTextHover.gameObject.SetActive(true);
+            textureMedTextHover.gameObject.SetActive(false);
+            textureHighTextHover.gameObject.SetActive(false);
         } 
         else if (PlayerPrefs.GetInt("Textures") == 1)
         {
@@ -202,9 +193,9 @@ public class SettingsManager : MonoBehaviour
             textureMedText.GetComponent<Text>().text = "MED";
             textureHighText.GetComponent<Text>().text = "high";
 
-            textureLowText.gameObject.SetActive(false);
-            textureMedText.gameObject.SetActive(true);
-            textureHighText.gameObject.SetActive(false);
+            textureLowTextHover.gameObject.SetActive(false);
+            textureMedTextHover.gameObject.SetActive(true);
+            textureHighTextHover.gameObject.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("Textures") == 2)
         {
@@ -213,9 +204,9 @@ public class SettingsManager : MonoBehaviour
             textureMedText.GetComponent<Text>().text = "med";
             textureHighText.GetComponent<Text>().text = "HIGH";
 
-            textureLowText.gameObject.SetActive(false);
-            textureMedText.gameObject.SetActive(false);
-            textureHighText.gameObject.SetActive(true);
+            textureLowTextHover.gameObject.SetActive(false);
+            textureMedTextHover.gameObject.SetActive(false);
+            textureHighTextHover.gameObject.SetActive(true);
         }
     }
 
@@ -224,9 +215,6 @@ public class SettingsManager : MonoBehaviour
     {
         sliderValue = musicSlider.GetComponent<Slider>().value;
         sliderValueSFX = sfxSlider.GetComponent<Slider>().value;
-        sliderValueXSensitivity = sensitivityXSlider.GetComponent<Slider>().value;
-        sliderValueYSensitivity = sensitivityYSlider.GetComponent<Slider>().value;
-        sliderValueSmoothing = mouseSmoothSlider.GetComponent<Slider>().value;
     }
 
     // Change to fullscreen or windowed
@@ -256,24 +244,6 @@ public class SettingsManager : MonoBehaviour
         PlayerPrefs.SetFloat("SFXVolume", sliderValueSFX);
     }
 
-    // Change sensitivity X slider
-    public void SensitivityXSlider()
-    {
-        PlayerPrefs.SetFloat("XSensitivity", sliderValueXSensitivity);
-    }
-
-    // Change sensitivity Y slider
-    public void SensitivityYSlider()
-    {
-        PlayerPrefs.SetFloat("YSensitivity", sliderValueYSensitivity);
-    }
-
-    // Change sensitivity x slider
-    public void sensitivitySmoothing()
-    {
-        PlayerPrefs.SetFloat("MouseSmoothing", sliderValueSmoothing);
-    }
-
     public void ShowHUD()
     {
         if (PlayerPrefs.GetInt("ShowHUD") == 0)
@@ -296,9 +266,10 @@ public class SettingsManager : MonoBehaviour
         shadowOffText.GetComponent<Text>().text = "OFF";
         shadowLowText.GetComponent<Text>().text = "low";
         shadowHighText.GetComponent<Text>().text = "high";
-        shadowOffTextLine.gameObject.SetActive(true);
-        shadowLowText.gameObject.SetActive(false);
-        shadowHighText.gameObject.SetActive(false);
+
+        shadowOffTextHover.gameObject.SetActive(true);
+        shadowLowTextHover.gameObject.SetActive(false);
+        shadowHighTextHover.gameObject.SetActive(false);
     }
 
     public void ShadowsLow()
@@ -309,9 +280,10 @@ public class SettingsManager : MonoBehaviour
         shadowOffText.GetComponent<Text>().text = "off";
         shadowLowText.GetComponent<Text>().text = "LOW";
         shadowHighText.GetComponent<Text>().text = "high";
-        shadowOffTextLine.gameObject.SetActive(false);
-        shadowLowText.gameObject.SetActive(true);
-        shadowHighText.gameObject.SetActive(false);
+
+        shadowOffTextHover.gameObject.SetActive(false);
+        shadowLowTextHover.gameObject.SetActive(true);
+        shadowHighTextHover.gameObject.SetActive(false);
     }
 
     public void ShadowsHigh()
@@ -322,9 +294,10 @@ public class SettingsManager : MonoBehaviour
         shadowOffText.GetComponent<Text>().text = "off";
         shadowLowText.GetComponent<Text>().text = "low";
         shadowHighText.GetComponent<Text>().text = "HIGH";
-        shadowOffTextLine.gameObject.SetActive(false);
-        shadowLowText.gameObject.SetActive(false);
-        shadowHighText.gameObject.SetActive(true);
+
+        shadowOffTextHover.gameObject.SetActive(false);
+        shadowLowTextHover.gameObject.SetActive(false);
+        shadowHighTextHover.gameObject.SetActive(true);
     }
 
     public void vsync()
@@ -391,9 +364,9 @@ public class SettingsManager : MonoBehaviour
         textureMedText.GetComponent<Text>().text = "med";
         textureHighText.GetComponent<Text>().text = "high";
 
-        textureLowText.gameObject.SetActive(true);
-        textureMedText.gameObject.SetActive(false);
-        textureHighText.gameObject.SetActive(false);
+        textureLowTextHover.gameObject.SetActive(true);
+        textureMedTextHover.gameObject.SetActive(false);
+        textureHighTextHover.gameObject.SetActive(false);
     }
 
     public void TexturesMed()
@@ -404,9 +377,9 @@ public class SettingsManager : MonoBehaviour
         textureMedText.GetComponent<Text>().text = "MED";
         textureHighText.GetComponent<Text>().text = "high";
 
-        textureLowText.gameObject.SetActive(false);
-        textureMedText.gameObject.SetActive(true);
-        textureHighText.gameObject.SetActive(false);
+        textureLowTextHover.gameObject.SetActive(false);
+        textureMedTextHover.gameObject.SetActive(true);
+        textureHighTextHover.gameObject.SetActive(false);
     }
 
     public void TexturesHigh()
@@ -417,8 +390,8 @@ public class SettingsManager : MonoBehaviour
         textureMedText.GetComponent<Text>().text = "med";
         textureHighText.GetComponent<Text>().text = "HIGH";
 
-        textureLowText.gameObject.SetActive(false);
-        textureMedText.gameObject.SetActive(false);
-        textureHighText.gameObject.SetActive(true);
+        textureLowTextHover.gameObject.SetActive(false);
+        textureMedTextHover.gameObject.SetActive(false);
+        textureHighTextHover.gameObject.SetActive(true);
     }
 }
