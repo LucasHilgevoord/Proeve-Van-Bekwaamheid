@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/RepairScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Game/Scenes/Comic/Comic.unity
+    guid: 089664734b7c8424eb58d932a965f941
   m_configObjects: {}
