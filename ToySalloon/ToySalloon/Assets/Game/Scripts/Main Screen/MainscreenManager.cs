@@ -19,11 +19,6 @@ public class MainscreenManager : MonoBehaviour
         {
             ChangeState();
         }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            BacktoSelect();
-        }
     }
 
     private void ChangeState()
@@ -37,15 +32,19 @@ public class MainscreenManager : MonoBehaviour
     public void OptionsMenu()
     {
         optionCanvas.gameObject.SetActive(true);
+        logoCanvas.gameObject.SetActive(false);
+        logo.gameObject.SetActive(false);
         Camera.main.GetComponent<Animator>().SetTrigger("GotoOptions");
         logo.SetTrigger("LogoOutro");
         logoCanvas.SetTrigger("KlikOpOutro");
     }
 
-    private void BacktoSelect()
+    public void BacktoSelect()
     {
         optionCanvas.gameObject.SetActive(false);
         Camera.main.GetComponent<Animator>().SetTrigger("BacktoSelect");
+        logo.SetTrigger("LogoOutro");
+        logoCanvas.SetTrigger("KlikOpOutro");
     }
 
     public void LoadGame()
