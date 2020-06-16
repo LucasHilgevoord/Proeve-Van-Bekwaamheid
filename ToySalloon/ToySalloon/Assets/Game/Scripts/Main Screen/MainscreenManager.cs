@@ -7,6 +7,8 @@ public class MainscreenManager : MonoBehaviour
     [SerializeField]
     private Canvas selectCanvas;
     [SerializeField]
+    private Canvas optionCanvas;
+    [SerializeField]
     private Animator logoCanvas;
     [SerializeField]
     private Animator logo;
@@ -23,6 +25,24 @@ public class MainscreenManager : MonoBehaviour
     {
         selectCanvas.gameObject.SetActive(true);
         Camera.main.GetComponent<Animator>().SetTrigger("GotoSelect");
+        logo.SetTrigger("LogoOutro");
+        logoCanvas.SetTrigger("KlikOpOutro");
+    }
+
+    public void OptionsMenu()
+    {
+        optionCanvas.gameObject.SetActive(true);
+        logoCanvas.gameObject.SetActive(false);
+        logo.gameObject.SetActive(false);
+        Camera.main.GetComponent<Animator>().SetTrigger("GotoOptions");
+        logo.SetTrigger("LogoOutro");
+        logoCanvas.SetTrigger("KlikOpOutro");
+    }
+
+    public void BacktoSelect()
+    {
+        optionCanvas.gameObject.SetActive(false);
+        Camera.main.GetComponent<Animator>().SetTrigger("BacktoSelect");
         logo.SetTrigger("LogoOutro");
         logoCanvas.SetTrigger("KlikOpOutro");
     }
